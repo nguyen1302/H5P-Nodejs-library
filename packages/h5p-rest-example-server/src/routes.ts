@@ -15,7 +15,7 @@ import {
 export default function (
     h5pEditor: H5P.H5PEditor,
     h5pPlayer: H5P.H5PPlayer,
-    languageOverride: string | 'auto' = 'auto'
+    languageOverride: string | 'auto' = 'vi'
 ): express.Router {
     const router = express.Router();
 
@@ -25,7 +25,7 @@ export default function (
                 req.params.contentId,
                 req.user,
                 languageOverride === 'auto'
-                    ? (req.language ?? 'en')
+                    ? (req.language ?? 'vi')
                     : languageOverride,
                 {
                     // We pass through the contextId here to illustrate how

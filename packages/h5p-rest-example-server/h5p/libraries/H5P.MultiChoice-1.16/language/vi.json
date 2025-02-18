@@ -1,0 +1,258 @@
+{
+    "semantics": [
+        {
+            "label": "Phương tiện hỗ trợ cho công cụ (Không bắt buộc, có thể bỏ qua)",
+            "fields": [
+                {
+                    "label": "Chọn loại phương tiện hiển thị",
+                    "description": "Loại phương tiện này sẽ hiển thị phía trên câu hỏi để làm cho câu hỏi trở nên sinh động hơn"
+                },
+                {
+                    "label": "Tắt tính năng thu nhỏ hình ảnh"
+                }
+            ]
+        },
+        {
+            "label": "Nhập nội dung câu hỏi"
+        },
+        {
+            "label": "Nhập đáp án",
+            "entity": "Đáp án",
+            "field": {
+                "label": "Đáp án",
+                "fields": [
+                    {
+                        "label": "Nhập nội dung đáp án"
+                    },
+                    {
+                        "label": "Chọn làm đáp án đúng"
+                    },
+                    {
+                        "label": "Cách làm bài và phản hồi cho người dùng (Có thể bỏ qua phần này)",
+                        "fields": [
+                            {
+                                "label": "Các cách nhập nội dung",
+                                "description": "Gợi ý dành cho người dùng. Gợi ý này sẽ xuất hiện trước khi người dùng bấm nút kiểm tra câu trả lời của mình"
+                            },
+                            {
+                                "label": "Thông báo hiển thị khi câu trả lời được chọn",
+                                "description": "Thông báo sẽ xuất hiện bên dưới câu trả lời khi người dùng bấm nút lệnh kiểm tra ngay khi câu trả lời này được chọn"
+                            },
+                            {
+                                "label": "Thông báo hiển thị khi câu trả lời không được chọn",
+                                "description": "Thông báo sẽ xuất hiện bên dưới câu trả lời khi người dùng bấm nút lệnh kiểm tra ngay khi câu trả lời này không được chọn"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "label": "Phản hồi cho người dùng (Không bắt buộc, có thể bỏ qua)",
+            "fields": [
+                {
+                    "widgets": [
+                        {
+                            "label": "mặc định"
+                        }
+                    ],
+                    "label": "Nhập phản hồi cho từng thang điểm",
+                    "description": "Nhấp vào nút \"Thêm thang điểm\" để thêm nhiều thang điểm nếu cần thiết. Ví dụ: 0-20% Điểm kém, 21-91% Điểm trung bình, 91-100% Điểm tốt!",
+                    "entity": "ô",
+                    "field": {
+                        "fields": [
+                            {
+                                "label": "Thang điểm"
+                            },
+                            {},
+                            {
+                                "label": "Nhập phản hồi",
+                                "placeholder": "Nhập phản hồi vào ô trống này"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "label": "Bản dịch giao diện người dùng cho đa giọng nói",
+            "fields": [
+                {
+                    "label": "Nhãn cho nút kiểm tra câu trả lời",
+                    "default": "Kiểm tra"
+                },
+                {
+                    "label": "Nhãn cho nút gửi bài tập",
+                    "default": "Gửi bài tập"
+                },
+                {
+                    "label": "Nhãn cho nút hiển thị giải pháp",
+                    "default": "Đáp án"
+                },
+                {
+                    "label": "Nhãn cho nút làm lại bài tập",
+                    "default": "Làm lại"
+                },
+                {
+                    "label": "Nhãn cho nút hiển thị cách làm bài",
+                    "default": "Hiển thị cách làm bài"
+                },
+                {
+                    "label": "Trình bày bằng văn bản của thang điểm cho những người sử dụng loa đọc",
+                    "description": "Các biến khả dụng là :num và :total",
+                    "default": "bạn đạt được :num trong :total số điểm"
+                },
+                {
+                    "label": "Cách làm bài có sẵn (không hiển thị)",
+                    "default": "Cách làm bài có sẵn",
+                    "description": "Văn bản hỗ trợ dùng cho loa đọc"
+                },
+                {
+                    "label": "Phản hồi có sẵn (không hiển thị)",
+                    "default": " Phản hồi Có sẵn",
+                    "description": "Văn bản hỗ trợ dùng cho loa đọc"
+                },
+                {
+                    "label": "Đọc phản hồi ( không hiển thị)",
+                    "default": "Đọc phản hồi",
+                    "description": "Văn bản hỗ trợ dùng cho loa đọc"
+                },
+                {
+                    "label": "Câu trả lời sai ( không hiển thị)",
+                    "default": "Câu trả lời sai",
+                    "description": "Văn bản hỗ trợ dùng cho loa đọc"
+                },
+                {
+                    "label": "Câu trả lời chính xác ( không hiển thị)",
+                    "default": "Câu trả lời chính xác",
+                    "description": "Văn bản hỗ trợ dùng cho loa đọc"
+                },
+                {
+                    "label": "Tùy chọn nên được kiểm tra",
+                    "default": "Nên được kiểm tra"
+                },
+                {
+                    "label": "Tùy chọn không nên được  Kiểm tra",
+                    "default": "Không nên được kiểm tra"
+                },
+                {
+                    "label": "Nội dung cho tin nhắn \"Yêu cầu câu trả lời \"",
+                    "default": "Xin vui lòng trả lời câu hỏi trước khi xem giải pháp"
+                },
+                {
+                    "label": "Mô tả công nghệ hỗ trợ cho nút \" Kiểm tra \"",
+                    "default": "Kiểm tra câu trả lời. Các câu trả lời sẽ được đánh dấu là chính xác, không chính xác hoặc chưa được trả lời"
+                },
+                {
+                    "label": "Nhãn công nghệ hỗ trợ cho \" hiển thị giải pháp\" nút",
+                    "default": "Hiển thị giải pháp. Nhiệm vụ sẽ được đánh dấu bằng giải pháp chính xác của nó."
+                },
+                {
+                    "label": "Công nghệ hỗ trợ mô tả cho \" thử lại\" nút",
+                    "default": "Thử lại nhiệm vụ. Đặt lại tất cả các câu trả lời và bắt đầu lại nhiệm vụ"
+                }
+            ]
+        },
+        {
+            "label": "Cài đặt nâng cao (Không bắt buộc, có thể bỏ qua)",
+            "description": "Các tùy chọn này sẽ cho phép bạn cài đặt một số tính năng của bài tập",
+            "fields": [
+                {
+                    "label": "Cho phép người dùng làm lại bài tập"
+                },
+                {
+                    "label": "Cho phép người dùng xem đáp án"
+                },
+                {
+                    "label": "Cho phép người dùng kiểm tra đáp án"
+                },
+                {
+                    "label": "Hiển thị điểm số",
+                    "description": "Hiển thị điểm đạt được cho mỗi câu trả lời.",
+                    "options": [
+                        {
+                            "label": "Tự động"
+                        },
+                        {
+                            "label": "Câu hỏi có nhiều đáp án đúng"
+                        },
+                        {
+                            "label": "Câu hỏi chỉ có một đáp án đúng"
+                        }
+                    ]
+                },
+                {
+                    "label": "Cho một điểm cho toàn bộ bài tập",
+                    "description": "Cho một điểm đối với loại bài tập dạng câu hỏi có nhiều đáp án đúng"
+                },
+                {
+                    "label": "Sắp xếp các đáp án một cách ngẫu nhiên",
+                    "description": "Cho phép sắp xếp thứ tự ngẫu nhiên của các đáp án khi hiển thị bài tập"
+                },
+                {
+                    "label": "Yêu cầu người dùng phải trả lời hết các câu hỏi trước khi xem đáp án"
+                },
+                {
+                    "label": "Hiển thị thông báo xác nhận khi người dùng muốn kiểm tra đáp án"
+                },
+                {
+                    "label": "Hiển thị thông báo xác nhận khi người dùng muốn làm lại bài tập"
+                },
+                {
+                    "label": "Tự động kiểm tra câu trả lời ngay khi người dùng nhấp vào chọn đáp án",
+                    "description": "Hệ thống sẽ tự động kiểm tra và hiển thị đáp án mà người dùng chọn đúng hay sai"
+                },
+                {
+                    "label": "Số phần trăm mà người dùng cần đạt để vượt qua bài kiểm tra",
+                    "description": "Cài đặt số phần trăm mà người dùng cần đạt trên tổng số điểm được yêu cầu để vượt qua bài kiểm tra (khi bật tính năng cho một điểm cho toàn bộ bài tập"
+                },
+                {
+                    "label": "Hiển thị điểm số",
+                    "description": "Hiển thị điểm đạt được cho mỗi câu trả lời. Đây sẽ không phải là một tùy chọn trong chế độ 'chỉ một câu trả lời đúng' hoặc nếu tùy chọn 'Cho một điểm cho toàn bộ nhiệm vụ' được bật."
+                }
+            ]
+        },
+        {
+            "label": "Hiển thị thông báo xác nhận kiểm tra đáp án",
+            "fields": [
+                {
+                    "label": "Tiêu đề",
+                    "default": "Thông báo xác nhận kết thúc bài tập"
+                },
+                {
+                    "label": "Nội dung thân bài",
+                    "default": "Bạn đã hoàn thành và muốn kết thúc bài tập?"
+                },
+                {
+                    "label": "Nhãn nút hủy",
+                    "default": "Quay lại"
+                },
+                {
+                    "label": "Nhãn nút gửi",
+                    "default": "Kết thúc"
+                }
+            ]
+        },
+        {
+            "label": "Hiển thị thông báo xác nhận làm lại bài tập",
+            "fields": [
+                {
+                    "label": "Nội dung tiêu đề",
+                    "default": "Thông báo xác nhận làm lại bài tập"
+                },
+                {
+                    "label": "Nội dung thân bài",
+                    "default": "Bạn muốn làm lại bài tập này?"
+                },
+                {
+                    "label": "Nhãn nút hủy",
+                    "default": "Không"
+                },
+                {
+                    "label": "Nhãn nút gửi",
+                    "default": "Có"
+                }
+            ]
+        }
+    ]
+}

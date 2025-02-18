@@ -1,0 +1,395 @@
+{
+  "semantics": [
+    {
+      "fields": [
+        {
+          "field": {
+            "fields": [
+              {
+                "field": {
+                  "fields": [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                      "label": "nhận xét",
+                      "description": "Nhận xét được hiển thị khi người dùng hiển thị các câu trả lời gợi ý cho tất cả các trang trình bày."
+                    },
+                    {
+                      "label": "Luôn hiển thị nhận xét"
+                    },
+                    {
+                      "label": "Độ mờ nền"
+                    },
+                    {
+                      "label": "Hiển thị dưới dạng nút"
+                    },
+                    {
+                      "label": "Kích cỡ nút",
+                      "options": [
+                        {
+                          "label": "Nhỏ"
+                        },
+                        {
+                          "label": "Lớn"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Tiêu đề"
+                    },
+                    {
+                      "label": "Dẫn đến",
+                      "options": [
+                        {
+                          "label": "Số trang trình bày cụ thể"
+                        },
+                        {
+                          "label": "Trang tiếp theo"
+                        },
+                        {
+                          "label": "Trang trước đó"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Số trang trình bày cụ thể",
+                      "description": "chỉ được áp dụng khi chọn 'số trang trình bày cụ thể'"
+                    },
+                    {
+                      "label": "Vô hình",
+                      "description": "Con trỏ mặc định, không có tiêu đề và không có mục lục tab. Cảnh báo: người dùng không đủ tư cách pháp lý hoặc chỉ sử dụng bàn phím sẽ xảy ra khó khăn khi sử dụng yếu tố này."
+                    }
+                  ]
+                }
+              },
+              {},
+              {
+                "fields": [
+                  {
+                    "label": "Hình ảnh",
+                    "description": "Ảnh nền phải có tỷ lệ chiều rộng / chiều cao là 2: 1 để tránh bị kéo giãn. Hình ảnh có độ phân giải cao sẽ hiển thị tốt hơn trên các màn hình lớn hơn."
+                  },
+                  {
+                    "label": "Chọn màu"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {},
+        {
+          "label": "Danh sách từ khóa"
+        },
+        {
+          "label": "Luôn hiển thị"
+        },
+        {
+          "label": "Tự động ẩn"
+        },
+        {
+          "label": "Độ mờ"
+        },
+        {
+          "fields": [
+            {
+              "label": "Hình ảnh",
+              "description": "ảnh nền phải có tỷ lệ chiều rộng / chiều cao là 2: 1 để tránh bị kéo giãn. Hình ảnh có độ phân giải cao sẽ hiển thị tốt hơn trên các màn hình lớn hơn."
+            },
+            {
+              "label": "Chọn màu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Khoanh vùng",
+      "fields": [
+        {
+          "label": "Bài dịch cho \"trang trình bày\"",
+          "default": "Trang trình bày"
+        },
+        {
+          "label": "Bài dịch cho \"điểm số\"",
+          "default": "Điểm số"
+        },
+        {
+          "label": "Bài dịch cho \"điểm số của bạn\"",
+          "default": "Điểm số của bạn"
+        },
+        {
+          "label": "Bài dịch cho \"điểm số cao nhất\"",
+          "default": "Điểm số cao nhất"
+        },
+        {
+          "label": "Bài dịch cho \"tổng số\"",
+          "default": "Tổng số"
+        },
+        {
+          "label": "Bài dịch cho \"tổng số điểm\"",
+          "default": "tổng số điểm"
+        },
+        {
+          "label": "Tiêu đề cho nút hiển thị giải pháp",
+          "default": "Hiển thị giải pháp"
+        },
+        {
+          "label": "Nội dung cho nút kiểm tra",
+          "default": "Kiểm tra"
+        },
+        {
+          "label": "Nội dung cho nút nội dung xuất văn bản",
+          "default": "Xuất văn bản"
+        },
+        {
+          "label": "Ẩn tiêu đề nút danh sách từ khóa",
+          "default": "Ẩn danh sách từ khóa"
+        },
+        {
+          "label": "Hiển thị tiêu đề nút danh sách từ khóa",
+          "default": "hiển thị danh sách từ khóa"
+        },
+        {
+          "label": "Nhãn toàn màn hình",
+          "default": "toàn màn hình"
+        },
+        {
+          "label": "Nhãn thoát toàn màn hình",
+          "default": "thoát toàn màn hình"
+        },
+        {
+          "label": "Nhãn trang trình bày trước đó",
+          "default": "trang trình bày trước đó"
+        },
+        {
+          "label": "Nhãn trang trình  bày tiếp theo",
+          "default": "trang trình bày tiếp theo"
+        },
+        {
+          "label": "Nhãn trang trình bày hiện tại",
+          "default": "trang trình bày hiện tại"
+        },
+        {
+          "label": "Nhãn trang trình bày cuối",
+          "default": "trang trình bày cuối"
+        },
+        {
+          "label": "Thoát khỏi chế độ nội dung giải pháp",
+          "default": "thoát khỏi chế độ giải pháp"
+        },
+        {
+          "label": "Nội dung cách khắc phục lỗi",
+          "default": "cách khắc phục lỗi"
+        },
+        {
+          "label": "Nội dung nhiều tác vụ trên cùng một trang",
+          "default": "nhiều tác vụ"
+        },
+        {
+          "label": "Nội dung tông tin điểm số",
+          "default": "bạn đạt được:"
+        },
+        {
+          "label": "Nội dung chia sẻ lên facebook",
+          "default": "chia sẻ lên facebook"
+        },
+        {
+          "label": "Nội dung chia sẻ lên Twitter",
+          "default": "chia sẻ lên Twitter"
+        },
+        {
+          "label": "Nội dung chia sẻ lên Google",
+          "default": "chia sẻ lên Google+"
+        },
+        {
+          "label": "tiêu đề cho tóm tắt trang thông tin",
+          "default": "tóm tắt"
+        },
+        {
+          "label": "tiêu đề cho biểu tượng phản hồi",
+          "default": "đưa ra nhận xét"
+        },
+        {
+          "label": "tiêu đề cho nút in",
+          "default": "In"
+        },
+        {
+          "label": "In hộp thư thoại",
+          "default": "Bạn muốn in bài thuyết trình này như thế nào?"
+        },
+        {
+          "label": "nhãn cho \"in tất cả các trang\" nút",
+          "default": "in tất cả các trang"
+        },
+        {
+          "label": "nhãn cho \" in trang hiện tại\" nút",
+          "default": "in trang hiện tại"
+        },
+        {
+          "label": "nhãn cho các trang không có tiêu đề",
+          "default": "không có tiêu đề"
+        },
+        {
+          "label": "Giải thích về điều hướng trang trình bày cho các công nghệ hỗ trợ",
+          "default": "Sử dụng mũi tên trái và phải để thay đổi trang trình bày theo hướng đó bất cứ khi nào canvas được chọn"
+        },
+        {
+          "label": "nhãn Canvas cho công nghệ hỗ trợ",
+          "default": "Khung trình chiếu. Sử dụng mũi tên trái và phải để di chuyển giữa các trang trình bày."
+        },
+        {
+          "label": "Gắn nhãn cho các tương tác chưa hoàn thành",
+          "default": "@slideName chứa tương tác chưa hoàn thành"
+        },
+        {
+          "label": "gắn nhãn cho các tương tác đã hoàn thành",
+          "default": "@slideName chứa tương tác đã hoàn thành"
+        },
+        {
+          "label": "Nhãn cho bộ đếm trang trình bày. Các biến là @index, @total",
+          "default": "Slide @index of @total"
+        },
+        {
+          "label": "Gắn nhãn cho các trang trình bày chỉ chứa các câu trả lời đúng",
+          "default": "@slideName chỉ có câu trả lời đúng"
+        },
+        {
+          "label": "nhãn cho các trang trình bày có câu trả lời không chính xác",
+          "default": "@slideName có câu trả lời không chính xác"
+        },
+        {
+          "label": "nhãn cho thanh chia sẻ lên mạng xã hội",
+          "default": "chia sẻ kết quả"
+        },
+        {
+          "label": "Thông báo tổng điểm cho các công nghệ hỗ trợ",
+          "default": "bạn nhận được @score trong @maxScore tổng số điểm",
+          "description": "các biến khả dụng là @score và @maxScore"
+        },
+        {
+          "label": "thông báo đã vào chế độ toàn màn hình cho các công nghệ hỗ trợ",
+          "default": "Đã vào chế độ toàn màn hình"
+        },
+        {
+          "label": "thông báo đã thoát chế độ toàn màn hình cho các công nghệ hỗ trợ",
+          "default": "thoát chế độ toàn màn hình"
+        },
+        {
+          "label": "Tiêu đề xác nhận gửi kết quả của hộp thoại",
+          "default": "xác nhận câu trả lời của bạn"
+        },
+        {
+          "label": "Tiêu đề xác nhận gửi kết quả của hộp thoại",
+          "default": "Điều này sẽ gửi kết quả của bạn, bạn có muốn tiếp tục không?"
+        },
+        {
+          "label": "Tiêu đề xác nhận gửi kết quả của hộp thoại",
+          "default": "gửi và xem kết quả"
+        }
+      ]
+    },
+    {
+      "label": "Cài đặt hành vi.",
+      "description": "Các thao tác naỳ sẽ cho phép bạn ghi đè lên các cài đặt hành vi.",
+      "fields": [
+        {
+          "label": "Kích hoạt Chế độ bề mặt hoạt động",
+          "description": "Loại bỏ các công cụ điều hướng cho người dùng cuối. Sử dụng Đi tới Trang trình bày để điều hướng."
+        },
+        {
+          "label": "ẩn các trang trình bày tóm tắt",
+          "description": "ẩn các trang trình bày tóm tắt."
+        },
+        {
+          "label": "Ghi đè \"Hiển thị giải pháp \"nút",
+          "description": "Tùy chọn này xác định xem nút \"Hiển thị Giải pháp \" sẽ được hiển thị cho tất cả các câu hỏi, bị vô hiệu hóa cho tất cả hoặc được định cấu hình cho từng câu hỏi riêng lẻ.",
+          "options": [
+            {
+              "label": "Đã bật"
+            },
+            {
+              "label": "Đã tắt"
+            }
+          ]
+        },
+        {
+          "label": "ghi đè \" thử lại\" nút",
+          "description": "Tùy chọn này xác định xem nút \"Thử lại \" sẽ được hiển thị cho tất cả các câu hỏi, bị vô hiệu hóa cho tất cả hoặc được định cấu hình cho từng câu hỏi riêng lẻ.",
+          "options": [
+            {
+              "label": "Đã bật"
+            },
+            {
+              "label": "Đã tắt"
+            }
+          ]
+        },
+        {
+          "label": "Hiển thị nút \"Hiển thị giải pháp \" trong trang trình bày tóm tắt",
+          "description": "Nếu được bật, người học sẽ có thể hiển thị các giải pháp cho tất cả các câu hỏi khi họ đến trang trình bày tóm tắt"
+        },
+        {
+          "label": "Hiển thị \"thử lại\" nút trong các trang trình bày tóm tắt",
+          "description": "Nếu được bật, người học sẽ có thể thử lại tất cả các câu hỏi khi họ đến trang trình bày tóm tắt. Xin lưu ý rằng bằng cách làm mới trang, người học sẽ có thể thử lại ngay cả khi nút này không hiển thị."
+        },
+        {
+          "label": "Bật nút in",
+          "description": "Bật nút in."
+        },
+        {
+          "label": "Cài đặt cộng đồng",
+          "description": " Các tùy chọn này sẽ cho phép bạn ghi nhớ các cài đặt cộng đồng trước đó. Các giá trị trống sẽ được điền tự động nếu có liên kết, nếu không, tất cả các giá trị sẽ được tạo.",
+          "fields": [
+            {
+              "label": "Hiển thị biểu tượng chia sẻ lên Facebook"
+            },
+            {
+              "label": "Cài đặt chia sẻ lên Facebook",
+              "fields": [
+                {
+                  "label": "Chia sẻ lên liên kết Facebook",
+                  "default": "@currentpageurl"
+                },
+                {
+                  "label": "Chia sẻ lên trích dẫn facebook",
+                  "default": "Tôi đã đạt được điểm @score trong số @maxScore trong một nhiệm vụ tại @currentpageurl."
+                }
+              ]
+            },
+            {
+              "label": "Hiển thị biểu tượng chia sẻ Twitter"
+            },
+            {
+              "label": "Cài đặt chia sẻ lên Twitter",
+              "fields": [
+                {
+                  "label": "Chia sẻ lên câu nói Twitter",
+                  "default": "Tôi đã đạt được điểm @score trong số @maxScore trong một nhiệm vụ tại @currentpageurl."
+                },
+                {
+                  "label": "Chia sẻ lên liên kết Twitter",
+                  "default": "@currentpageurl"
+                },
+                {
+                  "label": "Chia sẻ lên các thẻ bắt đầu bằng # trên Twitter",
+                  "default": "h5p, khóa học"
+                }
+              ]
+            },
+            {
+              "label": "Hiển thị biểu tượng chia sẻ lên  Google+"
+            },
+            {
+              "label": "Chia sẻ lên liên kết Google",
+              "default": "@currentpageurl"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

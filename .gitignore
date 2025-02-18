@@ -6,9 +6,8 @@ npm-debug.log*
 # Compiled files
 build
 build-ide
-h5p
 coverage
-typedoc
+typedoc 
 
 # vscode
 .DS_Store

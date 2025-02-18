@@ -1,0 +1,87 @@
+{
+    "semantics": [
+        {
+            "label": "Loại",
+            "options": [
+                {
+                    "label": "Hình vuông/hình chữ nhật"
+                },
+                {
+                    "label": "hình tròn"
+                },
+                {
+                    "label": "Đường dọc"
+                },
+                {
+                    "label": "Đường ngang"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "label": "Màu nền"
+                },
+                {
+                    "label": "Màu viền"
+                },
+                {
+                    "label": "Độ rộng viền"
+                },
+                {
+                    "label": "Kiểu viền",
+                    "options": [
+                        {
+                            "label": "Nét liền"
+                        },
+                        {
+                            "label": "Nét gãy bằng dấu chấm"
+                        },
+                        {
+                            "label": "Nét gãy bằng dấu gạch ngang"
+                        },
+                        {
+                            "label": "Nét đôi"
+                        },
+                        {
+                            "label": "Lõm"
+                        },
+                        {
+                            "label": "Nổi"
+                        }
+                    ]
+                },
+                {
+                    "label": "Độ bo góc của viền"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "label": "Màu hình dạng"
+                },
+                {
+                    "label": "Độ rộng"
+                },
+                {
+                    "label": "Kiểu hiển thị",
+                    "options": [
+                        {
+                            "label": "Nét liền"
+                        },
+                        {
+                            "label": "Nét gãy bằng dấu chấm"
+                        },
+                        {
+                            "label": "Nét gãy bằng dấu gạch ngang"
+                        },
+                        {
+                            "label": "Nét đôi"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

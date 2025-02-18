@@ -1,0 +1,16 @@
+{
+    "semantics": [
+        {
+            "label": "Nhãn",
+            "description": "Gắn nhãn / tiêu đề cho câu trả lời khi người dùng xuất tất cả câu trả lời"
+        },
+        {},
+        {
+            "label": "Xuất nhãn không được hỗ trợ",
+            "default": "Tính năng xuất không được hỗ trợ trên thiết bị của bạn"
+        },
+        {
+            "label": "Bao gồm các nhận xét trong tài liệu đã xuất"
+        }
+    ]
+}

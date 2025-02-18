@@ -1,0 +1,63 @@
+{
+    "H5P_Image": {
+        "title": "Hình ảnh"
+    },
+    "H5P_ContinuousText": {
+        "title": "Văn bản tiếp nối"
+    },
+    "H5P_FreeTextQuestion": {
+        "title": "Câu hỏi miễn phí"
+    },
+    "H5P_GoToScene": {
+        "title": "Đi đến màn hình"
+    },
+    "H5P_GoToQuestion": {
+        "title": "Ngã tư"
+    },
+    "H5P_GoalsPage": {
+        "title": "Trang mục tiêu"
+    },
+    "H5P_GoalsAssessmentPage": {
+        "title": "Trang đánh giá mục tiêu"
+    },
+    "H5P_StandardPage": {
+        "title": "Trang tiêu chuẩn"
+    },
+    "H5P_DocumentExportPage": {
+        "title": "Trang xuất tài liệu"
+    },
+    "H5P_Link": {
+        "title": "Đường dẫn"
+    },
+    "H5P_Nil": { "title": "Nhã" },
+    "H5P_IVHotspot": {
+        "title": "Điều hướng truy cập"
+    },
+    "H5P_OpenEndedQuestion": {
+        "title": "Câu hỏi mở"
+    },
+    "H5P_Shape": {
+        "title": "Hình dạng"
+    },
+    "H5P_Summary": {
+        "title": "Tóm tắt"
+    },
+    "H5P_Table": {
+        "title": "Bảng mục lục"
+    },
+    "H5P_Text": {
+        "title": "Text"
+    },
+    "H5P_Video": {
+        "title": "Video"
+    },
+    "H5P_AdvancedText": {
+        "title": "Văn bản"
+    },
+    "H5P_SimpleMultiChoice": {
+        "title": "Câu hỏi trắc nghiệm đơn giản"
+    },
+    "H5P_BranchingQuestion": {
+        "title": "Câu hỏi phân nhánh"
+    }
+}

@@ -79,6 +79,8 @@ export default class UrlGenerator implements IUrlGenerator {
     };
 
     public baseUrl = (): string => this.config.baseUrl;
+    public domainCDN = (): string =>
+        this.config.domainCDN + this.config.baseUrl;
 
     public contentFilesUrl(contentId: ContentId): string | undefined {
         return this.config.contentFilesUrlPlayerOverride?.replace(
@@ -134,14 +136,17 @@ export default class UrlGenerator implements IUrlGenerator {
      */
     public coreFile = (file: string): string =>
         `${this.baseUrl()}${this.config.coreUrl}/${file}?version=${
+            // `${this.domainCDN()}${this.config.coreUrl}/${file}?version=${
             this.config.h5pVersion
         }`;
 
     public coreFiles = (): string =>
         `${this.baseUrl()}${this.config.coreUrl}/js`;
+    // `${this.domainCDN()}${this.config.coreUrl}/js`;
 
     public downloadPackage = (contentId: ContentId): string =>
         `${this.baseUrl()}${this.config.downloadUrl}/${contentId}`;
+    // `${this.domainCDN()}${this.config.downloadUrl}/${contentId}`;
 
     /**
      * Also adds a cache buster based on IH5PConfig.h5pVersion.
@@ -149,11 +154,13 @@ export default class UrlGenerator implements IUrlGenerator {
      */
     public editorLibraryFile = (file: string): string =>
         `${this.baseUrl()}${this.config.editorLibraryUrl}/${file}?version=${
+            // `${this.domainCDN()}${this.config.editorLibraryUrl}/${file}?version=${
             this.config.h5pVersion
         }`;
 
     public editorLibraryFiles = (): string =>
         `${this.baseUrl()}${this.config.editorLibraryUrl}/`;
+    // `${this.domainCDN()}${this.config.editorLibraryUrl}/`;
 
     public libraryFile = (library: IFullLibraryName, file: string): string => {
         if (
@@ -164,6 +171,7 @@ export default class UrlGenerator implements IUrlGenerator {
             return file;
         }
         return `${this.baseUrl()}${this.config.librariesUrl}/${
+            // return `${this.domainCDN()}${this.config.librariesUrl}/${
             library.machineName
         }-${library.majorVersion}.${library.minorVersion}/${file}?version=${
             library.majorVersion

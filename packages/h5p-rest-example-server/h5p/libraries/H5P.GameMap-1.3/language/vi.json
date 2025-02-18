@@ -1,0 +1,264 @@
+{
+    "semantics": [
+        {
+            "label": "Hiển thị màn hình tiêu đề",
+            "description": "Nếu được chọn, màn hình tiêu đề sẽ xuất hiện khi bắt đầu."
+        },
+        {
+            "label": "Màn hình tiêu đề",
+            "fields": [
+                {
+                    "label": "Giới thiệu",
+                    "placeholder": "Chào mừng đến với ..."
+                },
+                {
+                    "label": "Phương tiện màn hình tiêu đề"
+                }
+            ]
+        },
+        {
+            "label": "Tiêu đề",
+            "description": "Tiêu đề tùy chọn cho thanh tiêu đề."
+        },
+        {
+            "label": "Trình chỉnh sửa bản đồ trò chơi",
+            "fields": [
+                {
+                    "label": "Hình nền",
+                    "fields": [
+                        {
+                            "label": "Hình nền",
+                            "description": "Chọn một hình ảnh làm nền cho bản đồ trò chơi."
+                        },
+                        {
+                            "label": "Dummy"
+                        }
+                    ]
+                },
+                {
+                    "label": "Bản đồ trò chơi",
+                    "fields": [
+                        {},
+                        {
+                            "label": "Các phần tử",
+                            "entity": "Phần tử",
+                            "field": {
+                                "label": "Các phần tử",
+                                "fields": [
+                                    {
+                                        "label": "Id"
+                                    },
+                                    {
+                                        "label": "Loại"
+                                    },
+                                    {
+                                        "label": "Nhãn giai đoạn",
+                                        "description": "Nhãn này sẽ hiển thị phía trên bài tập của bạn và giúp kết nối các giai đoạn khác nhau với nhau."
+                                    },
+                                    {
+                                        "label": "Người dùng có thể bắt đầu tại đây",
+                                        "description": "Nếu được chọn, giai đoạn này sẽ là giai đoạn mà người dùng bắt đầu. Nếu không có hoặc có nhiều giai đoạn được chọn làm giai đoạn bắt đầu, giai đoạn khởi đầu sẽ được chọn ngẫu nhiên."
+                                    },
+                                    {
+                                        "label": "Giới hạn thời gian",
+                                        "description": "Đặt các cài đặt liên quan đến bộ đếm thời gian.",
+                                        "fields": [
+                                            {
+                                                "label": "Giới hạn thời gian",
+                                                "description": "Giới hạn thời gian tùy chọn (tính bằng giây). Nếu người dùng vượt quá thời gian này, bài tập sẽ đóng, được đặt lại và người dùng sẽ mất một mạng nếu mạng bị giới hạn."
+                                            },
+                                            {
+                                                "label": "Thời gian cảnh báo hết giờ",
+                                                "description": "Tùy chọn đặt khi cảnh báo hết giờ sẽ phát (số giây còn lại). Cần đặt âm thanh trong phần cài đặt âm thanh."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "label": "Hạn chế truy cập",
+                                        "description": "Đặt hạn chế để mở khóa.",
+                                        "fields": [
+                                            {
+                                                "label": "Điểm tối thiểu để mở khóa",
+                                                "description": "Người dùng sẽ không thể mở khóa giai đoạn này nếu không đạt được điểm tối thiểu bằng cách hoàn thành các giai đoạn khác. Lưu ý rằng cài đặt này sẽ không có hiệu lực nếu \"tự do di chuyển\" được bật trong cài đặt hành vi."
+                                            },
+                                            {
+                                                "label": "Mở khi đủ điểm",
+                                                "description": "Nếu có nỗ lực mở khóa giai đoạn mà không đủ điểm, giai đoạn có nên tự động mở khi đạt đủ điểm hay không."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "label": "Nội dung giai đoạn",
+                                        "description": "Chọn loại nội dung bạn muốn thêm."
+                                    },
+                                    {
+                                        "label": "Loại giai đoạn đặc biệt",
+                                        "options": [
+                                            {
+                                                "label": "Kết thúc"
+                                            },
+                                            {
+                                                "label": "Thêm mạng"
+                                            },
+                                            {
+                                                "label": "Thêm thời gian"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "label": "Số mạng thêm",
+                                        "description": "Đặt số mạng người dùng sẽ nhận được khi vào giai đoạn này."
+                                    },
+                                    {
+                                        "label": "Số giây thêm",
+                                        "description": "Đặt số giây mà người dùng sẽ được cộng vào giới hạn thời gian toàn cầu khi vào giai đoạn này."
+                                    },
+                                    {
+                                        "label": "Luôn hiển thị",
+                                        "description": "Nếu được chọn, giai đoạn này sẽ luôn hiển thị, ngay cả khi cài đặt tầm nhìn của bản đồ ẩn các giai đoạn khác."
+                                    },
+                                    {
+                                        "label": "Ghi đè biểu tượng khóa",
+                                        "description": "Nếu được chọn, các giai đoạn bị khóa sẽ không sử dụng biểu tượng khóa mà sẽ sử dụng biểu tượng cho loại giai đoạn đặc biệt."
+                                    },
+                                    {
+                                        "label": "Các giai đoạn được kết nối"
+                                    },
+                                    {
+                                        "label": "Theo dõi từ xa"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Màn hình kết thúc",
+            "fields": [
+                {
+                    "label": "Người dùng không thành công",
+                    "fields": [
+                        {
+                            "label": "Thông báo (người dùng không thành công)",
+                            "placeholder": "Bạn chưa hoàn thành lần này ..."
+                        },
+                        {
+                            "label": "Phương tiện màn hình kết thúc (người dùng không thành công)"
+                        }
+                    ]
+                },
+                {
+                    "label": "Người dùng thành công",
+                    "fields": [
+                        {
+                            "label": "Thông báo (người dùng thành công)",
+                            "placeholder": "Bạn đã hoàn thành ..."
+                        },
+                        {
+                            "label": "Phương tiện màn hình kết thúc (người dùng thành công)"
+                        }
+                    ]
+                },
+                {
+                    "label": "Phản hồi tổng thể",
+                    "fields": [
+                        {
+                            "widgets": [
+                                {
+                                    "label": "Mặc định"
+                                }
+                            ],
+                            "label": "Định nghĩa phản hồi tùy chỉnh cho bất kỳ phạm vi điểm số nào",
+                            "description": "Nhấp nút \"Thêm phạm vi\" để thêm nhiều phạm vi như bạn cần. Ví dụ: 0-20% Điểm kém, 21-91% Điểm trung bình, 91-100% Điểm tuyệt vời!",
+                            "entity": "phạm vi",
+                            "field": {
+                                "fields": [
+                                    {
+                                        "label": "Phạm vi điểm số"
+                                    },
+                                    {},
+                                    {
+                                        "label": "Phản hồi cho phạm vi điểm số đã định nghĩa",
+                                        "placeholder": "Nhập phản hồi"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Cài đặt hình ảnh",
+            "fields": [
+                {
+                    "label": "Giai đoạn",
+                    "fields": [
+                        {
+                            "label": "Màu của giai đoạn chưa được truy cập"
+                        },
+                        {
+                            "label": "Màu của giai đoạn bị khóa"
+                        },
+                        {
+                            "label": "Màu của giai đoạn đã hoàn thành"
+                        }
+                    ]
+                },
+                {
+                    "label": "Đường dẫn",
+                    "fields": [
+                        {
+                            "label": "Hiển thị đường dẫn",
+                            "description": "Chọn xem các đường dẫn có hiển thị trên bản đồ hay không. Lưu ý: Đường dẫn luôn hiển thị trong trình chỉnh sửa."
+                        },
+                        {
+                            "label": "Kiểu dáng",
+                            "fields": [
+                                {
+                                    "label": "Màu đường dẫn"
+                                },
+                                {
+                                    "label": "Màu đường dẫn đã hoàn thành"
+                                },
+                                {
+                                    "label": "Độ rộng đường dẫn",
+                                    "options": [
+                                        {
+                                            "label": "Mỏng"
+                                        },
+                                        {
+                                            "label": "Vừa"
+                                        },
+                                        {
+                                            "label": "Dày"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "label": "Kiểu đường dẫn",
+                                    "options": [
+                                        {
+                                            "label": "Liền nét"
+                                        },
+                                        {
+                                            "label": "Chấm"
+                                        },
+                                        {
+                                            "label": "Nét đứt"
+                                        },
+                                        {
+                                            "label": "Kép"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

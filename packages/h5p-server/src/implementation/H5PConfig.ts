@@ -25,7 +25,7 @@ export default class H5PConfig implements IH5PConfig {
     public ajaxUrl: string = '/ajax';
     public baseUrl: string = '/h5p';
     public contentFilesUrl: string = '/content';
-    public contentFilesUrlPlayerOverride: string;
+    public contentFilesUrlPlayerOverride: string = '/h5p/content/{{contentId}}';
     public contentTypeCacheRefreshInterval: number = 1 * 1000 * 60 * 60 * 24;
     public contentHubEnabled: boolean = false;
     public contentHubMetadataRefreshInterval: number = 1 * 1000 * 60 * 60 * 24;
@@ -108,6 +108,7 @@ export default class H5PConfig implements IH5PConfig {
     public temporaryFileLifetime: number = 120 * 60 * 1000; // 120 minutes
     public temporaryFilesUrl: string = '/temp-files';
     public uuid: string = '';
+    public domainCDN: string = 'https://cdnc.lms360.edu.vn/dev/2025-02-13';
 
     private storage: IKeyValueStorage;
 
@@ -140,6 +141,7 @@ export default class H5PConfig implements IH5PConfig {
         await this.loadSettingFromStorage('setFinishedEnabled');
         await this.loadSettingFromStorage('siteType');
         await this.loadSettingFromStorage('uuid');
+        await this.loadSettingFromStorage('domainCDN');
         return this;
     }
 
@@ -171,6 +173,7 @@ export default class H5PConfig implements IH5PConfig {
         await this.saveSettingToStorage('setFinishedEnabled');
         await this.saveSettingToStorage('siteType');
         await this.saveSettingToStorage('uuid');
+        await this.saveSettingToStorage('domainCDN');
     }
 
     /**

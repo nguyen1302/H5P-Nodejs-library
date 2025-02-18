@@ -1,0 +1,479 @@
+{
+    "semantics": [
+        {
+            "label": "Trình chỉnh sửa video tương tác",
+            "fields": [
+                {
+                    "label": "Tải lên/nhúng video",
+                    "fields": [
+                        {
+                            "label": "Thêm video",
+                            "description": "Nhấp vào bên dưới để thêm video bạn muốn sử dụng để tạo bài giảng tương tác. Bạn có thể thêm bằng cách tải lên các tệp video có sẵn trên máy tính hoặc dán một đường dẫn video. Để đảm bảo hỗ trợ tối đa trong các trình duyệt, bạn nên thêm video với định dạng webm và mp4."
+                        },
+                        {
+                            "label": "Cài đặt nâng cao (Không hỗ trợ cho các Video trên youtube) - Không bắt buộc, có thể bỏ qua",
+                            "fields": [
+                                {
+                                    "label": "Đặt tên cho video tương tác này",
+                                    "default": "Video tương tác",
+                                    "description": "Được hiển thị trước khi bắt đầu video"
+                                },
+                                {
+                                    "label": "Không hiển thị tên video tương tác"
+                                },
+                                {
+                                    "label": "đoạn văn mô tả ngắn (tuỳ chọn)",
+                                    "description": "Hiển thị đoạn mô tả ngắn trước khi bắt đầu video (Không hỗ trợ cho các video trên Youtube)."
+                                },
+                                {
+                                    "label": "Hình ảnh",
+                                    "description": "Hình ảnh nền của video, hiển thị trước khi bắt đầu video (Không hỗ trợ cho các video trên Youtube)"
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Cài đặt nâng cao cho video (Không được hỗ trợ cho video YouTube) - Có thể bỏ qua",
+                            "fields": [
+                                {
+                                    "label": "Đoạn nội dung có sẵn",
+                                    "entity": "xác định lại các đoạn văn bản cho nội dung đa phương tiện",
+                                    "field": {
+                                        "label": "xác định lại các đoạn văn bản cho nội dung đa phương tiện",
+                                        "fields": [
+                                            {
+                                                "label": "Nhãn theo dõi",
+                                                "description": "Được sử dụng nếu bạn cung cấp nhiều bản nhạc và người dùng phải chọn một bản nhạc. Ví dụ: 'phụ đề tiếng Tây Ban Nha' có thể là nhãn của bản nhạc phụ đề tiếng Tây Ban Nha",
+                                                "default": "Phụ đề"
+                                            },
+                                            {
+                                                "label": "Loại nội dung",
+                                                "options": [
+                                                    {
+                                                        "label": "Phụ đề"
+                                                    },
+                                                    {
+                                                        "label": "Chú thích"
+                                                    },
+                                                    {
+                                                        "label": "Đoạn văn mô tả"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "label": "Ngôn ngữ nguồn, phải được xác định cho phụ đề",
+                                                "description": "Phải là thẻ ngôn ngữ BCP 47 hợp lệ. Nếu 'Phụ đề' là loại bản nhạc văn bản được chọn, thì ngôn ngữ nguồn của bản nhạc đó phải được xác định"
+                                            },
+                                            {
+                                                "label": "Nguồn theo dõi (tệp WebVTT) "
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "label": "Bản nhạc văn bản mặc định",
+                                    "description": "Nếu để trống hoặc không khớp với bất kỳ rãnh văn bản nào, rãnh văn bản đầu tiên sẽ được sử dụng làm mặc định"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "label": "Thêm tương tác",
+                    "fields": [
+                        {
+                            "field": {
+                                "fields": [
+                                    {
+                                        "label": "Thời gian hiển thị nội dung tương tác"
+                                    },
+                                    {
+                                        "label": "Dừng video để hiển thị nội dung tương tác"
+                                    },
+                                    {
+                                        "label": "Hiển thị dưới dạng",
+                                        "description": "<b>Dạng biểu tượng</b> là một hình thức hiển thị mà người dùng cần phải nhấn vào biểu tượng để mở nội dung. <b>Dạng trực tiếp</b> là một hình thức hiển thị trực tiếp trên video",
+                                        "options": [
+                                            {
+                                                "label": "Dạng biểu tượng"
+                                            },
+                                            {
+                                                "label": "Dạng trực tiếp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "label": "Biến thành biểu tượng khi hiển thị trên giao diện nhỏ"
+                                    },
+                                    {
+                                        "label": "Nhãn hiệu",
+                                        "description": "Đoạn nội dung hiển thị trực tiếp trên màn hình video"
+                                    },
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {
+                                        "label": "Tùy chọn nâng cao (Không bắt buộc, có thể bỏ qua)",
+                                        "fields": [
+                                            {
+                                                "label": "Trả lời đúng tất cả các câu hỏi",
+                                                "fields": [
+                                                    {
+                                                        "label": "Tìm kiếm",
+                                                        "description": "Nhập mã thời gian dạng phút:giây"
+                                                    },
+                                                    {
+                                                        "label": "Cho phép người dùng chọn bỏ qua và tiếp tục xem bài giảng"
+                                                    },
+                                                    {
+                                                        "label": "Nhập đoạn tin nhắn"
+                                                    },
+                                                    {
+                                                        "label": "Đặt tên cho nút tìm kiếm"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "label": "Trả lời sai tất cả các câu hỏi",
+                                                "fields": [
+                                                    {
+                                                        "label": "Tìm kiếm",
+                                                        "description": "Nhập mã thời gian dạng phút:giây"
+                                                    },
+                                                    {
+                                                        "label": "Cho phép người dùng chọn bỏ qua và tiếp tục xem bài giảng"
+                                                    },
+                                                    {
+                                                        "label": "Nhập đoạn tin nhắn"
+                                                    },
+                                                    {
+                                                        "label": "Đặt tên cho nút tìm kiếm"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "label": "Yêu cầu làm đúng tất cả các câu hỏi trước khi tiếp tục xem bài giảng",
+                                                "description": "Cài đặt này nên được sử dung khi bật tùy chọn \"Ngăn bỏ qua các nội dung trong Video\" của Video tương tác."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "label": "Cài đặt màu nền",
+                                        "fields": [
+                                            {
+                                                "label": "Màu nền"
+                                            },
+                                            {
+                                                "label": "Thêm bóng cho màu nền",
+                                                "description": "Đổ bóng mờ xung quanh nội dung tương tác."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "label": "Chuyển tiếp đến trang web khác hoặc mốc thời gian khác trong video bằng cách nhấp chuột vào nội dung tương tác",
+                                        "fields": [
+                                            {
+                                                "label": "Hình thức",
+                                                "options": [
+                                                    {
+                                                        "label": "Mốc thời gian trong video"
+                                                    },
+                                                    {
+                                                        "label": "Trang web khác"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "label": "Nhập mốc thời gian cụ thể",
+                                                "description": "Mốc thời gian mà người dùng được chuyển tiếp đến. Nhập mã thời gian ở định dạng phút:giây"
+                                            },
+                                            {
+                                                "label": "Dán đường dẫn trang web vào đây",
+                                                "fields": [
+                                                    {
+                                                        "label": "Địa chỉ web",
+                                                        "options": [
+                                                            {
+                                                                "label": "http://"
+                                                            },
+                                                            {
+                                                                "label": "https://"
+                                                            },
+                                                            {
+                                                                "label": "nguồn liên quan"
+                                                            },
+                                                            {
+                                                                "label": "khác"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "label": "URL"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "label": "Đánh dấu để giúp người dùng hình dung rằng có thể chuyển tiếp khi nhấp vào nội dung tương tác",
+                                                "description": "Giúp người dùng dễ dàng nhận biết được rằng tương tác có thể được nhấp vào và chuyển đến mốc thời gian hoặc trang web khác bằng cách thêm đường viền và biểu tượng"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "label": "Tổng hợp nội dung bài giảng",
+                    "fields": [
+                        {},
+                        {
+                            "label": "Thời gian mà nội dung này sẽ hiển thị trước khi video kết thúc (tính bằng giây)",
+                            "description": "Cài đặt số giây mà nội dung này sẽ hiển thị trước khi video kết thúc."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Cài đặt nâng cao (Không bắt buộc, có thể bỏ qua)",
+            "fields": [
+                {
+                    "label": "Video sẽ bắt đầu tại mốc thời gian",
+                    "description": "Nhập mã thời gian ở định dạng phút:giây"
+                },
+                {
+                    "label": "Tự động phát video",
+                    "description": "Video bài giảng sẽ tự động phát ngay khi nhấp vào"
+                },
+                {
+                    "label": "Cài đặt video tự động chạy lặp lại",
+                    "description": "Cài đặt để video bài giảng tự động chạy lặp lại khi kết thúc mà không cần nhấn nút phát lại"
+                },
+                {
+                    "label": "Cài đặt tùy chọn \"Hiển thị đáp án\"",
+                    "description": "Tùy chọn \"Hiển thị đáp án\" sẽ được hiển thị hoặc không hiển thị cho tất cả các bài tập",
+                    "options": [
+                        {
+                            "label": "Hiển thị"
+                        },
+                        {
+                            "label": "Không hiển thị"
+                        }
+                    ]
+                },
+                {
+                    "label": "Cài đặt tùy chọn \"Làm lại\"",
+                    "description": "Tùy chọn \"Làm lại\" sẽ được hiển thị hoặc không hiển thị cho tất cả các bài tập",
+                    "options": [
+                        {
+                            "label": "Hiển thị"
+                        },
+                        {
+                            "label": "Không hiển thị"
+                        }
+                    ]
+                },
+                {
+                    "label": "Bắt đầu với menu dấu trang mở",
+                    "description": "Chức năng này không được hỗ trợ trên iPad khi sử dụng các video YouTube"
+                },
+                {
+                    "label": "Hiển thị nút tua lại 10s"
+                },
+                {
+                    "label": "Ngăn chặn người dùng tua nhanh video bài giảng",
+                    "description": "Bật tùy chọn này sẽ ngăn chặn không cho người dùng tua nhanh mà phải xem lần lượt tất cả các nội dung trong video bài giảng"
+                },
+                {
+                    "label": "Tắt âm thanh",
+                    "description": "Âm thanh của video sẽ bị tắt và không cho phép người dùng bật âm thanh"
+                }
+            ]
+        },
+        {
+            "label": "Cài đặt khác (Không bắt buộc, có thể bỏ qua)",
+            "fields": [
+                {
+                    "label": "Tiêu đề tương tác",
+                    "default": "Bài giảng tương tác"
+                },
+                {
+                    "label": "Tiêu đề khi phát",
+                    "default": "Bắt đầu"
+                },
+                {
+                    "label": "Tiêu đề tạm dừng",
+                    "default": "Tạm dừng"
+                },
+                {
+                    "label": "Tắt âm thanh video",
+                    "default": "Tắt âm thanh"
+                },
+                {
+                    "label": "Bật âm thanh video",
+                    "default": "Bật âm thanh"
+                },
+                {
+                    "label": "Chất lượng video",
+                    "default": "Chất lượng video"
+                },
+                {
+                    "label": "Chú thích cho video",
+                    "default": "Chú thích"
+                },
+                {
+                    "label": "Đóng văn bản",
+                    "default": "Đóng"
+                },
+                {
+                    "label": "Tiêu đề hiển thị toàn màn hình",
+                    "default": "Toàn màn hình"
+                },
+                {
+                    "label": "Thoát hiển thị toàn màn hình",
+                    "default": "Thoát toàn màn hình"
+                },
+                {
+                    "label": "Tổng hợp bài giảng",
+                    "default": "Mở bài tập tổng hợp"
+                },
+                {
+                    "label": "Đánh dấu trang tiêu đề",
+                    "default": "Đánh dấu trang"
+                },
+                {
+                    "label": "Tiêu đề khi gửi bài tập",
+                    "default": "Đã gửi bài tập"
+                },
+                {
+                    "label": "Tiêu đề cho nút tìm kiếm",
+                    "default": "Tiếp tục"
+                },
+                {
+                    "label": "Tiêu đề cho nút tiếp tục phát video",
+                    "default": "Tiếp tục bài giảng"
+                },
+                {
+                    "label": "Cài đặt tốc độ phát lại video",
+                    "default": "Tốc độ phát lại"
+                },
+                {
+                    "label": "Tua lại 10 giây",
+                    "default": "Tua lại 10 giây"
+                },
+                {
+                    "label": "Tắt điều hướng",
+                    "default": "Điều hướng bị tắt"
+                },
+                {
+                    "label": "Tắt âm thanh",
+                    "default": "Âm thanh bị tắt"
+                },
+                {
+                    "label": "Thông báo người dùng cần trả lời đúng tất cả câu hỏi trước khi tiếp tục xem bài giảng",
+                    "default": "Bạn cần trả lời đúng tất cả câu hỏi mới được phép tiếp tục xem bài giảng"
+                },
+                {
+                    "label": "Nút quay lại",
+                    "default": "Quay lại"
+                },
+                {
+                    "label": "Thời gian tính bằng giờ",
+                    "default": "Giờ"
+                },
+                {
+                    "label": "Thời gian tính bằng phút",
+                    "default": "Phút"
+                },
+                {
+                    "label": "Thời gian tính bằng giây",
+                    "default": "Giây"
+                },
+                {
+                    "label": "Tiêu đề cho thời giạn hiện tại",
+                    "default": "Thời gian hiện tại:"
+                },
+                {
+                    "label": "Tiêu đề cho tổng thời gian",
+                    "default": "Tổng thời gian:"
+                },
+                {
+                    "label": "Thông báo xuất hiện tương tác",
+                    "default": "Xuất hiện tương tác"
+                },
+                {
+                    "label": "Thông báo xuất hiện nhiều tương tác",
+                    "default": "Xuất hiện nhiều tương tác"
+                },
+                {
+                    "label": "Thông báo video tạm dừng",
+                    "default": "Video bài giảng đang tạm dừng"
+                },
+                {
+                    "label": "Nội dung",
+                    "default": "Nội dung"
+                },
+                {
+                    "label": "Thông báo đã trả lời (@answered câu trả lời sẽ được thay thế bằng số câu hỏi đã trả lời)",
+                    "default": "@answered đáp án"
+                },
+                {
+                    "label": "Tiêu đề gửi bài tập",
+                    "default": "@answered câu hỏi đã trả lời",
+                    "description": "@answered câu trả lời sẽ được thay thế bằng số câu hỏi đã trả lời."
+                },
+                {
+                    "label": "Thông báo đã gửi bài tập",
+                    "default": "Bạn đã trả lời câu hỏi, hãy nhấp vào bên dưới để gửi câu trả lời của bạn",
+                    "description": "@answered câu trả lời sẽ được thay thế bằng số câu hỏi đã trả lời"
+                },
+                {
+                    "label": "Thông báo khi không gửi được bài tập",
+                    "default": "Bạn phải trả lời @answered các câu hỏi.",
+                    "description": "@answered sẽ được thay thế bằng số lượng câu hỏi được trả lời."
+                },
+                {
+                    "label": "Thông báo khi gửi bài tập không thành công",
+                    "default": "Bạn chưa trả lời bất kì câu hỏi nào"
+                },
+                {
+                    "label": "Thông báo khi gửi bài tập mà chưa làm câu hỏi nào",
+                    "default": "Bạn phải trả lời ít nhất một câu hỏi trước khi gửi đáp án"
+                },
+                {
+                    "label": "Nút gửi bài tập",
+                    "default": "Gửi câu trả lời"
+                },
+                {
+                    "label": "Thông báo khi gửi bài tập thành công",
+                    "default": "Đáp án của bạn đã được gửi đi"
+                },
+                {
+                    "label": "Gửi tiêu đề hàng bảng màn hình: Câu hỏi đã trả lời",
+                    "default": "Câu hỏi đã trả lời"
+                },
+                {
+                    "label": "Gửi tiêu đề hàng bảng màn hình: Điểm",
+                    "default": "Điểm"
+                },
+                {
+                    "label": "Gửi điểm trả lời màn hình",
+                    "default": "Được trả lời"
+                },
+                {
+                    "label": "Gửi bản tóm tắt hàng màn hình bao gồm cả điểm (dành cho người đọc)",
+                    "default": " cho câu hỏi xuất hiện sau @minutes phút và @seconds giây"
+                },
+                {
+                    "label": "Gửi bản tóm tắt hàng màn hình để không có điểm (dành cho người đọc)",
+                    "default": "Bạn phải trả lời @question xuất hiện sau @minutes vài phút và @seconds vài giây."
+                }
+            ]
+        }
+    ]
+}

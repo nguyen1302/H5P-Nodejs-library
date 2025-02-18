@@ -1,0 +1,163 @@
+{
+  "semantics": [
+    {
+      "label": "Phương tiện truyền thông",
+      "fields": [
+        {
+          "label": "Loại hình",
+          "description": "Phương tiện tùy chọn để hiển thị phía trên câu hỏi."
+        },
+        {
+          "label": "Tắt tính năng phóng to hình ảnh"
+        }
+      ]
+    },
+    {
+      "label": "Nhiệm vụ mô tả",
+      "description": "Mô tả cách người dùng nên giải quyết nhiệm vụ như thế nào.",
+      "default": "Kéo các từ vào ô trống sao cho đúng"
+    },
+    {
+      "label": "Văn bản",
+      "placeholder": "Oslo * là thủ đô của Na Uy, * Stockholm * là thủ đô của Thụy Điển và * Copenhagen * là thủ đô của Đan Mạch. Tất cả các thành phố đều nằm ở bán đảo * Scandinavia: Bắc Âu *.",
+      "important": {
+        "description": "<ul><li>Các từ có thể bỏ qua được thêm dấu hoa thị (*) ở phía trước và phía sau từ / cụm từ chính xác. </li> <li> Bạn có thể thêm một mẹo theo văn bản bằng cách sử dụng dấu hai chấm (:) ở phía trước của từ đó. </li> <li> Đối với mỗi chỗ trống, chỉ có một từ đúng. </li> <li> Bạn có thể thêm phản hồi để hiển thị khi nhiệm vụ được hoàn thành. Sử dụng '\\ +' cho đúng và '\\ -' cho phản hồi không chính xác.</li></ul>",
+        "example": "Nội dung H5P có thể được chỉnh sửa bằng* trình duyệt : Chrome là loại chương trình nào? *. Nội dung <br /> H5P là * tương tác \\ + chính xác! \\-Không chính xác. Thử lại lần nữa!"
+      }
+    },
+    {
+      "label": "Phản hồi tổng thể",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Mặc định"
+            }
+          ],
+          "label": "Xác định thông tin phản hồi cho bất kỳ phạm vi điểm nào",
+          "description": "Nhấp vào nút \"Thêm ô \" để thêm nhiều  ô nếu bạn cần. Ví dụ: 0-20% Điểm kém, 21-91% Điểm trung bình, 91-100% Điểm tốt!",
+          "entity": "phạm vi",
+          "field": {
+            "fields": [
+              {
+                "label": "Phạm vi điểm"
+              },
+              {},
+              {
+                "label": "Phản hồi cho phạm vi điểm đã xác định ",
+                "placeholder": "Điền vào thông tin phản hồik"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "nội dung \" kiểm tra\"nút",
+      "default": "Kiểm tra"
+    },
+    {
+      "label": "nội dung \" gửi\"nút",
+      "default": "Gửi"
+    },
+    {
+      "label": "nội dung \" thử lại\"nút",
+      "default": "Thử lại"
+    },
+    {
+      "label": "nội dung \" hiển thị giải pháp\"nút",
+      "default": "hiển thị giải pháp"
+    },
+    {
+      "label": "Nhãn vùng thả được đánh số",
+      "default": "Vùng thả @index.",
+      "description": "Nhãn được sử dụng để tiếp cận, trong đó loa Đọc sẽ đọc mục lục của vùng thả. Biến có sẵn: @index"
+    },
+    {
+      "label": "Nhãn vùng thả trống",
+      "default": "vùng thả @index trống.",
+      "description": "Nhãn được sử dụng cho khả năng tiếp cận, trong đó loa Đọc sẽ đọc rằng vùng thả trống"
+    },
+    {
+      "label": "Chứa nhãn Vùng thả",
+      "default": "vùng thả @index có thể kéo @draggable.",
+      "description": "Nhãn được sử dụng cho khả năng tiếp cận, trong đó loa Đọc sẽ đọc rằng khu vực thả có chứa một vật có thể kéo"
+    },
+    {
+      "label": "nhãn thành phần có thể kéo",
+      "default": "@index của @count có thể kéo.",
+      "description": "Nhãn được sử dụng cho khả năng tiếp cận, trong đó loa Đọc đọc rằng đây là phần tử có thể kéo. Biến có sẵn: @index, @count"
+    },
+    {
+      "label": "Nhãn để hiển thị nút mẹo",
+      "default": "Hiển thị mẹo",
+      "description": "Nhãn được sử dụng cho khả năng tiếp cận, trong đó loa Đọc sẽ đọc nó trước khi đọc hết mẹo"
+    },
+    {
+      "label": "Nội dung loa đọc cho câu trả lời chính xác",
+      "default": "Chính xác!"
+    },
+    {
+      "label": "Nội dung loa đọc cho câu trả lời không chính xác",
+      "default": "Không chính xác!"
+    },
+    {
+      "label": "Tiêu đề hộp thoại xác nhận mà người dùng muốn đặt lại có thể thả",
+      "default": "Đặt lại thả"
+    },
+    {
+      "label": "Mô tả hộp thoại xác nhận mà người dùng muốn đặt lại có thể thả",
+      "default": "Bạn có chắc rằng muốn đặt lại vùng thả này không?"
+    },
+    {
+      "label": "Nhãn được sử dụng cho trợ năng, trong đó loa đọc cho biết rằng quá trình kéo được bắt đầu",
+      "default": "Có thể kéo được."
+    },
+    {
+      "label": "Nhãn được sử dụng cho trợ năng, trong đó loa đọc cho biết rằng quá trình kéo bị hủy",
+      "default": "Hủy kéo."
+    },
+    {
+      "label": "Nhãn được sử dụng cho trợ năng, trong đó loa đọc cho biết rằng câu trả lời chính xác",
+      "default": "Câu trả lời chính xác:"
+    },
+    {
+      "label": "Tiêu đề cho bảng chứa phản hồi cho các câu trả lời chính xác / không chính xác",
+      "default": "Phản hồi"
+    },
+    {
+      "label": "Cài đặt hành vi",
+      "description": "Những tùy chọn này sẽ cho phép bạn kiểm soát cách hoạt động của nhiệm vụ.",
+      "fields": [
+        {
+          "label": "bật \"thử lại\""
+        },
+        {
+          "label": "bật \" hiển thị giải pháp\" nút"
+        },
+        {
+          "label": "bật \" kiểm tra\"nút"
+        },
+        {
+          "label": "Phản hồi tức thì"
+        }
+      ]
+    },
+    {
+      "label": "Trình bày bằng văn bản của thanh điểm số cho những người sử dụng loa đọc",
+      "default": "Bạn nhận được:num trong tổng số :total điểm"
+    },
+    {
+      "label": "văn bản trình bày cho nút giải thích điểm số",
+      "default": "hiển thị giải thích điểm số"
+    },
+    {
+      "label": "Nhãn công nghệ hỗ trợ cho nút \"Kiểm tra \"",
+      "default": "Kiểm tra câu trả lời. Các câu trả lời sẽ được đánh dấu là chính xác, không chính xác hoặc chưa được trả lời."
+    },
+    {
+      "label": "Nhãn công nghệ hỗ trợ cho nút \"thử lại \"",
+      "default": "Thử lại tác vụ. Đặt lại tất cả các câu trả lời và bắt đầu lại nhiệm vụ."
+    }
+  ]
+}

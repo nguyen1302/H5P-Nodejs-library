@@ -1,0 +1,19 @@
+{
+  "semantics": [
+    {
+      "label": "Hình"
+    },
+    {
+      "label": "Văn bản thay thế",
+      "description": "Yêu cầu. Nếu trình duyệt không thể tải hình ảnh, văn bản này sẽ được hiển thị. Văn bản từ giọng nói của người đọc cũng được sử dụng"
+    },
+    {
+      "label": "Di chuột qua văn bản",
+      "description": "Không bắt buộc. Nội dung sẽ hiển thị khi người dùng rê trỏ chuột trên thiết bị vào vị trí ảnh"
+    },
+    {
+      "label": "Mô tả ảnh",
+      "default": "Hình"
+    }
+  ]
+}

@@ -133,7 +133,7 @@ const start = async (): Promise<void> => {
             },
             debug: process.env.DEBUG && process.env.DEBUG.includes('i18n'),
             defaultNS: 'server',
-            fallbackLng: 'en',
+            fallbackLng: 'vi',
             ns: [
                 'client',
                 'copyright-semantics',
@@ -145,7 +145,7 @@ const start = async (): Promise<void> => {
                 'server',
                 'storage-file-implementations'
             ],
-            preload: ['en', 'de'] // If you don't use a language detector of
+            preload: ['vi'] // If you don't use a language detector of
             // i18next, you must preload all languages you want to use!
         });
 
@@ -290,7 +290,7 @@ const start = async (): Promise<void> => {
             path.resolve('h5p/editor'), // the path on the local disc where the
             // files of the JavaScript client of the editor are stored
             undefined,
-            'auto' // You can change the language of the editor here by setting
+            'vi' // You can change the language of the editor here by setting
             // the language code you need here. 'auto' means the route will try
             // to use the language detected by the i18next language detector.
         )
@@ -306,7 +306,7 @@ const start = async (): Promise<void> => {
         restExpressRoutes(
             h5pEditor,
             h5pPlayer,
-            'auto' // You can change the language of the editor here by setting
+            'vi' // You can change the language of the editor here by setting
             // the language code you need here. 'auto' means the route will try
             // to use the language detected by the i18next language detector.
         )

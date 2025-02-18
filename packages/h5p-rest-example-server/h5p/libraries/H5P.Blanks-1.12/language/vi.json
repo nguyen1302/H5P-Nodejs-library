@@ -1,0 +1,214 @@
+{
+    "semantics": [
+        {
+            "label": "Phương tiện hiển thị hỗ trợ cho bài tập (Có thể bỏ qua)",
+            "fields": [
+                {
+                    "label": "Loại",
+                    "description": "Các phương tiện tùy chọn để hiển thị phía trên câu hỏi."
+                },
+                {
+                    "label": "Tắt tính năng thu phóng hình ảnh"
+                }
+            ]
+        },
+        {
+            "label": "Mô tả nhiệm vụ",
+            "default": "Điền các từ còn thiếu",
+            "description": "Hướng dẫn cho người dùng biết cách trả lời nhiệm vụ này."
+        },
+        {
+            "label": "Nội dung bài tập",
+            "entity": "Nội dung bài tập",
+            "field": {
+                "label": "Nhập nội dung",
+                "placeholder": "Thành phố Hồ Chí Minh là một thành phố của *Việt Nam*.",
+                "important": {
+                    "description": "<ul><li>Các khoảng trống được thêm dấu hoa thị (*) ở phía trước và phía sau từ / cụm từ chính xác. </li> <li> Các câu trả lời thay thế được phân tách bằng dấu gạch chéo (/). </li> <li> Bạn có thể thêm một nguyên văn mẹo, sử dụng dấu hai chấm (:) ở trước nguyên văn mẹo.</li></ul>",
+                    "example": "Nội dung H5P có thể được chỉnh sửa bằng *browser/web-browser: Thứ bạn sử dụng hàng ngày *."
+                }
+            }
+        },
+        {
+            "label": "Phản hồi tổng thể",
+            "fields": [
+                {
+                    "widgets": [
+                        {
+                            "label": "Mặc định"
+                        }
+                    ],
+                    "label": "Xác định thông tin phản hồi tùy chỉnh cho bất kỳ thang điểm nào",
+                    "description": "Nhấp vào nút \"Thêm ô\" để thêm nhiều ô nếu bạn cần. Ví dụ: 0-20% Điểm kém, 21-91% Điểm trung bình, 91-100% Điểm tốt!",
+                    "entity": "phạm vi",
+                    "field": {
+                        "fields": [
+                            {
+                                "label": "Thang điểm"
+                            },
+                            {},
+                            {
+                                "label": "Thông tin phản hồi cho thang điểm điểm đã xác định",
+                                "placeholder": "Điền thông tin phản hồi"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "label": "Nội dung cho \"đưa ra giải pháp\" nút",
+            "default": "Đưa ra giải pháp"
+        },
+        {
+            "label": "Nội dung cho \"thử lại\" nút",
+            "default": "Thử lại"
+        },
+        {
+            "label": "Nội dung cho \"kiểm tra\" nút",
+            "default": "Kiểm tra"
+        },
+        {
+            "label": "Nội dung cho \"xem xét\" nút",
+            "default": "Xem xét"
+        },
+        {
+            "label": "Nội dung cho \"không điền vào\" tin nhắn",
+            "default": "Xin vui lòng điền thông tin vào tất cả các chổ trống để xem cách giải quyết"
+        },
+        {
+            "label": "Nội dung cho \":asn là chính xác\" tin nhắn",
+            "default": "':ans' chính xác"
+        },
+        {
+            "label": "Nội dung cho \":asn là không chính xác\" tin nhắn",
+            "default": "':ans' không chính xác"
+        },
+        {
+            "label": "Nội dung cho \"câu trả lời chính xác\" tin nhắn",
+            "default": "Câu trả lời chính xác"
+        },
+        {
+            "label": "Nội dung cho \"câu trả lời không chính xác\" tin nhắn",
+            "default": "Câu trả lời không chính xác"
+        },
+        {
+            "label": "Nhãn giải pháp công nghệ cho vấn đề",
+            "default": "Câu trả lời chính xác:"
+        },
+        {
+            "label": "Nhãn công nghệ hỗ trợ cho trường đầu vào",
+            "description": "Sử dụng @num và @total để thay thế số lượng bản sao hiện tại và tổng số bản sao",
+            "default": "để trống đầu vào @num của @total"
+        },
+        {
+            "label": "Nhãn  giải pháp công nghệ cho biết rằng một đầu vào có một cách làm gắn liền với nó",
+            "default": "Cách làm có sẵn"
+        },
+        {
+            "label": "Nhãn các biểu tượng cách làm",
+            "default": "Mẹo"
+        },
+        {
+            "label": "Các thiết lập hành vi.",
+            "description": "Các tùy chọn này sẽ cho phép bạn kiểm soát cách hoạt động của nhiệm vụ.",
+            "fields": [
+                {
+                    "label": "Cho phép \"thử lại\""
+                },
+                {
+                    "label": "Cho phép \"đưa ra giải pháp\" nút"
+                },
+                {
+                    "label": "Cho phép \"kiểm tra\" nút"
+                },
+                {
+                    "label": "Tự động kiểm tra kết quả đầu vào"
+                },
+                {
+                    "label": "Có phân biệt chữ hoa chữ thường",
+                    "description": "Đảm bảo rằng câu trả lời đầu vào phải trùng khớp với nhau."
+                },
+                {
+                    "label": "Yêu cầu tất cả các trường phải được trả lời trước khi có thể xem giải pháp"
+                },
+                {
+                    "label": "Đặt các trường đầu vào trên các dòng riêng biệt"
+                },
+                {
+                    "label": "Hiển thị hộp thoại xác nhận trên \"Kiểm tra\"",
+                    "description": "Các tùy chọn này không tương thích với tùy chọn \"Tự động kiểm tra câu trả lời sau khi nhập \""
+                },
+                {
+                    "label": "Hiển thị hộp thoại xác nhận trên \"Thử lại \""
+                },
+                {
+                    "label": "Chấp nhận những lỗi nhỏ về chính tả",
+                    "description": "Nếu được kích hoạt, câu trả lời cũng sẽ được tính là đúng với các lỗi chính tả nhỏ (3-9 ký tự: 1 lỗi chính tả, hơn 9 ký tự: 2 lỗi chính tả)"
+                }
+            ]
+        },
+        {
+            "label": "Kiểm tra hộp thư thoại",
+            "fields": [
+                {
+                    "label": "nội dung tiêu đề",
+                    "default": "Kết thúc ?"
+                },
+                {
+                    "label": "Nội dung thân bài",
+                    "default": "bạn có chắc rằng bạn muốn kết thúc?"
+                },
+                {
+                    "label": "Nhãn nút hủy",
+                    "default": "Hủy"
+                },
+                {
+                    "label": "Nhãn nút xác nhận",
+                    "default": "Kết thúc"
+                }
+            ]
+        },
+        {
+            "label": "Thử lại hộp thoại xác nhận",
+            "fields": [
+                {
+                    "label": "Nội dung tiêu đề",
+                    "default": "Thử lại ?"
+                },
+                {
+                    "label": "Nội dung thân bài",
+                    "default": "bạn có chắc rằng muốn thử lại?"
+                },
+                {
+                    "label": "nhãn nút hủy",
+                    "default": "Hủy"
+                },
+                {
+                    "label": "Nhãn nút xác nhận",
+                    "default": "Xác nhận"
+                }
+            ]
+        },
+        {
+            "label": "Trình bày văn bản của thang điểm cho phép người sử dụng loa đọc",
+            "default": "Bạn đã nhận được :num trong tổng số :total điểm"
+        },
+        {
+            "label": "Công nghệ hỗ trợ mô tả cho\" kiểm tra\" nút",
+            "default": "kiểm tra câu trả lời. Các câu trả lời sẽ được đánh dấu là chính xác, không chính xác hoặc chưa được trả lời."
+        },
+        {
+            "label": "công nghệ hỗ trợ mô tả cho \" hiển thị giải pháp\" nút",
+            "default": "Hiển thị các giải pháp. Nhiệm vụ sẽ được đánh dấu bằng giải pháp chính xác của nó."
+        },
+        {
+            "label": "Công nghệ hỗ trợ mô tả cho \"thử lại\" nút",
+            "default": "Thử lại nhiệm vụ. Đặt lại tất cả các phản hồi và bắt đầu lại nhiệm vụ."
+        },
+        {
+            "label": "Công nghệ hỗ trợ mô tả cho bắt đầu nhiệm vụ",
+            "default": "Kiểm tra chế độ"
+        }
+    ]
+}

@@ -1,0 +1,341 @@
+[
+  {
+    "name": "media",
+    "type": "group",
+    "label": "Phương tiện truyền thông",
+    "importance": "medium",
+    "fields": [
+      {
+        "name": "type",
+        "type": "library",
+        "label": "Loại phương tiện",
+        "importance": "medium",
+        "options": [
+          "H5P.Image 1.1",
+          "H5P.Video 1.5"
+        ],
+        "optional": true,
+        "description": "Phương tiện tùy chọn để hiển thị phía trên câu hỏi."
+      },
+      {
+        "name": "disableImageZooming",
+        "type": "boolean",
+        "label": "Vô hiệu hóa thu phóng hình ảnh",
+        "importance": "low",
+        "default": false,
+        "optional": true,
+        "widget": "showWhen",
+        "showWhen": {
+          "rules": [
+            {
+              "field": "type",
+              "equals": "H5P.Image 1.1"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "question",
+    "type": "text",
+    "widget": "html",
+    "label": "Câu hỏi",
+    "importance": "high",
+    "enterMode": "p",
+    "tags": [
+      "strong",
+      "em",
+      "sub",
+      "sup",
+      "h2",
+      "h3",
+      "pre",
+      "code"
+    ]
+  },
+  {
+    "name": "correct",
+    "type": "select",
+    "widget": "radioGroup",
+    "alignment": "horizontal",
+    "label": "Câu trả lời đúng",
+    "importance": "high",
+    "options": [
+      {
+        "value": "true",
+        "label": "Đúng"
+      },
+      {
+        "value": "false",
+        "label": "Sai"
+      }
+    ],
+    "default": "true"
+  },
+  {
+    "name": "l10n",
+    "type": "group",
+    "common": true,
+    "label": "Bản dịch cho câu hỏi Đúng/Sai ở giao diện người dùng",
+    "importance": "low",
+    "fields": [
+      {
+        "name": "trueText",
+        "type": "text",
+        "label": "Nhãn cho nút đúng",
+        "importance": "low",
+        "default": "True"
+      },
+      {
+        "name": "falseText",
+        "type": "text",
+        "label": "Nhãn cho nút sai",
+        "importance": "low",
+        "default": "False"
+      },
+      {
+        "label": "Nội dung phản hồi",
+        "importance": "low",
+        "name": "score",
+        "type": "text",
+        "default": "You got @score of @total points",
+        "description": "Nội dung phản hồi, các biến có sẵn: @score và @total. Ví dụ: 'Bạn đã nhận được @score trong tổng @total số điểm có thể có'"
+      },
+      {
+        "label": "Văn bản cho nút \"Kiểm tra\"",
+        "importance": "low",
+        "name": "checkAnswer",
+        "type": "text",
+        "default": "Check"
+      },
+      {
+        "label": "Văn bản cho nút \"Nộp bài\"",
+        "importance": "low",
+        "name": "submitAnswer",
+        "type": "text",
+        "default": "Submit"
+      },
+      {
+        "label": "Văn bản cho nút \"Hiển thị giải pháp\"",
+        "importance": "low",
+        "name": "showSolutionButton",
+        "type": "text",
+        "default": "Show solution"
+      },
+      {
+        "label": "Văn bản cho nút \"Thử lại\"",
+        "importance": "low",
+        "name": "tryAgain",
+        "type": "text",
+        "default": "Retry"
+      },
+      {
+        "name": "wrongAnswerMessage",
+        "type": "text",
+        "label": "Câu trả lời sai",
+        "importance": "low",
+        "default": "Wrong answer"
+      },
+      {
+        "name": "correctAnswerMessage",
+        "type": "text",
+        "label": "Câu trả lời đúng",
+        "importance": "low",
+        "default": "Correct answer"
+      },
+      {
+        "name": "scoreBarLabel",
+        "type": "text",
+        "label": "Trình bày bằng văn bản của thanh điểm cho những người sử dụng loa đọc",
+        "default": "You got :num out of :total points",
+        "importance": "low"
+      },
+      {
+        "name": "a11yCheck",
+        "type": "text",
+        "label": "Mô tả công nghệ hỗ trợ cho nút \"Kiểm tra\"",
+        "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+        "importance": "low"
+      },
+      {
+        "name": "a11yShowSolution",
+        "type": "text",
+        "label": "Mô tả công nghệ hỗ trợ cho nút \"Hiển thị giải pháp\"",
+        "default": "Show the solution. The task will be marked with its correct solution.",
+        "importance": "low"
+      },
+      {
+        "name": "a11yRetry",
+        "type": "text",
+        "label": "Mô tả công nghệ hỗ trợ cho nút \"Thử lại\"",
+        "default": "Retry the task. Reset all responses and start the task over again.",
+        "importance": "low"
+      }
+    ]
+  },
+  {
+    "name": "behaviour",
+    "type": "group",
+    "label": "Cài đặt nâng cao",
+    "importance": "low",
+    "description": "Các tùy chọn này sẽ cho phép bạn kiểm soát cách thức hoạt động của tác vụ.",
+    "fields": [
+      {
+        "name": "enableRetry",
+        "type": "boolean",
+        "label": "Bật nút \"Thử lại\"",
+        "importance": "low",
+        "default": true
+      },
+      {
+        "name": "enableSolutionsButton",
+        "type": "boolean",
+        "label": "Bật nút \"Hiển thị giải pháp\"",
+        "importance": "low",
+        "default": true
+      },
+      {
+        "name": "enableCheckButton",
+        "type": "boolean",
+        "label": "Bật nút \"Kiểm tra\"",
+        "widget": "none",
+        "importance": "low",
+        "default": true,
+        "optional": true
+      },
+      {
+        "label": "Hiển thị hộp thoại xác nhận \"Kiểm tra\"",
+        "importance": "low",
+        "name": "confirmCheckDialog",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "label": "Hiển thị hộp thoại xác nhận \"Thử lại\"",
+        "importance": "low",
+        "name": "confirmRetryDialog",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "label": "Tự động kiểm tra câu trả lời",
+        "importance": "low",
+        "description": "Lưu ý rằng khả năng truy cập sẽ bị ảnh hưởng nếu bật tùy chọn này",
+        "name": "autoCheck",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "feedbackOnCorrect",
+        "label": "Phản hồi cho câu trả lời đúng",
+        "importance": "low",
+        "description": "Điều này sẽ ghi đè văn bản phản hồi mặc định. Các biến có sẵn: @score và @total",
+        "type": "text",
+        "maxLength": 2048,
+        "optional": true
+      },
+      {
+        "name": "feedbackOnWrong",
+        "label": "Phản hồi cho câu trả lời sai",
+        "importance": "low",
+        "description": "Điều này sẽ ghi đè văn bản phản hồi mặc định. Các biến có sẵn: @score và @total",
+        "type": "text",
+        "maxLength": 2048,
+        "optional": true
+      }
+    ]
+  },
+  {
+    "label": "Kiểm tra hộp thoại xác nhận",
+    "importance": "low",
+    "name": "confirmCheck",
+    "type": "group",
+    "common": true,
+    "fields": [
+      {
+        "label": "Nội dung tiêu đề",
+        "importance": "low",
+        "name": "header",
+        "type": "text",
+        "default": "Finish ?"
+      },
+      {
+        "label": "Thân văn bản",
+        "importance": "low",
+        "name": "body",
+        "type": "text",
+        "default": "Are you sure you wish to finish ?",
+        "widget": "html",
+        "enterMode": "p",
+        "tags": [
+          "strong",
+          "em",
+          "del",
+          "u",
+          "code"
+        ]
+      },
+      {
+        "label": "Nhãn nút hủy",
+        "importance": "low",
+        "name": "cancelLabel",
+        "type": "text",
+        "default": "Cancel"
+      },
+      {
+        "label": "Nhãn nút xác nhận",
+        "importance": "low",
+        "name": "confirmLabel",
+        "type": "text",
+        "default": "Finish"
+      }
+    ]
+  },
+  {
+    "label": "Thử lại hộp thoại xác nhận",
+    "importance": "low",
+    "name": "confirmRetry",
+    "type": "group",
+    "common": true,
+    "fields": [
+      {
+        "label": "Nội dung tiêu đề",
+        "importance": "low",
+        "name": "header",
+        "type": "text",
+        "default": "Retry ?"
+      },
+      {
+        "label": "Thân văn bản",
+        "importance": "low",
+        "name": "body",
+        "type": "text",
+        "default": "Are you sure you wish to retry ?",
+        "widget": "html",
+        "enterMode": "p",
+        "tags": [
+          "strong",
+          "em",
+          "del",
+          "u",
+          "code"
+        ]
+      },
+      {
+        "label": "Nhãn nút hủy",
+        "importance": "low",
+        "name": "cancelLabel",
+        "type": "text",
+        "default": "Cancel"
+      },
+      {
+        "label": "Nhãn nút xác nhận",
+        "importance": "low",
+        "name": "confirmLabel",
+        "type": "text",
+        "default": "Confirm"
+      }
+    ]
+  }
+]

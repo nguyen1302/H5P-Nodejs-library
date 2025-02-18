@@ -1,0 +1,502 @@
+{
+  "semantics": [
+    {
+      "label": "Loại mã",
+      "description": "Chọn loại mã bạn muốn tạo",
+      "options": [
+        {
+          "label": "Liên hệ"
+        },
+        {
+          "label": "Sự kiện"
+        },
+        {
+          "label": "Địa chỉ Email"
+        },
+        {
+          "label": "H5P"
+        },
+        {
+          "label": "Địa điểm"
+        },
+        {
+          "label": "số điện thoại"
+        },
+        {
+          "label": "SMS"
+        },
+        {
+          "label": "Văn bản"
+        },
+        {
+          "label": "URL"
+        }
+      ]
+    },
+    {
+      "label": "Liên hệ",
+      "fields": [
+        {
+          "label": "Tên",
+          "placeholder": "Bách Khoa"
+        },
+        {
+          "label": "Đơn vị",
+          "placeholder": "Trường"
+        },
+        {
+          "label": "Địa điểm",
+          "placeholder": "Thành phố Hồ CHí Minh"
+        },
+        {
+          "label": "Số điện thoại",
+          "description": "Số điện thoại (Vui lòng sử dụng định dạng +84)",
+          "placeholder": "+84"
+        },
+        {
+          "label": "Địa chỉ Email",
+          "description": "Địa chỉ Email để viết thư cho",
+          "placeholder": "admin@bachkhoa.tech"
+        },
+        {
+          "label": "Địa chỉ",
+          "fields": [
+            {
+              "label": "Địa chỉ cụ thể",
+              "description": "Thông tin chi tiết, v.v...",
+              "placeholder": "Trường"
+            },
+            {
+              "label": "Đường",
+              "description": "Đường bao gồm cả số nhà",
+              "placeholder": ""
+            },
+            {
+              "label": "Địa điểm",
+              "description": "Thành phố, v.v...",
+              "placeholder": "Thành phố Hồ Chí Minh"
+            },
+            {
+              "label": "Vị trí",
+              "description": "Quận, Huyện, v.v...",
+              "placeholder": ""
+            },
+            {
+              "label": "Mã bưu chính",
+              "description": "Mã bưu chính",
+              "placeholder": "700000"
+            },
+            {
+              "label": "Quốc gia",
+              "description": "Quốc gia",
+              "placeholder": "Việt Nam"
+            }
+          ]
+        },
+        {
+          "label": "Địa điểm",
+          "description": "Liên kết trang web (phải bắt đầu bằng https:// or http://)",
+          "placeholder": "https://hoclieu.hcm.edu.vn"
+        },
+        {
+          "label": "Ghi chú",
+          "description": "Ghi chú",
+          "placeholder": ""
+        }
+      ]
+    },
+    {
+      "label": "Sự kiện",
+      "fields": [
+        {
+          "label": "Tiêu đề",
+          "description": "Tiêu đề cho sự kiện theo lịch",
+          "placeholder": "Tập huấn Xây dựng và lưu trữ học liệu số"
+        },
+        {
+          "label": "Sự kiện cả ngày",
+          "description": "Nhấn chọn nếu sự kiện kéo dài cả ngày"
+        },
+        {
+          "label": "Ngày bắt đầu",
+          "description": "Ngày bắt đầu sự kiện (vui lòng sử dụng định dạng YYYY / MM / DD)",
+          "placeholder": "2020/05/18"
+        },
+        {
+          "label": "Thời gian bắt đầu",
+          "description": "Thời gian bắt đầu sự kiện (vui lòng sử dụng định dạng hh: mm)",
+          "placeholder": "09:00"
+        },
+        {
+          "label": "Thời gian kết thúc",
+          "description": "Ngày sự kiện kết thúc (vui lòng sử dụng định dạng yyyy / mm / dd)",
+          "placeholder": "2020/05/20"
+        },
+        {
+          "label": "Thời gian kết thúc",
+          "description": "Thời gian sự kiện kết thúc (vui lòng sử dụng định dạng hh: mm)",
+          "placeholder": "16:00"
+        },
+        {
+          "label": "Múi giờ",
+          "description": "Vui lòng chọn múi giờ mà sự kiện sẽ diễn ra",
+          "options": [
+            {
+              "label": "UTC-12:00"
+            },
+            {
+              "label": "UTC-11:00"
+            },
+            {
+              "label": "UTC-10:00"
+            },
+            {
+              "label": "UTC-9:30"
+            },
+            {
+              "label": "UTC-9:00"
+            },
+            {
+              "label": "UTC-8:00"
+            },
+            {
+              "label": "UTC-7:00"
+            },
+            {
+              "label": "UTC-6:00"
+            },
+            {
+              "label": "UTC-5:00"
+            },
+            {
+              "label": "UTC-4:00"
+            },
+            {
+              "label": "UTC-3:30"
+            },
+            {
+              "label": "UTC-3:00"
+            },
+            {
+              "label": "UTC-2:00"
+            },
+            {
+              "label": "UTC-1:00"
+            },
+            {
+              "label": "UTC"
+            },
+            {
+              "label": "UTC+1:00"
+            },
+            {
+              "label": "UTC+2:00"
+            },
+            {
+              "label": "UTC+3:00"
+            },
+            {
+              "label": "UTC+3:30"
+            },
+            {
+              "label": "UTC+4:00"
+            },
+            {
+              "label": "UTC+4:30"
+            },
+            {
+              "label": "UTC+5:00"
+            },
+            {
+              "label": "UTC+5:30"
+            },
+            {
+              "label": "UTC+5:45"
+            },
+            {
+              "label": "UTC+6:00"
+            },
+            {
+              "label": "UTC+6:30"
+            },
+            {
+              "label": "UTC+7:00"
+            },
+            {
+              "label": "UTC+8:00"
+            },
+            {
+              "label": "UTC+9:00"
+            },
+            {
+              "label": "UTC+9:30"
+            },
+            {
+              "label": "UTC+10:00"
+            },
+            {
+              "label": "UTC+10:30"
+            },
+            {
+              "label": "UTC+11:00"
+            },
+            {
+              "label": "UTC+12:00"
+            },
+            {
+              "label": "UTC+12:45"
+            },
+            {
+              "label": "UTC+13:00"
+            },
+            {
+              "label": "UTC+14:00"
+            }
+          ]
+        },
+        {
+          "label": "Giai đoạn hè",
+          "description": " Vui lòng chọn nếu sự kiện diễn ra vào giai đoạn hè "
+        },
+        {
+          "label": "Địa điểm",
+          "description": "Tên địa điểm",
+          "placeholder": "Thành phố Hồ Chí Minh"
+        },
+        {
+          "label": "Mô tả",
+          "description": "Mô tả sự kiện",
+          "placeholder": ""
+        }
+      ]
+    },
+    {
+      "label": "Địa chỉ E-mail",
+      "fields": [
+        {
+          "label": "Địa chỉ E-mail",
+          "description": "Địa chỉ E-mail để viết thư",
+          "placeholder": "admin@bachkhoa.tech"
+        }
+      ]
+    },
+    {
+      "label": "Nội dung bài tập H5P",
+      "fields": [
+        {
+          "label": " Nội dung bài tập H5P ",
+          "description": " Nội dung bài tập H5P sẽ được hiển thị "
+        }
+      ]
+    },
+    {
+      "label": "Vị trí địa lý",
+      "fields": [
+        {
+          "label": "Vĩ độ",
+          "description": "Vĩ độ (vui lòng sử dụng định dạng 53.864462)",
+          "placeholder": "69.646007"
+        },
+        {
+          "label": "Kinh độ",
+          "description": "Kinh độ (vui lòng sử dụng định dạng 53.864462)",
+          "placeholder": "18.954036"
+        }
+      ]
+    },
+    {
+      "label": "Số điện thoại",
+      "fields": [
+        {
+          "label": "Số điện thoại",
+          "description": "Số điện thoại cần liên lạc (Vui lòng sữ dụng định dạng +84)",
+          "placeholder": "+84"
+        }
+      ]
+    },
+    {
+      "label": "SMS",
+      "fields": [
+        {
+          "label": "Số điện thoại",
+          "description": "Số điện thoại cần gửi tin nhắn (Vui lòng sử dụng định dạng +84)",
+          "placeholder": "+84"
+        },
+        {
+          "label": "Nội dung tin nhắn SMS",
+          "description": "Tin nhắn để gửi",
+          "placeholder": ""
+        }
+      ]
+    },
+    {
+      "label": "Văn bản",
+      "fields": [
+        {
+          "label": "Văn bản",
+          "description": "Văn bản để mã hóa",
+          "placeholder": ""
+        }
+      ]
+    },
+    {
+      "label": "URL",
+      "fields": [
+        {
+          "label": "URL",
+          "description": " URL để liên kết tới (phải bắt đầu bằng https:// hoặc http://)",
+          "placeholder": "https://hoclieu.hcm.edu.vn"
+        }
+      ]
+    },
+    {
+      "label": "Cài đặt",
+      "description": " Các tùy chọn trong cài đặt này xác định cách thức hoạt động của tác vụ bạn đang chọn một cách chi tiết.",
+      "fields": [
+        {
+          "label": "Mã màu sắc"
+        },
+        {
+          "label": "Màu nền"
+        },
+        {
+          "label": "Kích thước tối đa",
+          "description": " Kích thước tối đa "
+        },
+        {
+          "label": "Hướng ngang",
+          "description": " Đặt căn chỉnh theo chiều ngang nếu bạn đã đặt kích thước tối đa ",
+          "options": [
+            {
+              "label": "Căn trái"
+            },
+            {
+              "label": "Căn phải"
+            },
+            {
+              "label": "Căn giữa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Giao diện người dùng",
+      "fields": [
+        {
+          "label": "Địa chỉ",
+          "default": "Địa chỉ"
+        },
+        {
+          "label": "Liên hệ",
+          "default": "Liên hệ"
+        },
+        {
+          "label": "Vùng",
+          "default": "Vùng"
+        },
+        {
+          "label": "Ngày kết thúc",
+          "default": "Ngày kết thúc"
+        },
+        {
+          "label": "Ngày bắt đầu",
+          "default": "Ngày bắt đầu"
+        },
+        {
+          "label": "Mô tả",
+          "default": "Mô tả"
+        },
+        {
+          "label": "Email",
+          "default": "Email"
+        },
+        {
+          "label": "Sự kiện",
+          "default": "Sự kiện"
+        },
+        {
+          "label": "Địa chỉ cụ thể",
+          "default": "Địa chỉ cụ thể"
+        },
+        {
+          "label": "Vĩ độ",
+          "default": "Vĩ độ"
+        },
+        {
+          "label": "Nơi chốn",
+          "default": "Địa điểm"
+        },
+        {
+          "label": "Địa điểm",
+          "default": "Địa điểm"
+        },
+        {
+          "label": "Vĩ độ",
+          "default": "Vĩ độ"
+        },
+        {
+          "label": "Tin nhắn",
+          "default": "Tin nhắn"
+        },
+        {
+          "label": "Tên",
+          "default": "Tên"
+        },
+        {
+          "label": "Ghi chú",
+          "default": "Ghi chú"
+        },
+        {
+          "label": "Tổ chức",
+          "default": "Tổ chức"
+        },
+        {
+          "label": "Số điện thoại",
+          "default": "số điện thoại"
+        },
+        {
+          "label": "Vùng đất",
+          "default": "Vùng đất"
+        },
+        {
+          "label": "SMS",
+          "default": "tin nhắn"
+        },
+        {
+          "label": "Đường",
+          "default": "Đường"
+        },
+        {
+          "label": "Văn bản",
+          "default": "Văn bản"
+        },
+        {
+          "label": "tiêu đề",
+          "default": "Tiêu đề"
+        },
+        {
+          "label": "URL",
+          "default": "URL"
+        },
+        {
+          "label": "mã bưu chính",
+          "default": "mã bưu chính"
+        }
+      ]
+    },
+    {
+      "label": "Công cụ đọc (Trợ năng)",
+      "fields": [
+        {
+          "label": "Mã QR. Hiện thông tin (văn bản để đọc công cụ/khả năng truy nhập)",
+          "default": "Mã QR. Hiện thông tin."
+        },
+        {
+          "label": "Ẩn thông tin (văn bản để đọc công cụ/khả năng truy nhập)",
+          "default": "Ẩn thông tin."
+        }
+      ]
+    }
+  ]
+}

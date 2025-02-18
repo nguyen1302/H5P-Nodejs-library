@@ -1,0 +1,206 @@
+{
+    "semantics": [
+      {
+        "label": "Bật bìa sách",
+        "description": "Bìa hiển thị thông tin về cuốn sách trước khi truy cập"
+      },
+      {
+        "label": "Trang bìa",
+        "fields": [
+          {
+            "label": "Mô tả bìa",
+            "description": "Văn bản này sẽ là mô tả của cuốn sách của bạn."
+          },
+          {
+            "label": "Che trung bình",
+            "description": "Phương tiện tùy chọn cho phần giới thiệu."
+          }
+        ]
+      },
+      {
+        "label": "Trang",
+        "entity": "Trang",
+        "widgets": [
+          {
+            "label": "Mặc định"
+          }
+        ],
+        "field": {
+          "label": "Mục",
+          "fields": [
+            {
+              "label": "Trang"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Cài đặt hành vi",
+        "fields": [
+          {
+            "label": "Màu cơ bản",
+            "description": "Đặt màu cơ bản sẽ xác định bảng màu tổng thể của cuốn sách. Vui lòng đảm bảo độ tương phản đủ cao."
+          },
+          {
+            "label": "Hiển thị mục lục theo mặc định",
+            "description": "Khi được bật, mục lục sẽ hiển thị khi mở sách"
+          },
+          {
+            "label": "Hiển thị các chỉ báo tiến độ",
+            "description": "Khi được kích hoạt, sẽ có các chỉ báo trên mỗi trang hiển thị cho người dùng xem họ đã hoàn tất trang đó hay chưa."
+          },
+          {
+            "label": "Bật tiến trình tự động",
+            "description": "Nếu được bật, một trang không có nhiệm vụ được coi là hoàn thành khi xem. Một trang với các nhiệm vụ sẽ được coi là hoàn thành khi tất cả các nhiệm vụ được hoàn thành. Nếu bị vô hiệu hóa, sẽ có một nút ở cuối mỗi trang để người dùng nhấp vào khi hoàn tất trang."
+          },
+          {
+            "label": "Hiển thị tóm tắt",
+            "description": "Khi được bật, người dùng có thể xem tóm tắt và gửi tiến trình / câu trả lời"
+          },
+          {
+            "label": "Bật nút \"Khởi động lại\"",
+            "description": "Khi được bật, người dùng có thể khởi động lại từ trang tóm tắt."
+          }
+        ]
+      },
+      {
+        "label": "Dịch cho \"Đọc\"",
+        "default": "Đọc"
+      },
+      {
+        "label": "Dịch cho \"Hiển thị 'Mục lục'\"",
+        "default": "Hiển thị 'Mục lục'"
+      },
+      {
+        "label": "Dịch cho \"Ẩn 'Mục lục'\"",
+        "default": "Ẩn 'Mục lục'"
+      },
+      {
+        "label": "Dịch cho \"Trang tiếp theo\"",
+        "default": "Trang tiếp theo"
+      },
+      {
+        "label": "Dịch cho \"Trang trước\"",
+        "default": "Trang trước"
+      },
+      {
+        "label": "Dịch cho \"Trang đã hoàn thành!\"",
+        "default": "Trang đã hoàn thành!"
+      },
+      {
+        "label": "Dịch cho \"@pages của @total đã hoàn thành\" (@pages và @total sẽ được thay thế bằng các giá trị thực tế)",
+        "default": "@pages của @total đã hoàn thành"
+      },
+      {
+        "label": "Dịch cho \"Trang chưa hoàn chỉnh\"",
+        "default": "Trang chưa hoàn chỉnh"
+      },
+      {
+        "label": "Dịch cho \"Điều hướng lên đầu\"",
+        "default": "Điều hướng lên đầu"
+      },
+      {
+        "label": "Dịch cho \"Tôi đã hoàn thành trang này\"",
+        "default": "Tôi đã hoàn thành trang này"
+      },
+      {
+        "label": "Nhãn nút chế độ toàn màn hình",
+        "default": "Chế độ toàn màn hình"
+      },
+      {
+        "label": "Nhãn nút thoát chế độ toàn màn hình",
+        "default": "Thoát chế độ toàn màn hình"
+      },
+      {
+        "label": "Tiến độ trang trong sách",
+        "description": "\"@count\" sẽ được thay thế bằng số trang hiện tại, và \"@total\" sẽ được thay thế bằng tổng số trang",
+        "default": "@count của @total trang"
+      },
+      {
+        "label": "Tiến độ tương tác",
+        "description": "\"@count\" sẽ được thay thế bằng số lượng tương tác hiện tại, và \"@total\" sẽ được thay thế bằng tổng số lượng tương tác",
+        "default": "@count của @total tương tác"
+      },
+      {
+        "label": "Dịch cho \"Gửi báo cáo\"",
+        "default": "Gửi báo cáo"
+      },
+      {
+        "label": "Nhãn nút \"Khởi động lại\"",
+        "default": "Khởi động lại"
+      },
+      {
+        "label": "Tiêu đề tóm tắt",
+        "default": "Tóm tắt"
+      },
+      {
+        "label": "Dịch cho \"Tất cả tương tác\"",
+        "default": "Tất cả tương tác"
+      },
+      {
+        "label": "Dịch cho \"Tương tác chưa trả lời\"",
+        "default": "Tương tác chưa trả lời"
+      },
+      {
+        "label": "Điểm số",
+        "description": "\"@score\" sẽ được thay thế bằng điểm hiện tại, và \"@maxscore\" sẽ được thay thế bằng điểm tối đa có thể đạt được",
+        "default": "@score / @maxscore"
+      },
+      {
+        "label": "Hoàn thành tương tác trên mỗi trang",
+        "description": "\"@left\" sẽ được thay thế bằng số tương tác còn lại, và \"@max\" sẽ được thay thế bằng tổng số tương tác trên trang",
+        "default": "@left của @max tương tác đã hoàn thành"
+      },
+      {
+        "label": "Dịch cho \"Không có tương tác\"",
+        "default": "Không có tương tác"
+      },
+      {
+        "label": "Dịch cho \"Điểm số\"",
+        "default": "Điểm số"
+      },
+      {
+        "label": "Nhãn cho nút \"Tóm tắt &amp; gửi\"",
+        "default": "Tóm tắt &amp; gửi"
+      },
+      {
+        "label": "Dịch cho \"Bạn chưa tương tác với bất kỳ trang nào.\"",
+        "default": "Bạn chưa tương tác với bất kỳ trang nào."
+      },
+      {
+        "label": "Dịch cho \"Bạn phải tương tác với ít nhất một trang trước khi có thể xem tóm tắt.\"",
+        "default": "Bạn phải tương tác với ít nhất một trang trước khi có thể xem tóm tắt."
+      },
+      {
+        "label": "Dịch cho \"Câu trả lời của bạn đã được gửi để xem xét!\"",
+        "default": "Câu trả lời của bạn đã được gửi để xem xét!"
+      },
+      {
+        "label": "Nhãn tiến độ tóm tắt",
+        "default": "Tiến độ sách"
+      },
+      {
+        "label": "Nhãn tiến độ tương tác",
+        "default": "Tiến độ tương tác"
+      },
+      {
+        "label": "Nhãn tổng điểm",
+        "default": "Tổng điểm"
+      },
+      {
+        "label": "Văn bản hỗ trợ tiếp cận",
+        "fields": [
+          {
+            "label": "Thay thế văn bản cho tiến độ trang",
+            "description": "Một văn bản thay thế cho tiến độ trang. Các biến @page và @total có sẵn.",
+            "default": "Trang @page của @total."
+          },
+          {
+            "label": "Nhãn cho việc mở rộng / thu gọn menu điều hướng",
+            "default": "Chuyển đổi menu điều hướng"
+          }
+        ]
+      }
+    ]
+  }
+  

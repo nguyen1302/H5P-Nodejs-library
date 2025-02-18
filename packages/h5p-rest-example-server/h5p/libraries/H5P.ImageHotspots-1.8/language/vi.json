@@ -1,0 +1,94 @@
+{
+    "semantics": [
+        {
+            "label": "Ảnh nền",
+            "description": "Hình ảnh hiển thị trên nền."
+        },
+        {
+            "label": "Văn bản thay thế cho hình nền",
+            "description": "Nếu trình duyệt không thể tải hình ảnh, văn bản này sẽ được hiển thị thay thế. Cũng được sử dụng bởi các công nghệ hỗ trợ."
+        },
+        {
+            "label": "Biểu tượng điểm phát sóng",
+            "options": [
+                {
+                    "label": "Biểu tượng cài đặt sẵn"
+                },
+                {
+                    "label": "Hình ảnh đã tải lên"
+                }
+            ]
+        },
+        {
+            "label": "Biểu tượng cài đặt sẵn",
+            "description": "Sử dụng biểu tượng được cài đặt sẵn cho điểm phát sóng.",
+            "options": [
+                {
+                    "label": "Cộng"
+                },
+                {
+                    "label": "Trừ"
+                },
+                {
+                    "label": "Thời gian"
+                },
+                {
+                    "label": "Kiểm tra"
+                },
+                {
+                    "label": "Câu hỏi"
+                },
+                {
+                    "label": "Thông tin"
+                },
+                {
+                    "label": "Cảm thán"
+                }
+            ]
+        },
+        {
+            "label": "Hình ảnh đã tải lên",
+            "description": "Sử dụng hình ảnh của riêng bạn cho biểu tượng điểm phát sóng. <br> 75px x 75px được đề xuất cho hình ảnh của bạn."
+        },
+        {
+            "label": "Màu điểm phát sóng",
+            "description": "Màu sắc của các điểm nóng"
+        },
+        {
+            "entity": "điểm phát sóng",
+            "label": "Điểm phát sóng",
+            "field": {
+                "label": "Điểm phát sóng",
+                "fields": [
+                    {
+                        "label": "Vị trí điểm phát sóng",
+                        "description": "Nhấp vào hình ảnh thu nhỏ để đặt điểm phát sóng"
+                    },
+                    {
+                        "label": "Che toàn bộ hình nền",
+                        "description": "Khi người dùng nhấp vào điểm phát sóng, hộp thoại tự động bật lên sẽ bao phủ toàn bộ hình nền"
+                    },
+                    {
+                        "label": "Tiêu đề",
+                        "description": "Tiêu đề tùy chọn cho hộp thoại tự động bật lên khi mở trình duyệt hoặc truy cập vào một website"
+                    },
+                    {
+                        "label": "Nội dung cho hộp thoại",
+                        "field": {
+                            "label": "Mục Nội dung"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "label": "Nhãn điểm phát sóng cho các công nghệ hỗ trợ",
+            "default": "Hotspot #num",
+            "description": "Sẽ giúp thông báo điểm phát sóng nào đã được điều hướng đến nếu không có tiêu đề nào được chỉ định cho điểm phát sóng. #num can be used to replace the hotspot number."
+        },
+        {
+            "label": "Đóng nhãn nút cho các công nghệ hỗ trợ",
+            "default": "Đóng"
+        }
+    ]
+}

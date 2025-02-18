@@ -1,0 +1,7 @@
+{
+  "libraryStrings": {
+    "helpText": "Viết mỗi câu lệnh trên một dòng riêng biệt. \nSử dụng một dòng trống để phân tách các câu lệnh. \nCâu lệnh đầu tiên luôn đúng. \nNếu có mẹo - thì câu lệnh được viết trên dòng đầu tiên với tiền tố \" : \"",
+    "example": "2 + 2 = 4 \n0 * 4 = 4 \n \n: Thành phố ở Scandinavia \nOslo là thủ đô của Na Uy \nOslo là thủ đô của Thụy Điển \nOslo là thủ đô của Island",
+    "warning": "Cảnh báo! Nếu bạn thay đổi các tác vụ trong trình soạn thảo văn bản, tất cả các định dạng văn bản đa dạng thức (bao gồm cả ngắt dòng) sẽ bị xóa."
+  }
+}

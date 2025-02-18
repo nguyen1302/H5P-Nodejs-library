@@ -1,0 +1,1084 @@
+[
+  {
+    "name": "interactiveVideo",
+    "type": "group",
+    "widget": "wizard",
+    "label": "Trình chỉnh sửa video tương tác",
+    "importance": "high",
+    "fields": [
+      {
+        "name": "video",
+        "type": "group",
+        "label": "Tải lên/nhúng link video",
+        "importance": "high",
+        "fields": [
+          {
+            "name": "files",
+            "type": "video",
+            "label": "Thêm video",
+            "importance": "high",
+            "description": "Nhấp vào bên dưới để thêm video bạn muốn sử dụng để tạo bài giảng tương tác. Bạn có thể thêm bằng cách tải lên các tệp video có sẵn trên máy tính hoặc dán một đường dẫn video. Để đảm bảo hỗ trợ tối đa trong các trình duyệt, bạn nên thêm video với định dạng webm và mp4.",
+            "extraAttributes": [
+              "metadata"
+            ],
+            "enableCustomQualityLabel": true
+          },
+          {
+            "name": "startScreenOptions",
+            "type": "group",
+            "label": "Cài đặt nâng cao cho video (không hỗ trợ video từ Youtube)",
+            "importance": "low",
+            "fields": [
+              {
+                "name": "title",
+                "type": "text",
+                "label": "Tiêu đề của video tương tác này",
+                "importance": "low",
+                "maxLength": 60,
+                "default": "Interactive Video",
+                "description": "Được sử dụng trong tóm tắt, thống kê, v.v."
+              },
+              {
+                "name": "hideStartTitle",
+                "type": "boolean",
+                "label": "Ẩn tiêu đề trên màn hình bắt đầu video",
+                "importance": "low",
+                "optional": true,
+                "default": false
+              },
+              {
+                "name": "shortStartDescription",
+                "type": "text",
+                "label": "Mô tả ngắn (Tùy chọn)",
+                "importance": "low",
+                "optional": true,
+                "maxLength": 120,
+                "description": "Không bắt buộc. Hiển thị văn bản mô tả ngắn trên màn hình bắt đầu video. Không hoạt động đối với video từ YouTube."
+              },
+              {
+                "name": "poster",
+                "type": "image",
+                "label": "Hình ảnh áp phích",
+                "importance": "low",
+                "optional": true,
+                "description": "Hình ảnh hiển thị trước khi người dùng khởi chạy video. Không hoạt động đối với video từ YouTube."
+              }
+            ]
+          },
+          {
+            "name": "textTracks",
+            "type": "group",
+            "label": "Phần văn bản (không được hỗ trợ cho video YouTube)",
+            "importance": "low",
+            "fields": [
+              {
+                "name": "videoTrack",
+                "type": "list",
+                "label": "Các phần văn bản có sẵn",
+                "importance": "low",
+                "optional": true,
+                "entity": "Track",
+                "min": 0,
+                "defaultNum": 1,
+                "field": {
+                  "name": "track",
+                  "type": "group",
+                  "label": "Phần",
+                  "importance": "low",
+                  "expanded": false,
+                  "fields": [
+                    {
+                      "name": "label",
+                      "type": "text",
+                      "label": "Phần nhãn dán",
+                      "description": "Được sử dụng nếu bạn cung cấp nhiều phần và người dùng phải chọn một phần. Ví dụ: 'Phụ đề tiếng Tây Ban Nha' có thể là nhãn của bản phụ đề tiếng Tây Ban Nha.",
+                      "importance": "low",
+                      "default": "Subtitles",
+                      "optional": true
+                    },
+                    {
+                      "name": "kind",
+                      "type": "select",
+                      "label": "Loại của phần văn bản",
+                      "importance": "low",
+                      "default": "subtitles",
+                      "options": [
+                        {
+                          "value": "subtitles",
+                          "label": "Phụ đề"
+                        },
+                        {
+                          "value": "captions",
+                          "label": "Chú thích"
+                        },
+                        {
+                          "value": "descriptions",
+                          "label": "Mô tả"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "srcLang",
+                      "type": "text",
+                      "label": "Nguồn ngôn ngữ, phải được xác định cho phụ đề",
+                      "importance": "low",
+                      "default": "en",
+                      "description": "Phải là thẻ ngôn ngữ BCP 47 hợp lệ. Nếu 'Phụ đề' là loại của phần văn bản được chọn thì nguồn ngôn ngữ phải được xác định."
+                    },
+                    {
+                      "name": "track",
+                      "type": "file",
+                      "label": "Theo dõi nguồn (tài liệu WebVTT)",
+                      "importance": "low"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "defaultTrackLabel",
+                "type": "text",
+                "label": "Phần văn bản mặc định",
+                "description": "Nếu để trống hoặc không khớp với bất kỳ phần văn bản nào thì phần văn bản đầu tiên sẽ được sử dụng làm mặc định.",
+                "importance": "low",
+                "optional": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "assets",
+        "type": "group",
+        "label": "Thêm tương tác",
+        "importance": "high",
+        "widget": "interactiveVideo",
+        "video": "video/files",
+        "poster": "video/startScreenOptions/poster",
+        "fields": [
+          {
+            "name": "interactions",
+            "type": "list",
+            "field": {
+              "name": "interaction",
+              "type": "group",
+              "fields": [
+                {
+                  "name": "duration",
+                  "type": "group",
+                  "widget": "duration",
+                  "label": "Thời gian hiển thị",
+                  "importance": "low",
+                  "fields": [
+                    {
+                      "name": "from",
+                      "type": "number"
+                    },
+                    {
+                      "name": "to",
+                      "type": "number"
+                    }
+                  ]
+                },
+                {
+                  "name": "pause",
+                  "label": "Dừng video",
+                  "importance": "low",
+                  "type": "boolean"
+                },
+                {
+                  "name": "displayType",
+                  "label": "Hiển thị dưới dạng",
+                  "importance": "low",
+                  "description": "<b>Nút này</b> là một tương tác thu gọn mà người dùng phải nhấn để mở. <b>Tấm áp phích</b> là tương tác mở rộng được hiển thị trực tiếp trên đầu video",
+                  "type": "select",
+                  "widget": "imageRadioButtonGroup",
+                  "options": [
+                    {
+                      "value": "button",
+                      "label": "Nút"
+                    },
+                    {
+                      "value": "poster",
+                      "label": "Tấm áp phích"
+                    }
+                  ],
+                  "default": "button"
+                },
+                {
+                  "name": "buttonOnMobile",
+                  "label": "Chuyển thành nút trên màn hình nhỏ",
+                  "importance": "low",
+                  "type": "boolean",
+                  "default": false
+                },
+                {
+                  "name": "label",
+                  "type": "text",
+                  "widget": "html",
+                  "label": "Nhãn dán",
+                  "importance": "low",
+                  "description": "Nhãn hiển thị bên cạnh biểu tượng tương tác.",
+                  "optional": true,
+                  "enterMode": "p",
+                  "tags": [
+                    "p"
+                  ]
+                },
+                {
+                  "name": "x",
+                  "type": "number",
+                  "importance": "low",
+                  "widget": "none"
+                },
+                {
+                  "name": "y",
+                  "type": "number",
+                  "importance": "low",
+                  "widget": "none"
+                },
+                {
+                  "name": "width",
+                  "type": "number",
+                  "widget": "none",
+                  "importance": "low",
+                  "optional": true
+                },
+                {
+                  "name": "height",
+                  "type": "number",
+                  "widget": "none",
+                  "importance": "low",
+                  "optional": true
+                },
+                {
+                  "name": "libraryTitle",
+                  "type": "text",
+                  "importance": "low",
+                  "optional": true,
+                  "widget": "none"
+                },
+                {
+                  "name": "action",
+                  "type": "library",
+                  "importance": "low",
+                  "options": [
+                    "H5P.Nil 1.0",
+                    "H5P.Text 1.1",
+                    "H5P.Table 1.1",
+                    "H5P.Link 1.3",
+                    "H5P.Image 1.1",
+                    "H5P.Summary 1.10",
+                    "H5P.SingleChoiceSet 1.11",
+                    "H5P.MultiChoice 1.14",
+                    "H5P.TrueFalse 1.6",
+                    "H5P.Blanks 1.12",
+                    "H5P.DragQuestion 1.13",
+                    "H5P.MarkTheWords 1.9",
+                    "H5P.DragText 1.8",
+                    "H5P.GoToQuestion 1.3",
+                    "H5P.IVHotspot 1.2",
+                    "H5P.Questionnaire 1.2",
+                    "H5P.FreeTextQuestion 1.0"
+                  ]
+                },
+                {
+                  "name": "adaptivity",
+                  "type": "group",
+                  "label": "Khả năng thích ứng",
+                  "importance": "low",
+                  "optional": true,
+                  "fields": [
+                    {
+                      "name": "correct",
+                      "type": "group",
+                      "label": "Thao tác trên đều đúng",
+                      "fields": [
+                        {
+                          "name": "seekTo",
+                          "type": "number",
+                          "widget": "timecode",
+                          "label": "Tìm cách",
+                          "description": "Nhập mã thời gian ở định dạng M:SS"
+                        },
+                        {
+                          "name": "allowOptOut",
+                          "type": "boolean",
+                          "label": "Cho phép người dùng chọn bỏ qua và tiếp tục"
+                        },
+                        {
+                          "name": "message",
+                          "type": "text",
+                          "widget": "html",
+                          "enterMode": "p",
+                          "tags": [
+                            "strong",
+                            "em",
+                            "del",
+                            "a",
+                            "code"
+                          ],
+                          "label": "Tin nhắn"
+                        },
+                        {
+                          "name": "seekLabel",
+                          "type": "text",
+                          "label": "Nhãn cho nút tìm kiếm"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "wrong",
+                      "type": "group",
+                      "label": "Hành động sai",
+                      "fields": [
+                        {
+                          "name": "seekTo",
+                          "type": "number",
+                          "widget": "timecode",
+                          "label": "Tìm cách",
+                          "description": "Nhập mã thời gian ở định dạng M:SS"
+                        },
+                        {
+                          "name": "allowOptOut",
+                          "type": "boolean",
+                          "label": "Cho phép người dùng chọn bỏ qua và tiếp tục"
+                        },
+                        {
+                          "name": "message",
+                          "type": "text",
+                          "widget": "html",
+                          "enterMode": "p",
+                          "tags": [
+                            "strong",
+                            "em",
+                            "del",
+                            "a",
+                            "code"
+                          ],
+                          "label": "Tin nhắn"
+                        },
+                        {
+                          "name": "seekLabel",
+                          "type": "text",
+                          "label": "Nhãn cho nút tìm kiếm"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "requireCompletion",
+                      "type": "boolean",
+                      "label": "Yêu cầu điểm tối đa cho nhiệm vụ trước khi tiếp tục",
+                      "description": "Để có chức năng tốt nhất, tùy chọn này nên được sử dụng cùng với \"Ngăn chặn việc tua nhanh trong video\" tùy chọn của video tương tác."
+                    }
+                  ]
+                },
+                {
+                  "name": "visuals",
+                  "label": "Những gì bạn có thể nhìn thấy",
+                  "importance": "low",
+                  "type": "group",
+                  "fields": [
+                    {
+                      "name": "backgroundColor",
+                      "type": "text",
+                      "label": "Màu nền",
+                      "widget": "colorSelector",
+                      "default": "rgb(255, 255, 255)",
+                      "spectrum": {
+                        "showInput": true,
+                        "showAlpha": true,
+                        "preferredFormat": "rgb",
+                        "showPalette": true,
+                        "palette": [
+                          [
+                            "rgba(0, 0, 0, 0)"
+                          ],
+                          [
+                            "rgb(67, 67, 67)",
+                            "rgb(102, 102, 102)",
+                            "rgb(204, 204, 204)",
+                            "rgb(217, 217, 217)",
+                            "rgb(255, 255, 255)"
+                          ],
+                          [
+                            "rgb(152, 0, 0)",
+                            "rgb(255, 0, 0)",
+                            "rgb(255, 153, 0)",
+                            "rgb(255, 255, 0)",
+                            "rgb(0, 255, 0)",
+                            "rgb(0, 255, 255)",
+                            "rgb(74, 134, 232)",
+                            "rgb(0, 0, 255)",
+                            "rgb(153, 0, 255)",
+                            "rgb(255, 0, 255)"
+                          ],
+                          [
+                            "rgb(230, 184, 175)",
+                            "rgb(244, 204, 204)",
+                            "rgb(252, 229, 205)",
+                            "rgb(255, 242, 204)",
+                            "rgb(217, 234, 211)",
+                            "rgb(208, 224, 227)",
+                            "rgb(201, 218, 248)",
+                            "rgb(207, 226, 243)",
+                            "rgb(217, 210, 233)",
+                            "rgb(234, 209, 220)",
+                            "rgb(221, 126, 107)",
+                            "rgb(234, 153, 153)",
+                            "rgb(249, 203, 156)",
+                            "rgb(255, 229, 153)",
+                            "rgb(182, 215, 168)",
+                            "rgb(162, 196, 201)",
+                            "rgb(164, 194, 244)",
+                            "rgb(159, 197, 232)",
+                            "rgb(180, 167, 214)",
+                            "rgb(213, 166, 189)",
+                            "rgb(204, 65, 37)",
+                            "rgb(224, 102, 102)",
+                            "rgb(246, 178, 107)",
+                            "rgb(255, 217, 102)",
+                            "rgb(147, 196, 125)",
+                            "rgb(118, 165, 175)",
+                            "rgb(109, 158, 235)",
+                            "rgb(111, 168, 220)",
+                            "rgb(142, 124, 195)",
+                            "rgb(194, 123, 160)",
+                            "rgb(166, 28, 0)",
+                            "rgb(204, 0, 0)",
+                            "rgb(230, 145, 56)",
+                            "rgb(241, 194, 50)",
+                            "rgb(106, 168, 79)",
+                            "rgb(69, 129, 142)",
+                            "rgb(60, 120, 216)",
+                            "rgb(61, 133, 198)",
+                            "rgb(103, 78, 167)",
+                            "rgb(166, 77, 121)",
+                            "rgb(91, 15, 0)",
+                            "rgb(102, 0, 0)",
+                            "rgb(120, 63, 4)",
+                            "rgb(127, 96, 0)",
+                            "rgb(39, 78, 19)",
+                            "rgb(12, 52, 61)",
+                            "rgb(28, 69, 135)",
+                            "rgb(7, 55, 99)",
+                            "rgb(32, 18, 77)",
+                            "rgb(76, 17, 48)"
+                          ]
+                        ]
+                      }
+                    },
+                    {
+                      "name": "boxShadow",
+                      "type": "boolean",
+                      "label": "Bóng của hộp",
+                      "default": true,
+                      "description": "Thêm bóng tinh tế xung quanh sự tương tác. Bạn có thể muốn tắt tính năng này để có các tương tác hoàn toàn minh bạch"
+                    }
+                  ]
+                },
+                {
+                  "name": "goto",
+                  "label": "Nhấp chuột",
+                  "importance": "low",
+                  "type": "group",
+                  "fields": [
+                    {
+                      "name": "type",
+                      "label": "Dạng",
+                      "type": "select",
+                      "widget": "selectToggleFields",
+                      "options": [
+                        {
+                          "value": "timecode",
+                          "label": "Mã thời gian",
+                          "hideFields": [
+                            "url"
+                          ]
+                        },
+                        {
+                          "value": "url",
+                          "label": "Trang khác (URL)",
+                          "hideFields": [
+                            "time"
+                          ]
+                        }
+                      ],
+                      "optional": true
+                    },
+                    {
+                      "name": "time",
+                      "type": "number",
+                      "widget": "timecode",
+                      "label": "Đi đến",
+                      "description": "Mục tiêu thời gian mà người dùng sẽ được đưa đến khi nhấn vào điểm phát sóng. Nhập mã thời gian ở định dạng M:SS.",
+                      "optional": true
+                    },
+                    {
+                      "name": "url",
+                      "type": "group",
+                      "label": "URL",
+                      "widget": "linkWidget",
+                      "optional": true,
+                      "fields": [
+                        {
+                          "name": "protocol",
+                          "type": "select",
+                          "label": "Địa chỉ web",
+                          "options": [
+                            {
+                              "value": "http://",
+                              "label": "http://"
+                            },
+                            {
+                              "value": "https://",
+                              "label": "https://"
+                            },
+                            {
+                              "value": "/",
+                              "label": "Nguồn liên quan"
+                            },
+                            {
+                              "value": "other",
+                              "label": "Khác"
+                            }
+                          ],
+                          "optional": true,
+                          "default": "http://"
+                        },
+                        {
+                          "name": "url",
+                          "type": "text",
+                          "label": "URL",
+                          "optional": true
+                        }
+                      ]
+                    },
+                    {
+                      "name": "visualize",
+                      "type": "boolean",
+                      "label": "Hình dung",
+                      "description": "Cho thấy rằng có thể nhấp vào tương tác bằng cách thêm đường viền và biểu tượng"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "bookmarks",
+            "importance": "low",
+            "type": "list",
+            "field": {
+              "name": "bookmark",
+              "type": "group",
+              "fields": [
+                {
+                  "name": "time",
+                  "type": "number"
+                },
+                {
+                  "name": "label",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          {
+            "name": "endscreens",
+            "importance": "low",
+            "type": "list",
+            "field": {
+              "name": "endscreen",
+              "type": "group",
+              "fields": [
+                {
+                  "name": "time",
+                  "type": "number"
+                },
+                {
+                  "name": "label",
+                  "type": "text"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "summary",
+        "type": "group",
+        "label": "Nhiệm vụ tóm tắt",
+        "importance": "high",
+        "fields": [
+          {
+            "name": "task",
+            "type": "library",
+            "options": [
+              "H5P.Summary 1.10"
+            ],
+            "default": {
+              "library": "H5P.Summary 1.10",
+              "params": {}
+            }
+          },
+          {
+            "name": "displayAt",
+            "type": "number",
+            "label": "Hiển thị tại",
+            "description": "Số giây trước khi video kết thúc.",
+            "default": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "override",
+    "type": "group",
+    "label": "Cài đặt hành vi",
+    "importance": "low",
+    "optional": true,
+    "fields": [
+      {
+        "name": "startVideoAt",
+        "type": "number",
+        "widget": "timecode",
+        "label": "Bắt đầu video ở",
+        "importance": "low",
+        "optional": true,
+        "description": "Nhập mã thời gian theo định dạng M:SS"
+      },
+      {
+        "name": "autoplay",
+        "type": "boolean",
+        "label": "Tự động phát video",
+        "default": false,
+        "optional": true,
+        "description": "Bắt đầu phát video tự động"
+      },
+      {
+        "name": "loop",
+        "type": "boolean",
+        "label": "Lặp lại video",
+        "default": false,
+        "optional": true,
+        "description": "Kiểm tra xem video có nên chạy theo vòng lặp không"
+      },
+      {
+        "name": "showSolutionButton",
+        "type": "select",
+        "label": "Nút\"Hiển thị giải pháp\"",
+        "importance": "low",
+        "description": "Tùy chọn này xác định nút \"Hiển thị giải pháp\" sẽ được hiển thị cho tất cả câu hỏi, bị tắt cho tất cả hay được cấu hình mặc định cho từng câu hỏi riêng lẻ.",
+        "optional": true,
+        "options": [
+          {
+            "value": "on",
+            "label": "Đã bật"
+          },
+          {
+            "value": "off",
+            "label": "Đã tắt"
+          }
+        ]
+      },
+      {
+        "name": "retryButton",
+        "type": "select",
+        "label": "Nút \"Thử lại\"",
+        "importance": "low",
+        "description": "Tùy chọn này xác định nút \"Thử lại\" sẽ được hiển thị cho tất cả câu hỏi, bị tắt cho tất cả hay được cấu hình mặc định cho từng câu hỏi riêng lẻ.",
+        "optional": true,
+        "options": [
+          {
+            "value": "on",
+            "label": "Đã bật"
+          },
+          {
+            "value": "off",
+            "label": "Đã tắt"
+          }
+        ]
+      },
+      {
+        "name": "showBookmarksmenuOnLoad",
+        "type": "boolean",
+        "label": "Bắt đầu với menu dấu trang đang mở",
+        "importance": "low",
+        "default": false,
+        "description": "Chức năng này không khả dụng trên iPad khi sử dụng YouTube làm nguồn video."
+      },
+      {
+        "name": "showRewind10",
+        "type": "boolean",
+        "label": "Hiện nút tua lại 10 giây",
+        "importance": "low",
+        "default": false
+      },
+      {
+        "name": "preventSkipping",
+        "type": "boolean",
+        "default": false,
+        "label": "Ngăn chặn việc tua nhanh video",
+        "importance": "low",
+        "description": "Việc bật tùy chọn này sẽ tắt điều hướng video của người dùng thông qua các điều khiển mặc định."
+      },
+      {
+        "name": "deactivateSound",
+        "type": "boolean",
+        "default": false,
+        "label": "Tắt âm thanh",
+        "importance": "low",
+        "description": "Bật tùy chọn này sẽ tắt âm thanh của video và ngăn không cho âm thanh video được bật."
+      }
+    ]
+  },
+  {
+    "name": "l10n",
+    "type": "group",
+    "label": "Địa phương hóa",
+    "importance": "low",
+    "common": true,
+    "optional": true,
+    "fields": [
+      {
+        "name": "interaction",
+        "type": "text",
+        "label": "Tiêu đề tương tác",
+        "importance": "low",
+        "default": "Interaction",
+        "optional": true
+      },
+      {
+        "name": "play",
+        "type": "text",
+        "label": "Bật tiêu đề",
+        "importance": "low",
+        "default": "Play",
+        "optional": true
+      },
+      {
+        "name": "pause",
+        "type": "text",
+        "label": "Tạm dừng tiêu đề",
+        "importance": "low",
+        "default": "Pause",
+        "optional": true
+      },
+      {
+        "name": "mute",
+        "type": "text",
+        "label": "Tắt tiếng tiêu đề",
+        "importance": "low",
+        "default": "Mute",
+        "optional": true
+      },
+      {
+        "name": "unmute",
+        "type": "text",
+        "label": "Bật tiếng tiêu đề",
+        "importance": "low",
+        "default": "Unmute",
+        "optional": true
+      },
+      {
+        "name": "quality",
+        "type": "text",
+        "label": "Chất lượng tiêu đề video",
+        "importance": "low",
+        "default": "Video Quality",
+        "optional": true
+      },
+      {
+        "name": "captions",
+        "type": "text",
+        "label": "Chú thích tiêu đề video",
+        "importance": "low",
+        "default": "Captions",
+        "optional": true
+      },
+      {
+        "name": "close",
+        "type": "text",
+        "label": "Đóng nút văn bản",
+        "importance": "low",
+        "default": "Close",
+        "optional": true
+      },
+      {
+        "name": "fullscreen",
+        "type": "text",
+        "label": "Tiêu đề toàn màn hình",
+        "importance": "low",
+        "default": "Fullscreen",
+        "optional": true
+      },
+      {
+        "name": "exitFullscreen",
+        "type": "text",
+        "label": "Thoát tiêu đề toàn màn hình",
+        "importance": "low",
+        "default": "Exit Fullscreen",
+        "optional": true
+      },
+      {
+        "name": "summary",
+        "type": "text",
+        "label": "Tóm tắt tiêu đề",
+        "importance": "low",
+        "default": "Open summary dialog",
+        "optional": true
+      },
+      {
+        "name": "bookmarks",
+        "type": "text",
+        "label": "Dấu trang tiêu đề",
+        "importance": "low",
+        "default": "Bookmarks",
+        "optional": true
+      },
+      {
+        "name": "endscreen",
+        "type": "text",
+        "label": "Gửi tiêu đề màn hình",
+        "importance": "low",
+        "default": "Submit screen",
+        "optional": true
+      },
+      {
+        "name": "defaultAdaptivitySeekLabel",
+        "type": "text",
+        "label": "Nhãn mặc định cho nút tìm kiếm khả năng thích ứng",
+        "importance": "low",
+        "default": "Continue",
+        "optional": true
+      },
+      {
+        "name": "continueWithVideo",
+        "type": "text",
+        "label": "Nhãn mặc định cho nút tiếp tục video",
+        "importance": "low",
+        "default": "Continue with video",
+        "optional": true
+      },
+      {
+        "name": "playbackRate",
+        "type": "text",
+        "label": "Đặt tốc độ phát lại",
+        "importance": "low",
+        "default": "Playback Rate",
+        "optional": true
+      },
+      {
+        "name": "rewind10",
+        "type": "text",
+        "label": "Tua lại 10 giây",
+        "importance": "low",
+        "default": "Rewind 10 Seconds",
+        "optional": true
+      },
+      {
+        "name": "navDisabled",
+        "type": "text",
+        "label": "Văn bản điều hướng bị vô hiệu hóa",
+        "importance": "low",
+        "default": "Navigation is disabled",
+        "optional": true
+      },
+      {
+        "name": "sndDisabled",
+        "type": "text",
+        "label": "Văn bản âm thanh bị vô hiệu hóa",
+        "importance": "low",
+        "default": "Sound is disabled",
+        "optional": true
+      },
+      {
+        "name": "requiresCompletionWarning",
+        "type": "text",
+        "label": "Cảnh báo người dùng phải trả lời chính xác câu hỏi trước khi tiếp tục",
+        "importance": "low",
+        "default": "You need to answer all the questions correctly before continuing.",
+        "optional": true
+      },
+      {
+        "name": "back",
+        "type": "text",
+        "label": "Nút quay lại",
+        "importance": "low",
+        "default": "Back",
+        "optional": true
+      },
+      {
+        "name": "hours",
+        "type": "text",
+        "label": "Thời gian đã trôi qua",
+        "importance": "low",
+        "default": "Hours",
+        "optional": true
+      },
+      {
+        "name": "minutes",
+        "type": "text",
+        "label": "Phút đã trôi qua",
+        "importance": "low",
+        "default": "Minutes",
+        "optional": true
+      },
+      {
+        "name": "seconds",
+        "type": "text",
+        "label": "Giây đã trôi qua",
+        "importance": "low",
+        "default": "Seconds",
+        "optional": true
+      },
+      {
+        "name": "currentTime",
+        "type": "text",
+        "label": "Nhãn dán cho thời điểm hiện tại",
+        "importance": "low",
+        "default": "Current time:",
+        "optional": true
+      },
+      {
+        "name": "totalTime",
+        "type": "text",
+        "label": "Nhãn dán cho tổng thời gian",
+        "importance": "low",
+        "default": "Total time:",
+        "optional": true
+      },
+      {
+        "name": "singleInteractionAnnouncement",
+        "type": "text",
+        "label": "Văn bản giải thích rằng một lần tương tác với tên đã được hiển thị",
+        "importance": "low",
+        "default": "Interaction appeared:",
+        "optional": true
+      },
+      {
+        "name": "multipleInteractionsAnnouncement",
+        "type": "text",
+        "label": "Văn bản để giải thích rằng nhiều tương tác đã được xem xét",
+        "importance": "low",
+        "default": "Multiple interactions appeared.",
+        "optional": true
+      },
+      {
+        "name": "videoPausedAnnouncement",
+        "type": "text",
+        "label": "Thông báo video bị tạm dừng",
+        "importance": "low",
+        "default": "Video is paused",
+        "optional": true
+      },
+      {
+        "name": "content",
+        "type": "text",
+        "label": "Nội dung nhãn dán",
+        "importance": "low",
+        "default": "Content",
+        "optional": true
+      },
+      {
+        "name": "answered",
+        "type": "text",
+        "label": "Tin nhắn tự động (@answered sẽ được thay thế bằng số câu hỏi đã trả lời)",
+        "importance": "low",
+        "default": "@answered answered",
+        "optional": true
+      },
+      {
+        "name": "endcardTitle",
+        "type": "text",
+        "label": "Gửi màn hình tiêu đề",
+        "importance": "low",
+        "default": "@answered Question(s) answered",
+        "description": "@answered sẽ được thay thế bằng số lượng câu hỏi được trả lời.",
+        "optional": true
+      },
+      {
+        "name": "endcardInformation",
+        "type": "text",
+        "label": "Gửi thông tin màn hình",
+        "importance": "low",
+        "default": "Bạn phải trả lời @answered các câu hỏi, nhấp vào bên dưới để gửi câu trả lời của bạn.",
+        "description": "@answered sẽ được thay thế bằng số lượng câu hỏi được trả lời.",
+        "optional": true
+      },
+      {
+        "name": "endcardInformationNoAnswers",
+        "type": "text",
+        "label": "Gửi thông tin màn hình cho các câu trả lời còn thiếu",
+        "importance": "low",
+        "default": "You have not answered any questions.",
+        "optional": true
+      },
+      {
+        "name": "endcardInformationMustHaveAnswer",
+        "type": "text",
+        "label": "Gửi thông tin màn hình cho câu trả lời cần thiết",
+        "importance": "low",
+        "default": "You have to answer at least one question before you can submit your answers.",
+        "optional": true
+      },
+      {
+        "name": "endcardSubmitButton",
+        "type": "text",
+        "label": "Gửi nút gửi màn hình",
+        "importance": "low",
+        "default": "Submit Answers",
+        "optional": true
+      },
+      {
+        "name": "endcardSubmitMessage",
+        "type": "text",
+        "label": "Gửi màn hình tin nhắn",
+        "importance": "low",
+        "default": "Your answers have been submitted!",
+        "optional": true
+      },
+      {
+        "name": "endcardTableRowAnswered",
+        "type": "text",
+        "label": "Gửi tiêu đề bảng màn hình: Câu hỏi đã trả lời",
+        "importance": "low",
+        "default": "Answered questions",
+        "optional": true
+      },
+      {
+        "name": "endcardTableRowScore",
+        "type": "text",
+        "label": "Gửi tiêu đề bảng màn hình: Điểm",
+        "importance": "low",
+        "default": "Score",
+        "optional": true
+      },
+      {
+        "name": "endcardAnsweredScore",
+        "type": "text",
+        "label": "Gửi điểm màn hình câu trả lời",
+        "importance": "low",
+        "default": "answered",
+        "optional": true
+      },
+      {
+        "name": "endCardTableRowSummaryWithScore",
+        "type": "text",
+        "label": "Gửi bản tóm tắt màn hình bao gồm cả điểm (dành cho loa đọc)",
+        "importance": "low",
+        "default": "You got @score out of @total points for the @question that appeared after @minutes minutes and @seconds seconds.",
+        "optional": true
+      },
+      {
+        "name": "endCardTableRowSummaryWithoutScore",
+        "type": "text",
+        "label": "Gửi bản tóm tắt hàng màn hình không có điểm (dành cho loa đọc)",
+        "importance": "low",
+        "default": "You have answered the @question that appeared after @minutes minutes and @seconds seconds.",
+        "optional": true
+      }
+    ]
+  }
+]

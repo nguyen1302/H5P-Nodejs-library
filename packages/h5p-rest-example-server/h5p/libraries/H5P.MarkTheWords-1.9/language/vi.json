@@ -1,0 +1,143 @@
+{
+  "semantics": [
+    {
+      "label": "Phương tiện truyền thông",
+      "fields": [
+        {
+          "label": "Loại hình",
+          "description": "Phương tiện tùy chọn để hiển thị phía trên câu hỏi."
+        },
+        {
+          "label": "Tắt tính năng phóng to hình ảnh"
+        }
+      ]
+    },
+    {
+      "label": "Mô tả nhiệm vụ",
+      "description": "Mô tả cách người dùng nên giải quyết nhiệm vụ như thế nào",
+      "placeholder": "Nhấp vào tất cả các động từ trong văn bản sau"
+    },
+    {
+      "label": "Nhập nội dung. Lưu ý câu trả lời dúng được đặt trong 2 dấu *",
+      "placeholder": "Đây là câu trả lời: * câu trả lời*",
+      "important": {
+        "description": "<ul> <li> Các từ đã đánh dấu được thêm vào bằng dấu hoa thị (*). </li> <li> Có thể thêm dấu hoa thị vào các từ đã đánh dấu bằng cách thêm một dấu hoa thị khác, * chính xác *** = & gt; từ chính xác *. </li> </ul>",
+        "example": "Các từ đúng được đánh dấu như sau: * từ đúng *, dấu hoa thị được viết như thế này: * từ đúng ***"
+      }
+    },
+    {
+      "label": "Phản hồi tổng thể",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Mặc định"
+            }
+          ],
+          "label": "Xác định phản hồi tùy chỉnh cho bất kỳ phạm vi điểm số nào",
+          "description": "Nhấp vào nút \"Thêm ô \" để thêm nhiều ô nếu bạn cần. Ví dụ: 0-20% Điểm kém, 21-91% Điểm trung bình, 91-100% Điểm tốt!",
+          "entity": "ô",
+          "field": {
+            "fields": [
+              {
+                "label": "Phạm vi điểm"
+              },
+              {},
+              {
+                "label": "Phản hồi cho phạm vi điểm đã xác định",
+                "placeholder": "Điền vào phản hồi"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Nội dung cho \" kiểm tra\" nút",
+      "default": "kiểm tra"
+    },
+    {
+      "label": "Nội dung cho \" gửi\" nút",
+      "default": "Gửi"
+    },
+    {
+      "label": "Nội dung cho \" thử lại\" nút",
+      "default": "thử lại"
+    },
+    {
+      "label": "Nội dung cho \" hiển thị giải pháp\" nút",
+      "default": "Hiển thị giải pháp"
+    },
+    {
+      "label": "Cài đặt hành vi",
+      "description": "Các tùy chọn này sẽ cho phép bạn kiểm soát cách hoạt động của nhiệm vụ",
+      "fields": [
+        {
+          "label": "bật \" thử lại\""
+        },
+        {
+          "label": "Bật \" hiển thị giải pháp\"nút"
+        },
+        {
+          "label": "Bật \" kiểm tra\"nút"
+        },
+        {
+          "label": "Hiển thị điểm số",
+          "description": "Hiển thị điểm đạt được cho mỗi câu trả lời."
+        }
+      ]
+    },
+    {
+      "label": "Nội dung câu trả lời chính xác",
+      "default": "Chính xác",
+      "description": "Văn bản được sử dụng để chỉ ra rằng một câu trả lời là chính xác"
+    },
+    {
+      "label": "Nội dung cho câu trả lời không chính xác",
+      "default": "Không chính xác",
+      "description": "Văn bản được sử dụng để chỉ ra rằng một câu trả lời là không chính xác"
+    },
+    {
+      "label": "Nội dung cho câu trả lời bị bỏ qua",
+      "default": "Câu tra lời không thể tìm thấy",
+      "description": "Văn bản được sử dụng để chỉ ra rằng một câu trả lời thể tìm thấy"
+    },
+    {
+      "label": "Mô tả cho giải pháp hiển thị",
+      "default": "Nhiệm vụ được cập nhật để chứa giải pháp.",
+      "description": "Văn bản này cho người dùng biết rằng các nhiệm vụ đã được cập nhật cùng với giải pháp"
+    },
+    {
+      "label": "Trình bày bằng văn bản của thanh điểm số cho những người sử dụng loa đọc",
+      "default": "Bạn nhận được :num trong :total số điểm"
+    },
+    {
+      "label": "Nhãn cho toàn bộ văn bản có thể đọc được cho các công nghệ hỗ trợ",
+      "default": "Toàn bộ văn bản có thể đọc được"
+    },
+    {
+      "label": "Gắn nhãn cho toàn văn bản trong đó các từ có thể được đánh dấu cho các công nghệ hỗ trợ",
+      "default": "Toàn văn bản trong đó các từ có thể được đánh dấu"
+    },
+    {
+      "label": "Tiêu đề chế độ giải pháp dành cho công nghệ hỗ trợ",
+      "default": "Chế độ giải pháp"
+    },
+    {
+      "label": "Chế độ kiểm tra tiêu đề  cho các công nghệ hỗ trợ ",
+      "default": "Chế độ kiểm tra"
+    },
+    {
+      "label": "Mô tả công nghệ hỗ trợ cho nút \" Kiểm tra \"",
+      "default": "Kiểm tra câu trả lời. Các câu trả lời sẽ được đánh dấu là chính xác, không chính xác hoặc chưa được trả lời."
+    },
+    {
+      "label": "Mô tả công nghệ hỗ trợ cho \" hiển thị giải pháp \" nút",
+      "default": "Hiển thị giải pháp. Nhiệm vụ sẽ được đánh dấu bằng giải pháp chính xác của nó"
+    },
+    {
+      "label": "Mô tả công nghệ hỗ trợ cho \"thử lại \" nút",
+      "default": "Thử lại tác vụ. Đặt lại tất cả các câu trả lời và bắt đầu lại nhiệm vụ"
+    }
+  ]
+}

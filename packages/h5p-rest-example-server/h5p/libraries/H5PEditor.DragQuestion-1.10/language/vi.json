@@ -1,0 +1,20 @@
+{
+    "libraryStrings": {
+        "insertElement": "thêm : loại",
+        "done": "Hoàn thành",
+        "remove": "Xóa",
+        "image": "Thêm khối thả dạng hình",
+        "text": "Thêm khối thả dạng chữ",
+        "noTaskSize": "Hãy cài đặt kích thước hiển thị bài tập",
+        "confirmRemoval": "Bạn chắc chắn muốn xóa thành phần này?",
+        "backgroundOpacityOverridden": "Độ mờ nền",
+        "advancedtext": "Văn bản",
+        "dropzone": "Khung thả",
+        "selectAll": "Chọn tất cả",
+        "deselectAll": "Bỏ chọn tất cả",
+        "deleteTaskTitle": "Xác nhận xóa",
+        "cancel": "Hủy",
+        "confirm": "Xác nhận",
+        "ok": "Đồng ý"
+    }
+}

@@ -1,0 +1,60 @@
+{
+  "semantics": [
+    {
+      "label": "Tiêu đề",
+      "placeholder": "Bạn có thể tùy chọn nhập tiêu đề tại đây.",
+      "description": "Tiêu đề hiển thị phía trên hình ảnh trước / sau"
+    },
+    {
+      "label": "Hình ảnh đầu tiên",
+      "fields": [
+        {
+          "label": "Hình ảnh đầu tiên",
+          "description": "Hình ảnh đầu tiên. Đảm bảo rằng nó có cùng kích thước với thứ hai."
+        },
+        {
+          "label": "Nhãn của hình ảnh đầu tiên",
+          "description": "Văn bản hiển thị phía trên hình ảnh đầu tiên"
+        }
+      ]
+    },
+    {
+      "label": "Ảnh thứ hai",
+      "fields": [
+        {
+          "label": "Ảnh thứ hai",
+          "description": "Hình ảnh thứ hai. Đảm bảo rằng kích cỡ của ảnh thứ hai giống với ảnh thứ nhất."
+        },
+        {
+          "label": "Nhãn của hình ảnh thứ hai",
+          "description": "Văn bản hiển thị phía trên hình ảnh thứ hai"
+        }
+      ]
+    },
+    {
+      "label": "Thiết lập hành vi",
+      "description": "Ở đây một số chi tiết có thể được thiết lập",
+      "fields": [
+        {
+          "label": "Bắt đầu vị trí thanh trượt trong%",
+          "description": "Đặt vị trí bắt đầu của thanh trượt"
+        },
+        {
+          "label": "Hướng thanh trượt",
+          "description": "Ngang cho trái và phải, dọc để lên và xuống",
+          "options": [
+            {
+              "label": "Theo chiều ngang"
+            },
+            {
+              "label": "Theo chiều dọc"
+            }
+          ]
+        },
+        {
+          "label": "Màu thanh trượt"
+        }
+      ]
+    }
+  ]
+}

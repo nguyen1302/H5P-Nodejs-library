@@ -1,0 +1,256 @@
+{
+    "semantics": [
+        {
+            "label": "Nhập nội dung câu hỏi"
+        },
+        {
+            "label": "Đoạn văn bản hiển thị vị trí khung nhập câu trả lời cho người dùng",
+            "default": "Nhập câu trả lời của bạn tại đây",
+            "description": "Đoạn mô tả này sẽ được hiển thị trong khung trả lời và tự động bị xóa khi người dùng bắt đầu nhập câu trả lời"
+        },
+        {
+            "label": "Điểm số cao nhất cho bài tập",
+            "description": "Điểm này sẽ được sử dụng để chấm điểm và không hiển thị cho người làm bài"
+        },
+        {
+            "label": "Yêu cầu người làm bài phải làm đầy đủ trước khi tiếp tục bài giảng",
+            "description": "Người làm bài phải làm đầy đủ trước khi tiếp tục học bài giảng"
+        },
+        {
+            "label": "Cài đặt tên các nút trong bài tập",
+            "fields": [
+                {
+                    "label": "nhãn văn bản yêu cầu",
+                    "description": "Thông báo cho người dùng biết rằng bài tập này cần được làm đầy đủ trước khi tiếp tục bài giảng",
+                    "default": "Yêu cầu làm bài đầy đủ trước khi tiếp tục bài giảng"
+                },
+                {
+                    "label": "Thông báo yêu cầu làm bài đầy đủ",
+                    "default": "Bạn cần phải làm bài đầy đủ trước khi tiếp tục bài giảng",
+                    "description": "Thông báo này sẽ hiển thị khi bài tập yêu cầu người dùng trả lời đầy đủ trước khi tiếp tục học bài giảng"
+                },
+                {
+                    "label": "Tên của nút bỏ qua câu hỏi",
+                    "default": "Bỏ qua câu hỏi này"
+                },
+                {
+                    "label": "Tên của nút tiếp tục",
+                    "default": "Tiếp tục"
+                },
+                {
+                    "label": "Ngôn ngữ soạn thảo Wysiwyg",
+                    "description": "Ngôn ngữ trong giao diện người dùng wysiwyg",
+                    "options": [
+                        {
+                            "label": "tiếng Afrikaans"
+                        },
+                        {
+                            "label": "tiếng Ả Rập"
+                        },
+                        {
+                            "label": "tiếng Azerbaijani"
+                        },
+                        {
+                            "label": "tiếng Bungary"
+                        },
+                        {
+                            "label": "tiếng Bengali"
+                        },
+                        {
+                            "label": "tiếng Bosnian"
+                        },
+                        {
+                            "label": "tiếng Catalan"
+                        },
+                        {
+                            "label": "tiếng Séc"
+                        },
+                        {
+                            "label": "tiếng Welsh"
+                        },
+                        {
+                            "label": "tiếng Đan Mạch"
+                        },
+                        {
+                            "label": "tiếng Đức ( Thụy Sĩ)"
+                        },
+                        {
+                            "label": "tiếng Đức"
+                        },
+                        {
+                            "label": "tiếng Hy Lạp"
+                        },
+                        {
+                            "label": "Tiếng Anh ( Úc)"
+                        },
+                        {
+                            "label": "tiếng Anh ( Canada)"
+                        },
+                        {
+                            "label": "tiếng Anh ( Anh)"
+                        },
+                        {
+                            "label": "tiếng Anh"
+                        },
+                        {
+                            "label": "tiếng Esperanto"
+                        },
+                        {
+                            "label": "tiếng Tây Ban Nha ( Mexico)"
+                        },
+                        {
+                            "label": "tiếng Tây Ban Nha ( Tây Ban Nha)"
+                        },
+                        {
+                            "label": "tiếng Estonian"
+                        },
+                        {
+                            "label": "tiếng Basque"
+                        },
+                        {
+                            "label": "tiếng Farsi"
+                        },
+                        {
+                            "label": "tiếng Phần Lan"
+                        },
+                        {
+                            "label": "tiếng Faeroese"
+                        },
+                        {
+                            "label": "tiếng Pháp ( Canada)"
+                        },
+                        {
+                            "label": "Tiếng Pháp (Chuẩn)"
+                        },
+                        {
+                            "label": "tiếng Galician"
+                        },
+                        {
+                            "label": "tiếng Gujarati"
+                        },
+                        {
+                            "label": "Tiếng Do Thái (hiện đại)"
+                        },
+                        {
+                            "label": "Tiếng Hindi"
+                        },
+                        {
+                            "label": "Tiếng Croatia"
+                        },
+                        {
+                            "label": "Tiếng Hungary"
+                        },
+                        {
+                            "label": "Tiếng Indonesia"
+                        },
+                        {
+                            "label": "Tiếng Iceland"
+                        },
+                        {
+                            "label": "tiếng Ý (Chuẩn)"
+                        },
+                        {
+                            "label": "tiếng Nhật"
+                        },
+                        {
+                            "label": "Tiếng Georgia"
+                        },
+                        {
+                            "label": "tiếng Miền Trung Khmer"
+                        },
+                        {
+                            "label": "tiếng Hàn"
+                        },
+                        {
+                            "label": "Người Kurd"
+                        },
+                        {
+                            "label": "Tiếng Lithuania"
+                        },
+                        {
+                            "label": "Tiếng Latvia"
+                        },
+                        {
+                            "label": "Người Macedonian"
+                        },
+                        {
+                            "label": "Tiếng Mông Cổ"
+                        },
+                        {
+                            "label": "Tiếng Malay"
+                        },
+                        {
+                            "label": "Tiếng Na Uy Bokmål"
+                        },
+                        {
+                            "label": "Tiếng Hà Lan (Chuẩn)"
+                        },
+                        {
+                            "label": "Tiếng Na Uy"
+                        },
+                        {
+                            "label": "tiếng Occitan"
+                        },
+                        {
+                            "label": "Tiếng Ba Lan"
+                        },
+                        {
+                            "label": "Tiếng Bồ Đào Nha (Brazil)"
+                        },
+                        {
+                            "label": "Tiếng Bồ Đào Nha (Bồ Đào Nha)"
+                        },
+                        {
+                            "label": "Tiếng Rumani"
+                        },
+                        {
+                            "label": "Tiếng Nga"
+                        },
+                        {
+                            "label": "tiếng Sinhala / Sinhalese"
+                        },
+                        {
+                            "label": "Tiếng Slovak"
+                        },
+                        {
+                            "label": "Tiếng Slovenia"
+                        },
+                        {
+                            "label": "Tiếng Albania"
+                        },
+                        {
+                            "label": "Tiếng Serbia (Latinh)"
+                        },
+                        {
+                            "label": "Tiếng Serbia"
+                        },
+                        {
+                            "label": "Thụy Điển"
+                        },
+                        {
+                            "label": "Tiếng Thái"
+                        },
+                        {
+                            "label": "Tiếng Thổ Nhĩ Kỳ"
+                        },
+                        {
+                            "label": "tiếng Tatar"
+                        },
+                        {
+                            "label": "tiếng Duy Ngô Nhĩ / Uyghur"
+                        },
+                        {
+                            "label": "Tiếng Ukraina"
+                        },
+                        {
+                            "label": "Tiếng Việt"
+                        },
+                        {
+                            "label": "Tiếng Trung (PRC) "
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

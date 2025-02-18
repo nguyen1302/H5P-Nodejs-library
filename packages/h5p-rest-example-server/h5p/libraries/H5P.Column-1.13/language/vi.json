@@ -1,0 +1,29 @@
+{
+  "semantics": [
+    {
+      "label": "Danh sách các dạng nội dung của từng bài tập",
+      "entity": "nội dung",
+      "field": {
+        "fields": [
+          {
+            "label": "Chọn dạng bài tập"
+          },
+          {
+            "label": "Phân cách nội dung bài tập bằng một đường thẳng ngang",
+            "options": [
+              {
+                "label": "Tự động (mặc định)"
+              },
+              {
+                "label": "Không dùng đường phân cách ở trên"
+              },
+              {
+                "label": "Luôn dùng đường phân cách ở trên"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

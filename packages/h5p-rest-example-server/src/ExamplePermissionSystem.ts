@@ -17,6 +17,7 @@ export default class ExamplePermissionSystem
         contentId: string,
         affectedUserId?: string
     ): Promise<boolean> {
+        return true;
         if (!actingUser) {
             return false;
         }
@@ -59,6 +60,7 @@ export default class ExamplePermissionSystem
         permission: ContentPermission,
         contentId?: string
     ): Promise<boolean> {
+        return true;
         if (!actingUser) {
             return false;
         }
@@ -95,9 +97,9 @@ export default class ExamplePermissionSystem
         permission: TemporaryFilePermission,
         filename?: string
     ): Promise<boolean> {
-        if (!user || !user.role || user.role === 'anonymous') {
-            return false;
-        }
+        // if (!user || !user.role || user.role === 'anonymous') {
+        //     return false;
+        // }
         return true;
     }
 
@@ -105,6 +107,7 @@ export default class ExamplePermissionSystem
         actingUser: ExampleUser | undefined,
         permission: GeneralPermission
     ): Promise<boolean> {
+        return true;
         if (!actingUser) {
             return false;
         }

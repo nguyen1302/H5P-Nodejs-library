@@ -1,0 +1,120 @@
+{
+    "semantics": [
+        {
+            "label": "Nhập yêu cầu đề bài"
+        },
+        {
+            "widgets": [
+                {
+                    "label": "Mặc định"
+                }
+            ],
+            "label": "Thẻ",
+            "entity": "thẻ",
+            "field": {
+                "label": "Thẻ",
+                "fields": [
+                    {
+                        "label": "Nhập nội dung câu hỏi",
+                        "description": "Nhập câu hỏi dạng văn bản cho từng thẻ. (Thẻ có thể chỉ sử dụng một hình ảnh, một văn bản hoặc cả hai)"
+                    },
+                    {
+                        "label": "Nhập nội dung câu trả lời",
+                        "description": "Nhập câu trả lời dạng văn bản cho câu hỏi bên trên"
+                    },
+                    {
+                        "label": "Hình ảnh",
+                        "description": "Hình ảnh tùy chọn cho thẻ. (Thẻ có thể chỉ sử dụng một hình ảnh, chỉ một văn bản hoặc cả hai)"
+                    },
+                    {
+                        "label": "Đoạn văn bản hiển thị khi trình duyệt không hiển thị được hình ảnh"
+                    },
+                    {
+                        "label": "Mẹo làm bài",
+                        "fields": [
+                            {
+                                "label": "Nhập mẹo làm bài"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "label": "Văn bản tiến trình",
+            "default": "Thẻ @card của @total",
+            "description": "Văn bản tiến trình, các biến có sẵn: @card và @total. Example: 'Thẻ @card của @total'"
+        },
+        {
+            "label": "Văn bản cho nút tiếp theo",
+            "default": "Tiếp theo"
+        },
+        {
+            "label": "Văn bản cho nút trước đó",
+            "default": "Trước"
+        },
+        {
+            "label": "Văn bản cho nút kiểm tra câu trả lời ",
+            "default": "Kiểm tra"
+        },
+        {
+            "label": "Yêu cầu người dùng trả lời hết tất cả câu hỏi trước khi xem đáp án"
+        },
+        {
+            "label": "Văn bản cho trường nhập câu trả lời",
+            "default": "Câu trả lời của bạn"
+        },
+        {
+            "label": "Văn bản cho câu trả lời đúng",
+            "default": "Chính xác"
+        },
+        {
+            "label": "Văn bản cho câu trả lời không chính xác",
+            "default": "Không chính xác"
+        },
+        {
+            "label": "Hiển thị văn bản giải pháp",
+            "default": "Câu trả lời chính xác"
+        },
+        {
+            "label": "Văn bản cho tiêu đề kết quả",
+            "default": "Kết quả"
+        },
+        {
+            "label": "Văn bản cho số chính xác",
+            "default": "@score của @total chính xác",
+            "description": "Văn bản kết quả, các biến có sẵn: @score và @total. Ví dụ: '@score của @total chính xác'"
+        },
+        {
+            "label": "Văn bản cho kết quả hiển thị",
+            "default": "Hiển thị kết quả"
+        },
+        {
+            "label": "Văn bản cho nhãn câu trả lời ngắn gọn",
+            "default": "A:"
+        },
+        {
+            "label": "Văn bản cho nút \"thử lại \"",
+            "default": "Làm lại bài tập"
+        },
+        {
+            "label": "Yêu cầu câu trả lời của người dùng phải hoàn toàn khớp với đáp án",
+            "description": "Yêu cầu câu trả lời cần phải hoàn toàn giống với đáp án đưa ra (kể cả chữ viết hoa, viết thường)"
+        },
+        {
+            "label": "Văn bản không chính xác cho các công nghệ hỗ trợ",
+            "default": "Câu trả lời chưa chính xác. Câu trả lời đúng là @answer",
+            "description": "Văn bản sẽ được thông báo tới các công nghệ hỗ trợ. Sử dụng @answer như biến."
+        },
+        {
+            "label": "Văn bản phản hồi chính xác cho các công nghệ hỗ trợ",
+            "default": "@answer chính xác.",
+            "description": "Văn bản sẽ được thông báo tới các công nghệ hỗ trợ khi thẻ được trả lời đúng. Sử dụng @answer như biến."
+        },
+        {
+            "label": "Thay đổi thẻ cho các công nghệ hỗ trợ",
+            "default": "Trang @current của @total",
+            "description": "Văn bản sẽ được thông báo tới các công nghệ hỗ trợ khi điều hướng giữa các thẻ. Sử dụng @current và @total như biến."
+        }
+    ]
+}

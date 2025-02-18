@@ -49,7 +49,18 @@ export default class SemanticsEnforcer {
                         jsonPath
                     );
                     deleteMe = result.deleteMe;
-                } else if (semantics.type === 'text') {
+                } else if (
+                    // TAN FIX
+                    semantics.type === 'text' &&
+                    semantics.name !== 'text' &&
+                    semantics.name !== 'question' && // multichoice, singlechoice
+                    semantics.name !== 'taskDescription' && //(semantics.name !== 'textField')) // MarkTheWords Nhập câu hỏi (textField) vào đây không dùng được mathtype
+                    semantics.name !== 'label' &&
+                    semantics.name !== 'answer' && // Interactivideo
+                    semantics.name !== 'intro' && // Tạo danh sách bài tập với nhiều dạng tương tác => Trắc nghiệm chọn câu trả lời đúng nhất
+                    semantics.name !== 'title' &&
+                    semantics.name !== 'description' // Thẻ hội thoại
+                ) {
                     this.enforceTextSemantics(
                         semantics,
                         params,

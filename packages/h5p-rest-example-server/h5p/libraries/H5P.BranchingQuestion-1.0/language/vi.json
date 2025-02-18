@@ -1,0 +1,41 @@
+{
+  "semantics": [
+    {
+      "label": "Trình soạn thảo Câu hỏi Phân nhánh",
+      "fields": [
+        {
+          "label": "Câu hỏi"
+        },
+        {
+          "label": "Các lựa chọn thay thế có sẵn",
+          "entity": "Thay thế",
+          "field": {
+            "label": "Thay thế",
+            "fields": [
+              {
+                "label": "Văn bản"
+              },
+              {
+                "label": "Nội dung tiếp theo (-1 là màn hình kết thúc)"
+              },
+              {
+                "label": "Phản hồi",
+                "fields": [
+                  {
+                    "label": "Tiêu đề phản hồi"
+                  },
+                  {
+                    "label": "Văn bản phản hồi"
+                  },
+                  {
+                    "label": "Hình ảnh phản hồi"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

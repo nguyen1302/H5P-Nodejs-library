@@ -1,0 +1,230 @@
+[
+  {
+    "name": "description",
+    "type": "text",
+    "label": "Nhập câu hỏi tại đây",
+    "importance": "high"
+  },
+  {
+    "name": "cards",
+    "type": "list",
+    "widgets": [
+      {
+        "name": "VerticalTabs",
+        "label": "Mặc định"
+      }
+    ],
+    "label": "Thẻ",
+    "entity": "card",
+    "importance": "high",
+    "min": 1,
+    "defaultNum": 1,
+    "field": {
+      "name": "card",
+      "type": "group",
+      "label": "Thẻ",
+      "importance": "high",
+      "fields": [
+        {
+          "name": "text",
+          "type": "text",
+          "label": "Câu hỏi",
+          "importance": "high",
+          "optional": true,
+          "description": "Câu hỏi văn bản tùy chọn cho thẻ. (Thẻ sử dụng chỉ một hình ảnh, chỉ văn bản hoặc cả hai)"
+        },
+        {
+          "name": "answer",
+          "type": "text",
+          "label": "Câu trả lời",
+          "importance": "high",
+          "description": "Câu trả lời (giải pháp) cho thẻ."
+        },
+        {
+          "name": "image",
+          "type": "image",
+          "label": "Hình ảnh",
+          "importance": "high",
+          "optional": true,
+          "description": "Hình ảnh tùy chọn cho thẻ. (Thẻ sử dụng chỉ một hình ảnh, chỉ văn bản hoặc cả hai)"
+        },
+        {
+          "name": "imageAltText",
+          "type": "text",
+          "label": "Văn bản thay thế cho hình ảnh",
+          "importance": "high",
+          "optional": true
+        },
+        {
+          "name": "tip",
+          "type": "group",
+          "label": "Gợi ý",
+          "importance": "low",
+          "optional": true,
+          "fields": [
+            {
+              "name": "tip",
+              "label": "Nội dung gợi ý",
+              "importance": "low",
+              "type": "text",
+              "widget": "html",
+              "tags": [
+                "p",
+                "br",
+                "strong",
+                "em",
+                "code"
+              ],
+              "optional": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "label": "Nội dung tiến độ",
+    "name": "progressText",
+    "type": "text",
+    "default": "Card @card of @total",
+    "importance": "low",
+    "description": "Nội dung tiến độ, các biến có sẵn: @card và @total. Ví dụ: 'Thẻ @card của @total'",
+    "common": true
+  },
+  {
+    "label": "Văn bản cho nút tiếp theo",
+    "name": "next",
+    "type": "text",
+    "default": "Next",
+    "importance": "low",
+    "common": true
+  },
+  {
+    "label": "Văn bản cho nút trước đó",
+    "name": "previous",
+    "type": "text",
+    "default": "Previous",
+    "importance": "low",
+    "common": true
+  },
+  {
+    "label": "Văn bản cho nút kiểm tra đáp án",
+    "name": "checkAnswerText",
+    "type": "text",
+    "default": "Check",
+    "importance": "low",
+    "common": true
+  },
+  {
+    "label": "Yêu cầu đầu vào của học sinh trước khi có thể xem giải pháp",
+    "name": "showSolutionsRequiresInput",
+    "type": "boolean",
+    "default": true,
+    "importance": "low",
+    "optional": true
+  },
+  {
+    "label": "Văn bản nhập câu trả lời",
+    "name": "defaultAnswerText",
+    "type": "text",
+    "default": "Your answer",
+    "importance": "low",
+    "common": true
+  },
+  {
+    "label": "Văn bản cho câu trả lời đúng",
+    "name": "correctAnswerText",
+    "type": "text",
+    "default": "Correct",
+    "importance": "low",
+    "common": true
+  },
+  {
+    "label": "Văn bản cho câu trả lời sai",
+    "name": "incorrectAnswerText",
+    "type": "text",
+    "default": "Incorrect",
+    "importance": "low",
+    "common": true
+  },
+  {
+    "label": "Nội dung hiển thị giải pháp",
+    "name": "showSolutionText",
+    "type": "text",
+    "default": "Correct answer",
+    "importance": "low",
+    "common": true
+  },
+  {
+    "label": "Nội dung tiêu đề kết quả ",
+    "name": "results",
+    "type": "text",
+    "default": "Results",
+    "importance": "low",
+    "common": true
+  },
+  {
+    "label": "Nội dung cho số lượng đúng",
+    "name": "ofCorrect",
+    "type": "text",
+    "default": "@score of @total correct",
+    "importance": "low",
+    "description": "Văn bản kết quả, các biến có sẵn: @score và @total. Ví dụ: '@score của @total đúng'",
+    "common": true
+  },
+  {
+    "label": "Nội dung hiển thị kết quả",
+    "name": "showResults",
+    "type": "text",
+    "default": "Show results",
+    "importance": "low",
+    "common": true
+  },
+  {
+    "label": "Nội dung cho nhãn câu trả lời ngắn",
+    "name": "answerShortText",
+    "type": "text",
+    "default": "A:",
+    "importance": "low",
+    "common": true
+  },
+  {
+    "label": "Văn bản cho nút \"Thử lại\"",
+    "name": "retry",
+    "type": "text",
+    "default": "Retry",
+    "importance": "low",
+    "common": true
+  },
+  {
+    "label": "Trường hợp ảnh hưởng",
+    "name": "caseSensitive",
+    "type": "boolean",
+    "default": false,
+    "description": "Đảm bảo thông tin ban đầu của học sinh phải giống hệt với câu trả lời."
+  },
+  {
+    "label": "Văn bản không chính xác cho công nghệ hỗ trợ",
+    "name": "cardAnnouncement",
+    "type": "text",
+    "default": "Incorrect answer. Correct answer was @answer",
+    "description": "Văn bản sẽ được thông báo tới các công nghệ hỗ trợ. Sử dụng @answer làm biến.",
+    "common": true
+  },
+  {
+    "label": "Nội dung phản hồi chính xác cho công nghệ hỗ trợ",
+    "name": "correctAnswerAnnouncement",
+    "type": "text",
+    "default": "@answer is correct.",
+    "description": "Văn bản sẽ được thông báo tới các công nghệ hỗ trợ khi thẻ được trả lời đúng. Sử dụng @answer làm biến.",
+    "common": true
+  },
+  {
+    "label": "Đổi thẻ cho công nghệ hỗ trợ",
+    "name": "pageAnnouncement",
+    "type": "text",
+    "default": "Page @current of @total",
+    "description": "Văn bản sẽ được thông báo tới các công nghệ hỗ trợ khi điều hướng giữa các thẻ. Sử dụng @current và @total làm biến.",
+    "common": true
+  }
+]

@@ -1,0 +1,163 @@
+{
+    "semantics": [
+        {
+            "label": "Phương tiện hỗ trợ cho công cụ (Không bắt buộc, có thể bỏ qua)",
+            "fields": [
+                {
+                    "label": "Chọn loại hiển thị",
+                    "description": "Loại phương tiện này sẽ hiển thị phía trên câu hỏi để làm cho câu hỏi trở nên sinh động hơn"
+                },
+                {
+                    "label": "Tắt chế độ phóng to hình ảnh"
+                }
+            ]
+        },
+        {
+            "label": "Nhập nội dung câu hỏi"
+        },
+        {
+            "label": "Chọn đáp án cho câu hỏi này",
+            "options": [
+                {
+                    "label": "Đúng"
+                },
+                {
+                    "label": "Sai"
+                }
+            ]
+        },
+        {
+            "label": "Bản dịch giao diện người dùng cho các Câu hỏi Đúng / Sai",
+            "fields": [
+                {
+                    "label": "Tên cho nút đúng",
+                    "default": "Đúng"
+                },
+                {
+                    "label": "Tên cho nút sai",
+                    "default": "Sai"
+                },
+                {
+                    "label": "Nội dung phản hồi",
+                    "default": "Bạn đạt được @score trong @total số điểm",
+                    "description": "Nội dung phản hồi, các biến có sẵn: @score số và @total số. Ví dụ: 'Bạn nhận được @điểm số trong @tổng số điểm có thể có trong "
+                },
+                {
+                    "label": "Tên cho nút kiểm tra đáp án",
+                    "default": "Kiểm tra"
+                },
+                {
+                    "label": "Tên cho nút gửi đáp án",
+                    "default": "Gửi"
+                },
+                {
+                    "label": "Tên cho nút hiển thị đáp án",
+                    "default": "Đáp án"
+                },
+                {
+                    "label": "Tên cho nút làm lại bài tập",
+                    "default": "Làm lại"
+                },
+                {
+                    "label": "Câu trả lời sai",
+                    "default": "Câu trả lời sai"
+                },
+                {
+                    "label": "Câu trả lời chính xác",
+                    "default": "Câu trả lời đúng"
+                },
+                {
+                    "label": "Trình bày bằng văn bản của thanh điểm cho những người sử dụng loa đọc",
+                    "default": "Bạn dạt được :num trong :total số điểm"
+                },
+                {
+                    "label": "Nhãn công nghệ hỗ trợ mô tả cho \" kiểm tra\" nút",
+                    "default": "Kiểm tra câu trả lời. Các câu trả lời sẽ được đánh dấu là đúng, không chính xác hoặc chưa được trả lời."
+                },
+                {
+                    "label": "Mô tả công nghệ hỗ trợ cho nút \" Hiển thị Giải pháp \"",
+                    "default": "Hiển thị giải pháp. Nhiệm vụ sẽ được đánh dấu bằng giải pháp chính xác của nó."
+                },
+                {
+                    "label": "Mô tả công nghệ hỗ trợ cho \" Thử lại \"nút",
+                    "default": "Thử lại nhiệm vụ. Đặt lại tất cả các phản hồi và bắt đầu lại nhiệm vụ."
+                }
+            ]
+        },
+        {
+            "label": "Cài đặt nâng cao (Không bắt buộc, có thể bỏ qua)",
+            "description": "Các tùy chọn này sẽ cho phép bạn kiểm soát cách hoạt động của nhiệm vụ.",
+            "fields": [
+                {
+                    "label": "Cho phép người dùng làm lại bài tập"
+                },
+                {
+                    "label": "Cho phép người dùng xem đáp án"
+                },
+                {
+                    "label": "Cho phép người dùng kiểm tra đáp án"
+                },
+                {
+                    "label": "Hiển thị thông báo xác nhận kiểm tra đáp án"
+                },
+                {
+                    "label": "Hiển thị thông báo xác nhận làm lại bài tập"
+                },
+                {
+                    "label": "Tự động kiểm tra câu trả lời ngay khi người dùng nhấp vào chọn đáp án",
+                    "description": "Hệ thống sẽ tự động kiểm tra và hiển thị đáp án mà người dùng chọn đúng hay sai"
+                },
+                {
+                    "label": "Phản hồi cho câu trả lời đúng",
+                    "description": "Hệ thống sẽ tự động hiển thị phản hồi cho tất cả các câu trả lời đúng"
+                },
+                {
+                    "label": "Phản hồi cho câu trả lời sai",
+                    "description": "Hệ thống sẽ tự động hiển thị phản hồi cho tất cả các câu trả lời sai"
+                }
+            ]
+        },
+        {
+            "label": "Hiển thị thông báo xác nhận kiểm tra đáp án",
+            "fields": [
+                {
+                    "label": "Tiêu đề",
+                    "default": "Thông báo xác nhận kết thúc bài tập"
+                },
+                {
+                    "label": "Nội dung thân bài",
+                    "default": "Bạn đã hoàn thành và muốn kết thúc bài tập?"
+                },
+                {
+                    "label": "Nhãn nút hủy",
+                    "default": "Quay lại"
+                },
+                {
+                    "label": "Nhãn nút gửi",
+                    "default": "Kết thúc"
+                }
+            ]
+        },
+        {
+            "label": "Hiển thị thông báo xác nhận làm lại bài tập",
+            "fields": [
+                {
+                    "label": "Tiêu đề",
+                    "default": "Làm lại"
+                },
+                {
+                    "label": "Nội dung thân bài",
+                    "default": "Bạn muốn làm lại bài tập này?"
+                },
+                {
+                    "label": "Nhãn nút hủy",
+                    "default": "Hủy"
+                },
+                {
+                    "label": "Nhãn nút gửi",
+                    "default": "Có"
+                }
+            ]
+        }
+    ]
+}

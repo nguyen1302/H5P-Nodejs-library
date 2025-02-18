@@ -1,0 +1,271 @@
+{
+    "semantics": [
+        {
+            "label": "Nút kiểm câu trả lời",
+            "default": "Kiểm tra"
+        },
+        {
+            "label": "Nút gửi câu trả lời",
+            "default": "Nộp bài tập"
+        },
+        {
+            "label": "Nút thử lại",
+            "default": "Làm lại"
+        },
+        {
+            "label": "Điểm văn bản thuyết minh",
+            "default": "Câu trả lời đúng cho +1 điểm. Câu trả lời sai cho -1 điểm. Số điểm thấp nhất có thể là 0."
+        },
+        {
+            "fields": [
+                {
+                    "label": "Chọn ảnh nền và kích thước bài tập hiển thị",
+                    "fields": [
+                        {
+                            "label": "Chọn ảnh nền (Không bắt buộc)",
+                            "description": "không bắt buộc. Chọn một hình ảnh để sử dụng làm hình nền cho tác vụ kéo và thả của bạn."
+                        },
+                        {
+                            "label": "Kích thước bài tập hiển thị (Không bắt buộc thay đổi)",
+                            "description": "Chỉ định kích thước (tính bằng px) của khu vực đặt"
+                        }
+                    ]
+                },
+                {
+                    "label": "Tạo nội dung bài tập",
+                    "description": "Đầu tiên, bạn cần thêm khung thả bằng cách nhấp vào Tạo khung thả.<br />Tiếp theo, tạo thêm các khối thả (dạng chữ hoặc dạng hình ảnh) và đánh dấu các khối thả vào các khung thả đã tạo.<br />Cuối cùng, vào chỉnh sửa từng khung thả với khối thả đúng và phù hợp.",
+                    "fields": [
+                        {
+                            "label": "Thành phần",
+                            "entity": "thành phần",
+                            "field": {
+                                "label": "Thành phần",
+                                "fields": [
+                                    {
+                                        "description": "Chọn loại nội dung bạn muốn thêm vào."
+                                    },
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {
+                                        "label": "Chọn khung thả phù hợp (nên chọn tất cả)"
+                                    },
+                                    {
+                                        "label": "Độ mờ nền"
+                                    },
+                                    {
+                                        "label": "Cho phép khối thả này được kéo đến nhiều khung thả khác nhau",
+                                        "description": "Sao chép khối thả này để có thể kéo đếnn nhiều khung thả khác nhau."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Tạo khung thả",
+                            "entity": "Khung thả",
+                            "field": {
+                                "label": "Khung thả",
+                                "fields": [
+                                    {
+                                        "label": "Nhập tên khung thả"
+                                    },
+                                    {
+                                        "label": "Cho phép hiển thị tên khung thả"
+                                    },
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {
+                                        "label": "Chọn khối thả chính xác"
+                                    },
+                                    {
+                                        "label": "Độ mờ nền"
+                                    },
+                                    {
+                                        "label": "Mẹo làm bài",
+                                        "fields": [
+                                            {
+                                                "label": "Nội dung"
+                                            },
+                                            {
+                                                "label": "Thông báo hiển thị khi câu trả lời trùng với đáp án",
+                                                "description": "Thông báo sẽ hiển thị khi câu trả lời trùng với đáp án"
+                                            },
+                                            {
+                                                "label": "Thông báo hiển thị khi câu trả lời không trùng với đáp án",
+                                                "description": "Thông báo sẽ hiển thị khi câu trả lời không trùng với đáp án"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "label": "Khung thả này chỉ có thể chứa một khối thả duy nhất",
+                                        "description": "Nhấp chọn tính năng này khi chỉ có duy nhất một khối thả là đáp án đúng cho khung thả"
+                                    },
+                                    {
+                                        "label": "Bật tính năng tự động căn chỉnh",
+                                        "description": "Các khối thả sẽ tự động căn chỉnh với khoảng cách đều trong khung thả"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Phản hồi cho người dùng (Không bắt buộc, có thể bỏ qua)",
+            "fields": [
+                {
+                    "widgets": [
+                        {
+                            "label": "Mặc định"
+                        }
+                    ],
+                    "label": "Nhập phản hồi cho từng phạm vi điểm",
+                    "description": "Nhấp vào nút \"Thêm ô\" để thêm nhiều ô nếu bạn cần. Ví dụ: 0-20% Điểm kém, 21-91% Điểm trung bình, 91-100% Điểm tốt!",
+                    "entity": "phạm vi",
+                    "field": {
+                        "fields": [
+                            {
+                                "label": "Phạm vi điểm"
+                            },
+                            {},
+                            {
+                                "label": "Nhập phản hồi",
+                                "placeholder": "Nhập phản hồi vào ô này"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "label": "Cài đặt nâng cao (Không bắt buộc, có thể bỏ qua)",
+            "description": "Các tùy chọn này sẽ cho phép bạn cài đặt cách hoạt động của bài tập",
+            "fields": [
+                {
+                    "label": "Cho phép người dùng làm lại bài tập"
+                },
+                {
+                    "label": "bật nút \"thử lại\""
+                },
+                {
+                    "label": "Yêu cầu người dùng làm bài đầy đủ trước khi xem đáp án"
+                },
+                {
+                    "label": "Cho một điểm cho toàn bộ bài tập",
+                    "description": "Chọn tính năng này thì làm đúng hết bài tập mới được 1 điểm, nếu kéo sai một khối thả nào đó sẽ không có điểm"
+                },
+                {
+                    "label": "Trừ điểm khi làm sai",
+                    "description": "Bật tính năng này để trừ điểm khi người dùng trả lời sai"
+                },
+                {
+                    "label": "Bật phần giải thích điểm số",
+                    "description": "Hiển thị giải thích điểm số cho người làm bài, câu nào đúng thì hiển thị +1, câu nào sai thì hiển thị -1 (áp dụng khi bật tính năng 'Trừ điểm khi làm sai')"
+                },
+                {
+                    "label": "Độ mờ nền của các khối thả (Có thể bỏ qua)",
+                    "description": "Nếu trường này được đặt, tất cả các khối thả sẽ được cài đặt độ mờ nền giống nhau. Số được nhập phải nằm trong phạm vi từ 0 đến 100, nếu nhập 0 thì khối thả sẽ hoàn toàn không có nền và nếu nhập 100 thì khối thả sẽ có nền rất rõ"
+                },
+                {
+                    "label": "Đánh dấu vùng thả",
+                    "description": "Chọn thời điểm đánh dấu vùng thả.",
+                    "options": [
+                        {
+                            "label": "Khi kéo khối thả"
+                        },
+                        {
+                            "label": "Luôn hiển thị"
+                        },
+                        {
+                            "label": "Không hiển thị"
+                        }
+                    ]
+                },
+                {
+                    "label": "Khoảng cách giữa các khối thả khi bật tính năng tự đông căn chỉnh (tính bằng px)"
+                },
+                {
+                    "label": "Bật toàn màn hình",
+                    "description": "Đánh dấu vào tùy chọn này để bật nút toàn màn hình"
+                },
+                {
+                    "label": "Hiển thị điểm số",
+                    "description": "Hiển thị điểm đạt được cho mỗi câu trả lời. Không khả dụng khi tùy chọn 'Cho một điểm cho toàn bộ nhiệm vụ' được bật"
+                },
+                {
+                    "label": "Hiển thị tiêu đề bài tập",
+                    "description": "Bỏ chọn tùy chọn này nếu bạn không muốn hiển thị tiêu đề bài tập này. Tiêu đề sẽ chỉ được hiển thị trong tóm tắt, thống kê, v.v."
+                }
+            ]
+        },
+        {
+            "label": "Cộng đồng hóa",
+            "fields": [
+                {
+                    "label": "nhãn toàn màn hình",
+                    "default": "Cài đặt hiển thị"
+                },
+                {
+                    "label": "nhãn thoát toàn màn hình",
+                    "default": "Thoát toàn màn hình"
+                }
+            ]
+        },
+        {
+            "label": "Tiền tố có thể lấy được",
+            "default": "có thể lấy {num} trong {total}."
+        },
+        {
+            "label": "Tiền tố có thể lấy được",
+            "default": "Đặt trong khu vực thả {num}."
+        },
+        {
+            "label": "tiền tố khu vực thả",
+            "default": "khu vực thả {num} trong {total}."
+        },
+        {
+            "label": "Không có khu vực thả được chọn",
+            "default": "Không có khu vực thả"
+        },
+        {
+            "label": "Nút hiển thị mẹo",
+            "default": "Hiển thị mẹo."
+        },
+        {
+            "label": "Nhãn cho mẹo có sẵn",
+            "default": "Mẹo có sẵn"
+        },
+        {
+            "label": "Hiển thị khi có câu trả lời đúng",
+            "default": "Câu trả lời đúng"
+        },
+        {
+            "label": "Hiển thị khi có câu trả lời sai",
+            "default": "Câu trả lời sai"
+        },
+        {
+            "label": "Tiêu đề cho bảng chứa phản hồi cho các câu trả lời chính xác / không chính xác",
+            "default": "Phản hồi cho người dùng"
+        },
+        {
+            "label": "Trình bày bằng văn bản của thanh điểm số cho những người sử dụng loa đọc",
+            "default": "Bạn nhận được :num trong tổng :total điểm"
+        },
+        {
+            "label": "Nhãn cho nút \"Kiểm tra \"",
+            "default": "hiển thị giải thích điểm số"
+        },
+        {
+            "label": "Nhãn cho nút \"Kiểm tra \"",
+            "default": "Kiểm tra câu trả lời. Các câu trả lời sẽ được đánh dấu là chính xác, không chính xác hoặc chưa được trả lời."
+        },
+        {
+            "label": "Nhãn cho nút \"Thử lại \"",
+            "default": "Thử lại tác vụ. Đặt lại tất cả các câu trả lời và bắt đầu lại nhiệm vụ."
+        }
+    ]
+}

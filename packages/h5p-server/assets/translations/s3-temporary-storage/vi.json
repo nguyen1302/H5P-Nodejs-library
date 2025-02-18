@@ -1,0 +1,8 @@
+{
+    "deleting-file-error": "Đã xảy ra lỗi khi xóa tệp này.",
+    "file-not-found": "Các tập tin không tồn tại.",
+    "missing-delete-permission": "Bạn không có quyền xóa tệp này.",
+    "missing-view-permission": "Bạn không có quyền xem tệp này.",
+    "missing-write-permission": "Bạn không có quyền lưu các tệp tạm thời.",
+    "s3-upload-error": "Đã xảy ra lỗi khi tải tệp tạm thời lên S3."
+}

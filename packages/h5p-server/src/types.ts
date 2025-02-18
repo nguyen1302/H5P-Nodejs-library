@@ -1905,6 +1905,7 @@ export interface IH5PConfig {
      * library.
      */
     installLibraryLockTimeout: number;
+    domainCDN: string;
 }
 
 /**
@@ -2137,6 +2138,7 @@ export interface IUrlGenerator {
      * @param contentId
      */
     uniqueContentUrl(contentId: ContentId): string;
+    domainCDN(): string;
 }
 
 /**

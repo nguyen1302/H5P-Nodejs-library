@@ -1,0 +1,155 @@
+{
+  "semantics": [
+    {
+      "label": "Cửa",
+      "entity": "Cửa sổ",
+      "field": {
+        "fields": [
+          {
+            "label": "Hình ảnh cánh cửa",
+            "description": "Hình ảnh được sử dụng trên cửa. Nó phải có tỷ lệ khung hình 1: 1 nếu bạn muốn nửa bên trái phù hợp với nửa bên phải."
+          },
+          {
+            "label": "Ảnh nền",
+            "description": "Hình ảnh sẽ xuất hiện bên trong cánh cửa. Theo mặc định, nó sẽ là số cửa."
+          },
+          {
+            "label": "Kiểu Nội dung",
+            "description": "Loại nội dung cần mở khi mở cửa (tùy chọn).",
+            "options": [
+              {
+                "label": "Âm thanh"
+              },
+              {
+                "label": "Hình ảnh"
+              },
+              {
+                "label": "Liên kết"
+              },
+              {
+                "label": "Văn bản"
+              },
+              {
+                "label": "Video"
+              }
+            ]
+          },
+          {
+            "label": "Âm thanh"
+          },
+          {
+            "label": "Hình ảnh"
+          },
+          {
+            "label": "Liên kết"
+          },
+          {
+            "label": "Văn bản"
+          },
+          {
+            "label": "Video"
+          },
+          {
+            "label": "Tự động phát"
+          }
+        ]
+      },
+      "widgets": [
+        {
+          "label": "Mặc định"
+        }
+      ]
+    },
+    {
+      "label": "Cài đặt hành vi",
+      "description": "Các tùy chọn này cho phép bạn ghi đè lên cài đặt hành vi.",
+      "fields": [
+        {
+          "label": "Ảnh nền lịch"
+        },
+        {
+          "label": "Nhạc nền"
+        },
+        {
+          "label": "Tự động phát nhạc nền",
+          "description": "Đánh dấu sẽ tự động phát nhạc nền khi bạn mở rộng nội dung.Xin lưu ý: Chính sách phương tiện của một số trình duyệt có thể từ chối tự động phát lại."
+        },
+        {
+          "label": "Tuyết rơi",
+          "description": "Tuyết sẽ xuất hiện ở phía trước của lịch."
+        },
+        {
+          "label": "Mẫu ảnh cửa",
+          "description": "Nếu bạn chỉ định một hình ảnh, nó sẽ được sử dụng cho tất cả các cửa trừ khi bạn đặt một hình ảnh chính xác cho một trong những cửa ra vào.."
+        },
+        {
+          "label": "Ẩn các cạnh cửa"
+        },
+        {
+          "label": "Ẩn số cửa"
+        },
+        {
+          "label": "Ẩn tay nắm cửa"
+        },
+        {
+          "label": "Ẩn khung cửa"
+        },
+        {
+          "label": "Thứ tự ngẫu nhiên",
+          "description": "Xáo trộn thứ tự của các cửa. Nếu tùy chọn \"lưu trạng thái nội dung \" được chọn trong cài đặt H5P, thứ tự đó sẽ được duy trì khi người dùng quay lại sau."
+        },
+        {
+          "label": "Giữ hình ảnh theo thứ tự",
+          "description": "Xáo trộn các cửa, nhưng giữ hình ảnh của các cửa ở vị trí ban đầu 1 ở trên cùng bên trái và thứ 24 ở dưới cùng bên phải."
+        },
+        {
+          "label": "Chế độ thiết kế",
+          "description": "Chế độ thiết kế cho phép mở tất cả các cửa. Nếu không, chỉ có thể mở cửa vào tháng 12 và sau ngày có số cửa."
+        }
+      ]
+    },
+    {
+      "label": "Vị trí",
+      "fields": [
+        {
+          "label": "Không có gì để xem",
+          "default": "Không có gì để xem ở đây! \ud83c \udf84"
+        },
+        {
+          "label": "Manikia",
+          "default": "Manikin"
+        }
+      ]
+    },
+    {
+      "label": "Khả năng tiếp cận",
+      "fields": [
+        {
+          "label": "Cửa sổ",
+          "default": "Cửa"
+        },
+        {
+          "label": "Đã khóa",
+          "default": "Đã khóa. Vẫn chưa đến lúc để mở cánh cửa này."
+        },
+        {
+          "description": "Công bố nội dung. Đây là một biến sẽ được thay thế bằng mô tả của cửa được liên kết @door.",
+          "label": "Nội dung cửa",
+          "default": "@ door.ate content"
+        },
+        {
+          "label": "Tắt âm thanh",
+          "default": "Tắt âm thanh"
+        },
+        {
+          "label": "Bật âm thanh",
+          "default": "Bật âm thanh"
+        },
+        {
+          "label": "Đóng cửa sổ",
+          "default": "Đóng cửa sổ"
+        }
+      ]
+    }
+  ]
+}

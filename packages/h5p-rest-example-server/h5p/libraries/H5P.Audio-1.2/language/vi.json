@@ -1,0 +1,49 @@
+{
+  "semantics": [
+    {
+      "label": "Tệp nguồn"
+    },
+    {
+      "label": "Chế độ của trình phát",
+      "description": "Chọn giao diện của trình phát.",
+      "options": [
+        {
+          "label": "Tối giản"
+        },
+        {
+          "label": "Toàn bộ"
+        },
+        {
+          "label": "Minh bạch"
+        }
+      ]
+    },
+    {
+      "label": "Vừa với trình bọc"
+    },
+    {
+      "label": "Bật điều khiển",
+      "description": "Các điều khiển cho phép người dùng tạm dừng âm thanh."
+    },
+    {
+      "label": "Tự động phát",
+      "description": "Với trình tự động phát cho phép người dùng phát video ngay lập tức. Nếu trình tự phát bị dừng người dùng nhấn nút phát để phát Video."
+    },
+    {
+      "label": "phát âm thanh (loa đọc)",
+      "default": "Phát âm thanh"
+    },
+    {
+      "label": "Dừng âm thanh (loa đọc)",
+      "default": "Dừng âm thanh"
+    },
+    {
+      "label": "Tên nội dung âm thanh",
+      "default": "Âm thanh"
+    },
+    {
+      "label": "Thông báo âm thanh không được hỗ trợ",
+      "default": "Trình duyệt của bạn không thể phát âm thanh này"
+    }
+  ]
+}

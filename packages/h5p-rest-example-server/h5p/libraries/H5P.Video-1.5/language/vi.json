@@ -1,0 +1,136 @@
+{
+  "semantics": [
+    {
+      "label": "Nguồn video",
+      "description": "Để đảm bảo rằng video hoạt động trên tất cả các trình duyệt, bạn nên thêm cả nguồn có định dạng WebM và MP4."
+    },
+    {
+      "label": "Hình ảnh",
+      "fields": [
+        {
+          "label": "hình ảnh quảng cáo"
+        },
+        {
+          "label": "Chỉnh trình phát video để sử dụng hết dung lượng có sẵn",
+          "description": "Nếu không được đặt, trình phát video sẽ có cùng tỷ lệ khung hình với video."
+        },
+        {
+          "label": "Hiển thị các điều khiển trình phát video",
+          "description": "Thêm điều khiển vào trình phát video. Điều này cho phép người dùng phát, tạm dừng, v.v."
+        }
+      ]
+    },
+    {
+      "label": "Phát lại",
+      "fields": [
+        {
+          "label": "Tự động phát video",
+          "description": "Bắt đầu phát video tự động. Có thể không hoạt động trên thiết bị di động."
+        },
+        {
+          "label": "Video lặp lại",
+          "description": "Tự động bắt đầu lại video khi nó kết thúc."
+        }
+      ]
+    },
+    {
+      "label": "Cộng đồng hóa video",
+      "fields": [
+        {
+          "label": "Tên",
+          "default": "Video",
+          "description": "Giúp xác định nội dung thuộc loại này."
+        },
+        {
+          "label": "Đang tải",
+          "default": "Đang tải trình phát video..."
+        },
+        {
+          "label": "Không tìm thấy trình phát nào",
+          "default": "Không tìm thấy trình phát video nào hỗ trợ định dạng video đã cho"
+        },
+        {
+          "label": "Không có nguồn",
+          "default": "Video thiếu nguồn"
+        },
+        {
+          "label": "Đã hủy bỏ",
+          "default": "Phát lại phương tiện đã bị hủy"
+        },
+        {
+          "label": "Lỗi mạng",
+          "default": "Lỗi mạng."
+        },
+        {
+          "label": "Không thể giải mã nguồn video",
+          "default": "Không thể giải mã phương tiện."
+        },
+        {
+          "label": "Định dạng không được hỗ trợ",
+          "default": "Định dạng video không được hỗ trợ"
+        },
+        {
+          "label": "Phương tiện được mã hóa",
+          "default": "Phương tiện được mã hóa."
+        },
+        {
+          "label": "Lỗi không xác định",
+          "default": "Lỗi không xác định."
+        },
+        {
+          "label": "ID YouTube không hợp lệ",
+          "default": "ID YouTube không hợp lệ."
+        },
+        {
+          "label": "ID YouTube không xác định",
+          "default": "Không thể tìm thấy video có ID YouTube đã cho"
+        },
+        {
+          "label": "Video YouTube bị hạn chế",
+          "default": "Chủ sở hữu của video này không cho phép nhúng video"
+        }
+      ]
+    },
+    {
+      "label": "Khả năng truy cập",
+      "fields": [
+        {
+          "label": "Thêm đoạn video",
+          "entity": " đoạn phát",
+          "field": {
+            "label": " đoạn phát",
+            "fields": [
+              {
+                "label": "nhãn đoạn phát"
+              },
+              {
+                "label": "Nhập loại, hãy tham khảo <a target=\"_blank\" href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-track-element\">  HTML < / a>",
+                "options": [
+                  {
+                    "label": "Phụ đề"
+                  },
+                  {
+                    "label": "Chú thích"
+                  },
+                  {
+                    "label": "Mô tả"
+                  },
+                  {
+                    "label": "Chương"
+                  }
+                ]
+              },
+              {
+                "label": "Ngôn ngữ nguồn, phải được xác định cho phụ đề",
+                "description": "Phải là thẻ ngôn ngữ BCP 47 hợp lệ. Nếu thuộc tính loại được đặt thành phụ đề, thì srclang phải được xác định."
+              },
+              {
+                "label": "Theo dõi tệp (WebVTT)"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

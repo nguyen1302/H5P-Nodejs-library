@@ -1,0 +1,74 @@
+{
+  "semantics": [
+    {
+      "label": "Phần mở đầu",
+      "placeholder": "Tại đây bạn có thể thêm một tiêu đề tùy chọn.",
+      "description": "Tiêu đề bạn muốn hiển thị phía trên hình ảnh"
+    },
+    {
+      "label": "Hình ảnh",
+      "entity": "Hình ảnh",
+      "widgets": [
+        {
+          "label": "Mặc định"
+        }
+      ],
+      "field": {
+        "label": "Hình ảnh",
+        "fields": [
+          {
+            "label": "Hình ảnh"
+          },
+          {
+            "label": "Nhãn hiệu",
+            "description": "Nhãn tùy chọn cho một đánh dấu. Hãy đảm bảo rằng nó không quá dài, nếu không nó sẽ bị ẩn."
+          },
+          {
+            "label": "Mô tả",
+            "placeholder": "Mô tả hình ảnh của tôi ...",
+            "description": "Mô tả tùy chọn cho hình ảnh"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Cài đặt hành vi",
+      "description": "Các tùy chọn này sẽ cho phép bạn kiểm soát cách hoạt động của nhiệm vụ.",
+      "fields": [
+        {
+          "label": "Bắt đầu theo thứ tự hình ảnh",
+          "description": "Đặt số thứ tự hình ảnh mà bạn muốn xuất hiện đầu tiên."
+        },
+        {
+          "label": "Thanh trượt nhanh",
+          "description": "Nếu được kích hoạt, thanh trượt sẽ gắn vào vị trí của hình ảnh."
+        },
+        {
+          "label": "Hiển thị dấu tròn",
+          "description": "Nếu được kích hoạt, thanh trượt sẽ hiển thị dấu tròn cho mỗi hình ảnh."
+        },
+        {
+          "label": "Hiển thị nhãn",
+          "description": "Nếu được kích hoạt, thanh trượt sẽ hiển thị một nhãn thay vì / ngoài các dấu tích."
+        },
+        {
+          "label": "Màu thay thế khi hình ảnh có diện tích nhỏ so với khung",
+          "description": "Màu thay thế khi hình ảnh có diện tích nhỏ so với khung."
+        }
+      ]
+    },
+    {
+      "label": "Loa đọc",
+      "fields": [
+        {
+          "label": "Hình ảnh",
+          "default": "Hình ảnh"
+        },
+        {
+          "label": "Thanh trượt hình ảnh",
+          "default": "Thanh trượt hình ảnh"
+        }
+      ]
+    }
+  ]
+}

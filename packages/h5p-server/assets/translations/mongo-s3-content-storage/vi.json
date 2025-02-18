@@ -1,0 +1,15 @@
+{
+    "content-not-found": "Nội dung truy cập không tồn tại.",
+    "deleting-content-error": "Lỗi đối tượng đã bị xóa.",
+    "deleting-file-error": "Đã xảy ra lỗi khi xóa tệp {{filename}} khỏi đối tượng.",
+    "filename-too-long": "Tên tệp quá dài: {{filename}}",
+    "illegal-filename": "Tên tệp {{filename}} không được cho phép.",
+    "listing-content-error": "Đã xảy ra lỗi khi nhận danh sách các đối tượng",
+    "missing-delete-permission": "Bạn không có quyền xóa đối tượng này.",
+    "missing-list-content-permission": "Bạn không có quyền lên liệt kê các đối tượng.",
+    "missing-view-permission": "Bạn không có quyền xem đối tượng.",
+    "missing-write-permission": "Bạn không có quyền thay đổi đối tượng.",
+    "mongo-add-update-error": "Đã xảy ra lỗi khi thêm hoặc cập nhật nội dung trong cơ sở dữ liệu.",
+    "mongo-replace-error": "Đã xảy ra lỗi khi cập nhật nội dung trong cơ sở dữ liệu.",
+    "s3-upload-error": "Đã xảy ra lỗi khi tải tệp lên {{filename}} đến S3."
+}

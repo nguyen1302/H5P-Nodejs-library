@@ -1,0 +1,301 @@
+{
+    "semantics": [
+        {
+            "label": "Nhập yêu cầu trò chơi",
+            "description": "Nhập mô tả cách chơi trò chơi hay cách giải đố ô chữ ở đây"
+        },
+        {
+            "label": "Danh sách các câu hỏi",
+            "widgets": [
+                {
+                    "label": "Dữ liệu đầu vào"
+                }
+            ],
+            "entity": "Cài đặt câu đố",
+            "field": {
+                "label": "Cài đặt câu đố",
+                "fields": [
+                    {
+                        "label": "Câu hỏi",
+                        "description": "Nhập câu hỏi tại đây"
+                    },
+                    {
+                        "label": "Câu trả lời",
+                        "description": "Nhập câu trả lời/từ ngữ cần tìm tại đây (Chú ý: Viết liền, không dấu)"
+                    },
+                    {
+                        "label": "Thêm phương tiện hỗ trợ cho trò chơi (Có thể bỏ qua)"
+                    },
+                    {
+                        "label": "Cho phép sửa câu trả lời trực tiếp trong ô",
+                        "description": "Chọn tùy chọn này nếu bạn muốn sửa câu trả lời tại một vị trí cụ thể trong ô"
+                    },
+                    {
+                        "label": "dòng",
+                        "description": "Số dòng để bắt đầu trả lời trên."
+                    },
+                    {
+                        "label": "Cột",
+                        "description": "Số cột để bắt đầu phản hồi."
+                    },
+                    {
+                        "label": "Sự thẳng hàng",
+                        "description": "Định hướng phản hồi.",
+                        "options": [
+                            {
+                                "label": "Ngang"
+                            },
+                            {
+                                "label": "Vuông góc "
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "label": "Nhập ô chữ từ khóa cho trò chơi",
+            "description": "Nhập từ khóa đặc biệt cho toàn bộ trò chơi. Lưu ý: Các từ ngữ của từ khóa đặt biệt này cần phải chứa trong toàn bộ các từ khóa thường/ câu trả lời trên"
+        },
+        {
+            "label": "Phản hồi cho người dùng (Không bắt buộc, có thể bỏ qua)",
+            "fields": [
+                {
+                    "widgets": [
+                        {
+                            "label": "Dữ liệu đầu vào"
+                        }
+                    ],
+                    "label": "Nhập phản hồi cho từng phạm vi điểm",
+                    "description": "Nhấp vào nút \"Thêm phạm vi điểm \" để thêm nhiều phạm vi điểm nếu cần thiết. Ví dụ: 0-20% Điểm kém, 21-91% Điểm trung bình, 91-100% Điểm tốt!",
+                    "entity": "Thêm phạm vi điểm",
+                    "field": {
+                        "fields": [
+                            {
+                                "label": "Phạm vi điểm số"
+                            },
+                            {},
+                            {
+                                "label": "Nhập phản hồi",
+                                "placeholder": "Nhập phản hồi tại ô trống này"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "label": "Cài đặt ảnh nền, màu sắc cho trò chơi",
+            "fields": [
+                {
+                    "label": "Thêm ảnh nền",
+                    "description": "Chọn một hình nền phù hợp để cài đặt cho trò chơi thêm sinh động"
+                },
+                {
+                    "label": "Chọn màu nền",
+                    "description": "Nếu không chọn ảnh nền thì bạn có thể chọn màu nền tại ô này",
+                    "default": "#173354"
+                },
+                {
+                    "label": "Màu lưới",
+                    "description": "Chọn một màu lưới.",
+                    "default": "#000000"
+                },
+                {
+                    "label": "Màu nền ô",
+                    "description": "Chọn màu nền của ô chữ",
+                    "default": "#ffffff"
+                },
+                {
+                    "label": "Màu chữ hiển thị trong ô",
+                    "description": "Chọn màu chữ hiển thị của ô",
+                    "default": "#000000"
+                },
+                {
+                    "label": "Màu số thứ tự ô chữ",
+                    "description": "Chọn màu của số gợi ý trong ô chữ",
+                    "default": "#606060"
+                },
+                {
+                    "label": "Màu nền ô khi trả lời",
+                    "description": "Chọn màu nền của ô chữ khi đã trả lời",
+                    "default": "#3e8de8"
+                },
+                {
+                    "label": "Màu chữ hiển thị khi nhấp vào ô trả lời",
+                    "description": "Chọn màu chữ hiển thị khi đã trả lời",
+                    "default": "#ffffff"
+                },
+                {
+                    "label": "Màu số hiển thị khi nhấp vào ô trả lời",
+                    "description": "Chọn màu của số gợi ý trong ô bảng đã chọn.",
+                    "default": "#e0e0e0"
+                }
+            ]
+        },
+        {
+            "label": "Cài đặt nâng cao (Không bắt buộc, có thể bỏ qua)",
+            "description": "Các tùy chọn này xác định cách hoạt động của bài tập một cách chi tiết.",
+            "fields": [
+                {
+                    "label": "Số lượng từ để hiển thị",
+                    "description": "Tạo một lựa chọn ngẫu nhiên của các từ. Lựa chọn sẽ luôn chứa ít nhất các từ đã được cố định trong lưới.Giá trị trống hoặc 0 có nghĩa là tất cả các từ."
+                },
+                {
+                    "label": "Bật kiểm tra đáp án tức thì"
+                },
+                {
+                    "label": "Một câu được tính một điểm",
+                    "description": "Nếu tính năng này được chọn thì khi người dùng điền đúng hoàn toàn một câu mới được tính một điểm"
+                },
+                {
+                    "label": "Trừ điểm cho đáp án sai",
+                    "description": "Nếu tính năng này được chọn thì người dùng sẽ bị trừ một điểm khi trả lời sai"
+                },
+                {
+                    "label": "Hiển thị nút Làm lại"
+                },
+                {
+                    "label": "Hiển thị nút đáp án"
+                }
+            ]
+        },
+        {
+            "label": "Nhãn và Nhãn",
+            "fields": [
+                {
+                    "label": "Nhãn nằm ngang ",
+                    "default": "Ngang"
+                },
+                {
+                    "label": "Nhãn cho đường vuông góc",
+                    "default": "Vuông góc"
+                },
+                {
+                    "label": "Nhãn của nút \"xem xét\"",
+                    "default": "Xác minh "
+                },
+                {
+                    "label": "Văn bản cho nút \"gửi\"",
+                    "default": "Gửi"
+                },
+                {
+                    "label": "Nhãn của nút \"lặp lại\"",
+                    "default": "Lặp lại"
+                },
+                {
+                    "label": "Nhãn của nút \"giải pháp\"",
+                    "default": "Hiển thị giải pháp"
+                },
+                {
+                    "label": "Không thể tạo ra ô chữ",
+                    "default": "Không thể tạo ra ô chữ từ những từ đã cho. Vui lòng thử lại với ít từ hoặc từ ngữ có nhiều chữ thường hơn."
+                },
+                {
+                    "label": "Không có ô chữ nào có thể có ít từ)",
+                    "default": "Không thể tạo ra ô chữ. Anh cần ít nhất hai từ."
+                },
+                {
+                    "label": "Từ có vấn đề",
+                    "description": "Liệt kê các từ không thể đặt khi tạo ô chữ. @words là một phần giữ chỗ sẽ được thay thế bằng các từ có vấn đề thực tế.",
+                    "default": "Vấn đề của từ: @words"
+                },
+                {
+                    "label": "Ghi chú bổ sung",
+                    "default": "Ghi chú bổ sung"
+                },
+                {
+                    "label": "Đóng cửa sổ",
+                    "default": "Đóng cửa sổ"
+                }
+            ]
+        },
+        {
+            "label": "Công cụ Đọc (Trợ năng)",
+            "fields": [
+                {
+                    "label": "Mô tả lưới ô chữ",
+                    "default": "Mạng ô chữ. Sử dụng phím mũi tên và bàn phím để nhập các ký tự. Sử dụng phím tab để sử dụng các trường nhập  ."
+                },
+                {
+                    "label": "Cột",
+                    "default": "Cột"
+                },
+                {
+                    "label": "dòng",
+                    "default": "dòng"
+                },
+                {
+                    "label": "Qua",
+                    "default": "Ngang"
+                },
+                {
+                    "label": "Vuông góc",
+                    "default": "Vuông góc"
+                },
+                {
+                    "label": "Rỗng",
+                    "default": "Rỗng"
+                },
+                {
+                    "description": "Thông báo kết quả. @clue là một biến và sẽ được thay thế bằng đầu mối thích hợp.",
+                    "label": "Kết quả",
+                    "default": "Kết quả cho: @clue"
+                },
+                {
+                    "label": "Đúng",
+                    "default": "Đúng"
+                },
+                {
+                    "label": "Sai",
+                    "default": "Sai"
+                },
+                {
+                    "label": "Điểm",
+                    "default": "chấm"
+                },
+                {
+                    "description": "Giải pháp được thông báo. @clue và @solution là các biến và sẽ được thay thế bằng các giá trị thích hợp.",
+                    "label": "Giải pháp",
+                    "default": "Hiển thị @clue giải pháp là: @solution"
+                },
+                {
+                    "description": "Gợi ý thêm. @clue là một biến và sẽ được thay thế bằng gợi ý thích hợp.",
+                    "label": "Nhãn bổ sung",
+                    "default": "Mở thêm gợi ý cho @clue"
+                },
+                {
+                    "label": "Vực trống",
+                    "default": "Vực trống"
+                },
+                {
+                    "description": "Thông báo vị trí. @position và @length là các biến và sẽ được thay thế bằng các giá trị thích hợp.",
+                    "label": "kí tự",
+                    "default": "Đặc điểm @position của @length"
+                },
+                {
+                    "description": "Thông báo độ dài từ. @length là một biến và sẽ được thay thế bằng giá trị thích hợp.",
+                    "label": "Độ dài của từ",
+                    "default": "Từ ngữ với @length các đặc điểm"
+                },
+                {
+                    "label": "Mô tả công cụ đọc cho nút \"xem xét\"",
+                    "default": "Kiểm tra các mục nhập. Câu trả lời sẽ được đánh dấu là đúng, không chính xác hoặc chưa được trả lời."
+                },
+                {
+                    "label": "Mô tả công cụ đọc cho nút \"giải pháp xem\"",
+                    "default": "Đưa ra giải pháp. ô chữ sẽ được chứa đầy giải pháp đúng."
+                },
+                {
+                    "label": "Nhãn công cụ đọc cho nút \"lặp lại\"",
+                    "default": "Lặp lại nhiệm vụ. Đặt lại tất cả các nguyên liệu và bắt đầu lại."
+                },
+                {
+                    "label": "Kết quả của bạn",
+                    "description": "@score và @total là các biến và sẽ được thay thế bằng các giá trị thích hợp.",
+                    "default": "Bạn đã đạt được @score tổng @total điểm."
+                }
+            ]
+        }
+    ]
+}

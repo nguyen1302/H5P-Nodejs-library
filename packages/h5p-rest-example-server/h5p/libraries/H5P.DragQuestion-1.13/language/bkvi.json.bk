@@ -1,0 +1,268 @@
+{
+  "semantics": [
+    {
+      "label": "Nút kiểm câu trả lời",
+      "default": "Kiểm tra"
+    },
+    {
+      "label": "Nút gửi câu trả lời",
+      "default": "Gửi"
+    },
+    {
+      "label": "Nút thử lại",
+      "default": "Thử lại"
+    },
+    {
+      "label": "Điểm văn bản thuyết minh",
+      "default": "Câu trả lời đúng cho +1 điểm. Câu trả lời sai cho -1 điểm. Số điểm thấp nhất có thể là 0."
+    },
+    {
+      "fields": [
+        {
+          "label": "Cài đặt",
+          "fields": [
+            {
+              "label": "Ảnh nền",
+              "description": "không bắt buộc. Chọn một hình ảnh để sử dụng làm hình nền cho tác vụ kéo và thả của bạn."
+            },
+            {
+              "label": "Kích cỡ nhiệm vụ",
+              "description": "Chỉ định kích thước (tính bằng px) của khu vực đặt"
+            }
+          ]
+        },
+        {
+          "label": "Nhiệm vụ",
+          "description": "Bắt đầu bằng cách đặt các khu vực thả của bạn. <br /> Tiếp theo, đặt các phần tử có thể thả xuống và đánh dấu vào các khu vực thả thích hợp. <br /> Cuối cùng, chỉnh sửa lại khu vực thả của bạn và đánh dấu các câu trả lời chính xác.",
+          "fields": [
+            {
+              "label": "Thành phần",
+              "entity": "thành phần",
+              "field": {
+                "label": "Thành phần",
+                "fields": [
+                  {
+                    "description": "Chọn loại nội dung bạn muốn thêm vào."
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {
+                    "label": "Chọn khu vực thả"
+                  },
+                  {
+                    "label": "Độ mờ nền"
+                  },
+                  {
+                    "label": "Số lượng cực đại của từng phần tử",
+                    "description": "Sao chép phần tử này để có thể kéo phần tử này đến nhiều vùng thả."
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Vùng thả",
+              "entity": "Vùng thả",
+              "field": {
+                "label": "Vùng thả",
+                "fields": [
+                  {
+                    "label": "Nhãn"
+                  },
+                  {
+                    "label": "Hiển thị nhãn"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {
+                    "label": "Chọn các thành phần chính xác"
+                  },
+                  {
+                    "label": "Độ mờ nền"
+                  },
+                  {
+                    "label": "Mẹo và phản hồi",
+                    "fields": [
+                      {
+                        "label": "Nội dung mẹo"
+                      },
+                      {
+                        "label": "Thông báo được hiển thị cho kết quả trùng khớp",
+                        "description": "Thông báo sẽ xuất hiện bên dưới nhiệm vụ  \"kiểm tra \" nếu trùng khớp sẽ thả xuống kết quả trùng khớp."
+                      },
+                      {
+                        "label": "Thông báo hiển thị cho kết quả không trùng khớp",
+                        "description": "thông báo sẽ xuất hiện bên dưới nhiệm vụ \"kiểm tra\" nếu kết quả không chính xác"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Khu vực thả này chỉ có thể chứa một phần tử",
+                    "description": "Đảm bảo rằng chỉ có một câu trả lời chính xác cho khu vực thả này"
+                  },
+                  {
+                    "label": "Bật tính năng tự động căn chỉnh",
+                    "description": "Sẽ tự động căn chỉnh tất cả các thiết bị có thể kéo được thả trong vùng này."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Phản hồi tổng thể",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Mặc định"
+            }
+          ],
+          "label": "Xác định thông tin phản hồi cho bất kỳ phạm vi điểm nào",
+          "description": "Nhấp vào nút \"Thêm ô\" để thêm nhiều  ô nếu bạn cần. Ví dụ: 0-20% Điểm kém, 21-91% Điểm trung bình, 91-100% Điểm tốt!",
+          "entity": "phạm vi",
+          "field": {
+            "fields": [
+              {
+                "label": "Phạm vi điểm"
+              },
+              {},
+              {
+                "label": "Phản hồi cho phạm vi điểm đã xác định",
+                "placeholder": "Điền vào thông tin phản hồi"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Cài đặt hành vi",
+      "description": "Các tùy chọn này sẽ cho phép bạn kiểm soát cách hoạt động của nhiệm vụ",
+      "fields": [
+        {
+          "label": "bật \"thử lại\""
+        },
+        {
+          "label": "bật nút \"thử lại\""
+        },
+        {
+          "label": "Cho một điểm cho toàn bộ nhiệm vụ",
+          "description": "Vô hiệu hóa để đưa ra một điểm cho mỗi lần thao tác kéo được đặt đúng vị trí."
+        },
+        {
+          "label": "Thêm hình phạt",
+          "description": "Tính năng này phải được bật khi (các) phần tử giống nhau có thể được đưa vào nhiều vùng thả hoặc nếu chỉ có một vùng thả.Nếu tính năng này không được bật, người học có thể kết hợp tất cả các mục với tất cả các khu vực thả và luôn nhận được điểm đầy đủ."
+        },
+        {
+          "label": "Bật phần giải thích điểm số",
+          "description": "Hiển thị giải thích về điểm số cho người dùng khi kiểm tra câu trả lời của họ (nếu tùy chọn 'Áp dụng hình phạt' đã được chọn)."
+        },
+        {
+          "label": "Độ mờ của nền cho các thiết bị có thể kéo",
+          "description": "Nếu trường này được đặt, nó sẽ ghi đè độ mờ được đặt trên tất cả các phần tử có thể kéo. Đây phải là một số từ 0 đến 100, trong đó 0 có nghĩa là hoàn toàn minh bạch và 100 có nghĩa là không minh bạch"
+        },
+        {
+          "label": "Đánh dấu vùng thả",
+          "description": "Chọn thời điểm đánh dấu vùng thả.",
+          "options": [
+            {
+              "label": "Khi kéo"
+            },
+            {
+              "label": "Luôn luôn"
+            },
+            {
+              "label": "Không bao giờ"
+            }
+          ]
+        },
+        {
+          "label": "Khoảng cách cho Tự động căn chỉnh (tính bằng px)"
+        },
+        {
+          "label": "Bật toàn màn hình",
+          "description": "Đánh dấu vào tùy chọn này để bật nút toàn màn hình."
+        },
+        {
+          "label": "Hiển thị điểm số",
+          "description": "Hiển thị điểm kiếm được cho mỗi câu trả lời. Không khả dụng khi tùy chọn 'Cho một điểm cho toàn bộ nhiệm vụ' được bật."
+        },
+        {
+          "label": "Hiển thị tiêu đề",
+          "description": "Bỏ chọn tùy chọn này nếu bạn không muốn hiển thị tiêu đề này. Tiêu đề sẽ chỉ được hiển thị trong tóm tắt, thống kê, v.v."
+        }
+      ]
+    },
+    {
+      "label": "Cộng đồng hóa",
+      "fields": [
+        {
+          "label": "nhãn toàn màn hình",
+          "default": "toàn màn hình"
+        },
+        {
+          "label": "nhãn thoát toàn màn hình",
+          "default": "thoát toàn màn hình"
+        }
+      ]
+    },
+    {
+      "label": "Tiền tố có thể lấy được",
+      "default": "có thể lấy {num} trong {total}."
+    },
+    {
+      "label": "Tiền tố có thể lấy được",
+      "default": "Đặt trong khu vực thả {num}."
+    },
+    {
+      "label": "tiền tố khu vực thả",
+      "default": "khu vực thả {num} trong {total}."
+    },
+    {
+      "label": "nhãn không có lựa chọn khu vực thả",
+      "default": "không có khu vực thả."
+    },
+    {
+      "label": "nhãn cho nút hiển thị mẹo",
+      "default": "hiển thị mẹo."
+    },
+    {
+      "label": "nhãn cho mẹo có sẵn",
+      "default": "mẹo có sẵn"
+    },
+    {
+      "label": "nhãn cho câu trả lời đúng",
+      "default": "câu trả lời đúng"
+    },
+    {
+      "label": "nhãn cho câu trả lời sai",
+      "default": "câu trả lời sai"
+    },
+    {
+      "label": "Tiêu đề cho bảng chứa phản hồi cho các câu trả lời chính xác / không chính xác",
+      "default": "Phản hồi"
+    },
+    {
+      "label": "Trình bày bằng văn bản của thanh điểm số cho những người sử dụng loa đọc",
+      "default": "Bạn nhận được :num trong tổng :total điểm"
+    },
+    {
+      "label": "Nhãn công nghệ hỗ trợ cho nút \"Kiểm tra \"",
+      "default": "hiển thị giải thích điểm số"
+    },
+    {
+      "label": "Nhãn công nghệ hỗ trợ cho nút \"Kiểm tra \"",
+      "default": "Kiểm tra câu trả lời. Các câu trả lời sẽ được đánh dấu là chính xác, không chính xác hoặc chưa được trả lời."
+    },
+    {
+      "label": "Nhãn công nghệ hỗ trợ cho nút \"thử lại \"",
+      "default": "Thử lại tác vụ. Đặt lại tất cả các câu trả lời và bắt đầu lại nhiệm vụ."
+    }
+  ]
+}

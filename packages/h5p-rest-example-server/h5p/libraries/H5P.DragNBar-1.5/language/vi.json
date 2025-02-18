@@ -1,0 +1,17 @@
+{
+    "libraryStrings": {
+        "transformLabel": "Chuyển đổi",
+        "editLabel": "Chỉnh sửa",
+        "removeLabel": "Xóa",
+        "bringToFrontLabel": "Chèn lên trước",
+        "sendToBackLabel": "Chèn về sau cùng",
+        "unableToPaste": "Không thể dán đối tượng này. Rất tiếc, đối tượng bạn đang cố dán không được loại nội dung hoặc phiên bản này hỗ trợ",
+        "sizeLabel": "Kích thước",
+        "positionLabel": "Vị trí",
+        "heightLabel": "Chiều dài",
+        "widthLabel": "Chiều rộng",
+        "copyLabel": "Sao chép",
+        "paste": "Dán",
+        "moreElements": "Thêm thành phần"
+    }
+}

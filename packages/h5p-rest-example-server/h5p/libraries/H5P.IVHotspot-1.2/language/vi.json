@@ -1,0 +1,97 @@
+{
+    "semantics": [
+        {
+            "label": "Chọn đích đến của chiều hướng",
+            "fields": [
+                {
+                    "label": "Loại",
+                    "options": [
+                        {
+                            "label": "Mã thời gian"
+                        },
+                        {
+                            "label": "Trang khác (URL)"
+                        }
+                    ]
+                },
+                {
+                    "label": "Nhập mốc thời gian cần điều hướng đến",
+                    "description": "Mốc thời gian mà người dùng được đưa đến khi nhấp vào điều hướng này. Nhập mã thời gian ở định dạng phút:giây"
+                },
+                {
+                    "label": "Dán đường dẫn vào đây",
+                    "fields": [
+                        {
+                            "label": "Biên bản",
+                            "options": [
+                                {
+                                    "label": "http://"
+                                },
+                                {
+                                    "label": "https://"
+                                },
+                                {
+                                    "label": "Nguồn liên quan"
+                                },
+                                {
+                                    "label": "Khác"
+                                }
+                            ]
+                        },
+                        {
+                            "label": "URL"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Tùy chọn nâng cao (Không bắt buộc, có thể bỏ qua)",
+            "fields": [
+                {
+                    "label": "Hình dạng hiển thị công cụ này",
+                    "options": [
+                        {
+                            "label": "Hình chữ nhật"
+                        },
+                        {
+                            "label": "Hình tròn"
+                        },
+                        {
+                            "label": "Hình chữ nhật bo góc"
+                        }
+                    ]
+                },
+                {
+                    "label": "Màu nền của công cụ"
+                },
+                {
+                    "label": "Sử dụng con trỏ chuột để điều hướng truy cập"
+                },
+                {
+                    "label": "Thêm hiệu ứng lấp lánh cho công cụ",
+                    "description": "Hiệu ứng lấp lánh luôn được bật trong trình chỉnh sửa để bạn có thể dễ dàng chỉnh sửa công cụ"
+                }
+            ]
+        },
+        {
+            "label": "Cài đặt nâng cao (Không bắt buộc, có thể bỏ qua)",
+            "fields": [
+                {
+                    "label": "Nhập đoan mô tả của công cụ",
+                    "description": "Mô tả chủ đề của công cụ này",
+                    "placeholder": "Một trái táo trên một cái bàn"
+                },
+                {
+                    "label": "Nhập tên hiển thị trên công cụ này"
+                },
+                {
+                    "label": "Hiển thị tên"
+                },
+                {
+                    "label": "Chọn màu sắc cho tên hiển thị"
+                }
+            ]
+        }
+    ]
+}

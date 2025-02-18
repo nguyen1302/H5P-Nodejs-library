@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "lib": [
+        "DOM",
+        "DOM.Iterable",
+        "ES2019"
+      ],
+      "noImplicitAny": true,
+      "noImplicitOverride": true,
+      "strict": true,
+      "module": "es6",
+      "target": "es2019",
+      "sourceMap": true,
+      "allowJs": true,
+      "moduleResolution": "node",
+      "skipLibCheck": true,
+      "baseUrl": "./",
+      "paths": {
+        "@wiris/mathtype-ckeditor5": ["src/types/wiris-mathtype.d.ts"]
+      }
+    },
+    "include": [
+      "./src",
+      "./src/types"
+    ]
+  }
+  

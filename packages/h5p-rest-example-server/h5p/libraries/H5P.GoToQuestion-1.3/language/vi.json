@@ -1,0 +1,32 @@
+{
+    "semantics": [
+        {
+            "label": "Nhập mô tả/tiêu đề của nội dung tương tác",
+            "description": "Câu hỏi/cách làm mà người dùng sẽ đưa ra lựa chọn dựa trên nội dung đó"
+        },
+        {
+            "label": "Danh sách các lựa chọn",
+            "entity": "Các lựa chọn",
+            "field": {
+                "fields": [
+                    {
+                        "label": "Nhập nội dung cho lựa chọn",
+                        "description": "Nội dung này sẽ hiển thị trên nút lựa chọn"
+                    },
+                    {
+                        "label": "Nhập mốc thời gian cho lựa chọn",
+                        "description": "Mốc thời gian mà người dùng sẽ được đưa đến khi nhấn vào lựa chọn này. Nhập mã thời gian ở định dạng phút:giây"
+                    },
+                    {
+                        "label": "Thông báo hiển thị khi người dùng nhấp vào lựa chọn này",
+                        "description": "Một thông báo xác nhận sẽ được hiển thị khi người dùng nhấn nút lựa chọn"
+                    }
+                ]
+            }
+        },
+        {
+            "label": "Tên của nút tiếp tục",
+            "default": "Tiếp tục"
+        }
+    ]
+}

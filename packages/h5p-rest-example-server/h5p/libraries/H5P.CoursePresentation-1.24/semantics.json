@@ -1,0 +1,661 @@
+[
+  {
+    "name": "presentation",
+    "type": "group",
+    "importance": "high",
+    "widget": "coursepresentation",
+    "fields": [
+      {
+        "name": "slides",
+        "importance": "high",
+        "type": "list",
+        "field": {
+          "name": "slide",
+          "importance": "high",
+          "type": "group",
+          "fields": [
+            {
+              "name": "elements",
+              "importance": "high",
+              "type": "list",
+              "field": {
+                "name": "element",
+                "importance": "high",
+                "type": "group",
+                "fields": [
+                  {
+                    "name": "x",
+                    "importance": "low",
+                    "type": "number",
+                    "widget": "none"
+                  },
+                  {
+                    "name": "y",
+                    "importance": "low",
+                    "type": "number",
+                    "widget": "none"
+                  },
+                  {
+                    "name": "width",
+                    "importance": "low",
+                    "type": "number",
+                    "widget": "none",
+                    "optional": true
+                  },
+                  {
+                    "name": "height",
+                    "importance": "low",
+                    "type": "number",
+                    "widget": "none",
+                    "optional": true
+                  },
+                  {
+                    "name": "action",
+                    "type": "library",
+                    "importance": "high",
+                    "options": [
+                      "H5P.AdvancedText 1.1",
+                      "H5P.Link 1.3",
+                      "H5P.Image 1.1",
+                      "H5P.Shape 1.0",
+                      "H5P.Video 1.6",
+                      "H5P.Audio 1.5",
+                      "H5P.Blanks 1.14",
+                      "H5P.SingleChoiceSet 1.11",
+                      "H5P.MultiChoice 1.16",
+                      "H5P.TrueFalse 1.8",
+                      "H5P.DragQuestion 1.14",
+                      "H5P.Summary 1.10",
+                      "H5P.DragText 1.10",
+                      "H5P.MarkTheWords 1.11",
+                      "H5P.Dialogcards 1.9",
+                      "H5P.Table 1.1",
+                      "H5P.InteractiveVideo 1.24",
+                      "H5P.AudioRecorder 1.0"
+                    ],
+                    "optional": true
+                  },
+                  {
+                    "name": "solution",
+                    "type": "text",
+                    "widget": "html",
+                    "optional": true,
+                    "label": "Bình luận",
+                    "importance": "low",
+                    "description": "Các bình luận được hiển thị khi người dùng hiển thị các câu trả lời gợi ý cho tất cả các slide.",
+                    "enterMode": "p",
+                    "tags": [
+                      "strong",
+                      "em",
+                      "del",
+                      "a",
+                      "ul",
+                      "ol",
+                      "h2",
+                      "h3",
+                      "hr",
+                      "pre",
+                      "code"
+                    ]
+                  },
+                  {
+                    "name": "alwaysDisplayComments",
+                    "type": "boolean",
+                    "label": "Luôn luôn hiển thị bình luận",
+                    "importance": "low",
+                    "optional": true
+                  },
+                  {
+                    "name": "backgroundOpacity",
+                    "type": "number",
+                    "label": "Độ mờ nền",
+                    "importance": "low",
+                    "min": 0,
+                    "max": 100,
+                    "step": 5,
+                    "default": 0,
+                    "optional": true
+                  },
+                  {
+                    "name": "displayAsButton",
+                    "type": "boolean",
+                    "label": "Hiển thị dưới dạng nút",
+                    "importance": "medium",
+                    "default": false,
+                    "optional": true
+                  },
+                  {
+                    "name": "buttonSize",
+                    "type": "select",
+                    "label": "Kích cỡ nút",
+                    "importance": "low",
+                    "optional": false,
+                    "default": "big",
+                    "options": [
+                      {
+                        "value": "small",
+                        "label": "Nhỏ"
+                      },
+                      {
+                        "value": "big",
+                        "label": "Lớn"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "title",
+                    "type": "text",
+                    "optional": true,
+                    "label": "Tiêu đề",
+                    "importance": "medium"
+                  },
+                  {
+                    "name": "goToSlideType",
+                    "type": "select",
+                    "label": "Đi đến",
+                    "importance": "medium",
+                    "optional": false,
+                    "options": [
+                      {
+                        "value": "specified",
+                        "label": "Số lượng trang trình chiếu cụ thể"
+                      },
+                      {
+                        "value": "next",
+                        "label": "Trang tiếp theo"
+                      },
+                      {
+                        "value": "previous",
+                        "label": "Trang trình chiếu trước đó"
+                      }
+                    ],
+                    "default": "specified"
+                  },
+                  {
+                    "name": "goToSlide",
+                    "type": "number",
+                    "label": "Số lượng trang trình chiếu cụ thể",
+                    "description": "Chỉ áp dụng khi chọn 'Số lượng trang trình chiếu cụ thể'",
+                    "importance": "low",
+                    "min": 1,
+                    "optional": true
+                  },
+                  {
+                    "name": "invisible",
+                    "type": "boolean",
+                    "label": "Không hiển thị",
+                    "importance": "low",
+                    "description": "Con trỏ mặc định, không có tiêu đề và không có thẻ. Cảnh báo: Người dùng không có khả năng hoặc chỉ dùng bàn phím sẽ gặp khó khăn khi sử dụng thành phần này.",
+                    "default": false
+                  }
+                ]
+              }
+            },
+            {
+              "name": "keywords",
+              "importance": "low",
+              "type": "list",
+              "optional": true,
+              "field": {
+                "name": "keyword",
+                "importance": "low",
+                "type": "group",
+                "optional": true,
+                "fields": [
+                  {
+                    "name": "main",
+                    "importance": "low",
+                    "type": "text",
+                    "optional": true
+                  },
+                  {
+                    "name": "subs",
+                    "importance": "low",
+                    "type": "list",
+                    "optional": true,
+                    "field": {
+                      "name": "keyword",
+                      "importance": "low",
+                      "type": "text"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "slideBackgroundSelector",
+              "importance": "medium",
+              "type": "group",
+              "widget": "radioSelector",
+              "fields": [
+                {
+                  "name": "imageSlideBackground",
+                  "type": "image",
+                  "label": "Hình ảnh",
+                  "importance": "medium",
+                  "optional": true,
+                  "description": "Nền ảnh phải có tỷ lệ chiều rộng và chiều cao là 2:1 để tránh bị giãn. Hình ảnh có độ phân giải cao sẽ hiển thị tốt hơn trên màn hình lớn."
+                },
+                {
+                  "name": "fillSlideBackground",
+                  "importance": "medium",
+                  "type": "text",
+                  "widget": "colorSelector",
+                  "label": "Chọn một màu",
+                  "spectrum": {
+                    "flat": true,
+                    "showInput": true,
+                    "allowEmpty": true,
+                    "showButtons": false
+                  },
+                  "default": null,
+                  "optional": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "ct",
+        "importance": "low",
+        "type": "text",
+        "widget": "none",
+        "optional": true,
+        "tags": [
+          "strong",
+          "em",
+          "del",
+          "br",
+          "p",
+          "a",
+          "h2",
+          "h3",
+          "pre",
+          "code"
+        ]
+      },
+      {
+        "name": "keywordListEnabled",
+        "type": "boolean",
+        "label": "Danh sách từ khóa",
+        "importance": "low",
+        "default": true
+      },
+      {
+        "name": "keywordListAlwaysShow",
+        "type": "boolean",
+        "label": "Luôn luôn hiển thị",
+        "importance": "low",
+        "default": false
+      },
+      {
+        "name": "keywordListAutoHide",
+        "type": "boolean",
+        "label": "Luôn luôn ẩn",
+        "importance": "low",
+        "default": false
+      },
+      {
+        "name": "keywordListOpacity",
+        "type": "number",
+        "label": "Độ mờ",
+        "importance": "low",
+        "min": 0,
+        "max": 100,
+        "default": 90
+      },
+      {
+        "name": "globalBackgroundSelector",
+        "importance": "medium",
+        "type": "group",
+        "widget": "radioSelector",
+        "fields": [
+          {
+            "name": "imageGlobalBackground",
+            "type": "image",
+            "label": "Hình ảnh",
+            "importance": "medium",
+            "optional": true,
+            "description": "Nền ảnh phải có tỷ lệ chiều rộng và chiều cao là 2:1 để tránh bị giãn. Hình ảnh có độ phân giải cao sẽ hiển thị tốt hơn trên màn hình lớn."
+          },
+          {
+            "name": "fillGlobalBackground",
+            "type": "text",
+            "widget": "colorSelector",
+            "label": "Chọn một màu",
+            "importance": "medium",
+            "spectrum": {
+              "flat": true,
+              "showInput": true,
+              "allowEmpty": true,
+              "showButtons": false
+            },
+            "default": null,
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "l10n",
+    "type": "group",
+    "label": "Địa phương hóa",
+    "importance": "low",
+    "common": true,
+    "fields": [
+      {
+        "name": "slide",
+        "type": "text",
+        "label": "Bản dịch cho \"Trang trình chiếu\"",
+        "importance": "low",
+        "default": "Slide"
+      },
+      {
+        "name": "score",
+        "type": "text",
+        "label": "Bản dịch cho \"Điểm\"",
+        "importance": "low",
+        "default": "Score"
+      },
+      {
+        "name": "yourScore",
+        "type": "text",
+        "label": "Bản dịch cho \"Điểm của bạn\"",
+        "importance": "low",
+        "default": "Your Score"
+      },
+      {
+        "name": "maxScore",
+        "type": "text",
+        "label": "Bản dịch cho \"Điểm cao nhất\"",
+        "importance": "low",
+        "default": "Max Score"
+      },
+      {
+        "name": "total",
+        "type": "text",
+        "label": "Bản dịch cho \"Tổng cộng\"",
+        "importance": "low",
+        "default": "Total"
+      },
+      {
+        "name": "totalScore",
+        "type": "text",
+        "label": "Bản dịch cho \"Tổng điểm\"",
+        "importance": "low",
+        "default": "Total Score"
+      },
+      {
+        "name": "showSolutions",
+        "type": "text",
+        "label": "Tiêu đề cho nút hiển thị giải pháp",
+        "importance": "low",
+        "default": "Show solutions"
+      },
+      {
+        "name": "retry",
+        "type": "text",
+        "label": "Văn bản cho nút thử lại",
+        "importance": "low",
+        "default": "Retry",
+        "optional": true
+      },
+      {
+        "name": "exportAnswers",
+        "type": "text",
+        "label": "Văn bản cho nút xuất văn bản",
+        "importance": "low",
+        "default": "Export text"
+      },
+      {
+        "name": "hideKeywords",
+        "type": "text",
+        "label": "Ẩn tiêu đề nút điều hướng thanh bên",
+        "importance": "low",
+        "default": "Hide sidebar navigation menu"
+      },
+      {
+        "name": "showKeywords",
+        "type": "text",
+        "label": "Hiển thị tiêu đề nút điều hướng thanh bên",
+        "importance": "low",
+        "default": "Show sidebar navigation menu"
+      },
+      {
+        "name": "fullscreen",
+        "type": "text",
+        "label": "Nhãn dán toàn màn hình",
+        "importance": "low",
+        "default": "Fullscreen"
+      },
+      {
+        "name": "exitFullscreen",
+        "type": "text",
+        "label": "Thoát nhãn dán toàn màn hình",
+        "importance": "low",
+        "default": "Exit fullscreen"
+      },
+      {
+        "name": "prevSlide",
+        "type": "text",
+        "label": "Nhãn trang trình chiếu trước đó",
+        "importance": "low",
+        "default": "Previous slide"
+      },
+      {
+        "name": "nextSlide",
+        "type": "text",
+        "label": "Nhãn trang trình chiếu tiếp theo",
+        "importance": "low",
+        "default": "Next slide"
+      },
+      {
+        "name": "currentSlide",
+        "type": "text",
+        "label": "Nhãn trang trình chiếu hiện tại",
+        "importance": "low",
+        "default": "Current slide"
+      },
+      {
+        "name": "lastSlide",
+        "type": "text",
+        "label": "Nhãn trang trình chiếu cuối cùng",
+        "importance": "low",
+        "default": "Last slide"
+      },
+      {
+        "name": "solutionModeTitle",
+        "type": "text",
+        "label": "Thoát khỏi văn bản chế độ giải pháp",
+        "importance": "low",
+        "default": "Exit solution mode"
+      },
+      {
+        "name": "solutionModeText",
+        "type": "text",
+        "label": "Văn bản chế độ giải pháp",
+        "importance": "low",
+        "default": "Solution Mode"
+      },
+      {
+        "name": "summaryMultipleTaskText",
+        "type": "text",
+        "label": "Nhắn tin khi có nhiều tác vụ trên một trang",
+        "importance": "low",
+        "default": "Multiple tasks"
+      },
+      {
+        "name": "scoreMessage",
+        "type": "text",
+        "label": "Nội dung thông báo ghi điểm",
+        "importance": "low",
+        "default": "You achieved:"
+      },
+      {
+        "name": "shareFacebook",
+        "type": "text",
+        "label": "Chia sẻ nội dung lên facebook",
+        "importance": "low",
+        "default": "Share on Facebook"
+      },
+      {
+        "name": "shareTwitter",
+        "type": "text",
+        "label": "Chia sẻ nội dung lên Twitter",
+        "importance": "low",
+        "default": "Share on Twitter"
+      },
+      {
+        "name": "shareGoogle",
+        "type": "text",
+        "label": "Chia sẻ nội dung lên Google",
+        "importance": "low",
+        "default": "Share on Google+"
+      },
+      {
+        "name": "summary",
+        "type": "text",
+        "label": "Tiêu đề tóm tắt cho trang trình chiếu",
+        "importance": "low",
+        "default": "Summary"
+      },
+      {
+        "name": "solutionsButtonTitle",
+        "type": "text",
+        "label": "Tiêu đề cho biểu tượng bình luận",
+        "importance": "low",
+        "default": "Show comments"
+      },
+      {
+        "name": "printTitle",
+        "type": "text",
+        "label": "Tiêu đề cho nút in",
+        "importance": "low",
+        "default": "Print"
+      },
+      {
+        "name": "printIngress",
+        "type": "text",
+        "label": "Quyền in hộp thoại",
+        "importance": "low",
+        "default": "How would you like to print this presentation?"
+      },
+      {
+        "name": "printAllSlides",
+        "type": "text",
+        "label": "Nhãn cho nút \"In tất cả các trang trình chiếu\"",
+        "importance": "low",
+        "default": "Print all slides"
+      },
+      {
+        "name": "printCurrentSlide",
+        "type": "text",
+        "label": "Nhãn cho nút \"In trang trình chiếu hiện tại\"",
+        "importance": "low",
+        "default": "Print current slide"
+      },
+      {
+        "name": "noTitle",
+        "type": "text",
+        "label": "Nhãn cho slide không có tiêu đề",
+        "importance": "low",
+        "default": "No title"
+      },
+      {
+        "name": "accessibilitySlideNavigationExplanation",
+        "type": "text",
+        "label": "Giải thích về điều hướng trang trình bày cho các công nghệ hỗ trợ",
+        "importance": "low",
+        "default": "Use left and right arrow to change slide in that direction whenever canvas is selected."
+      },
+      {
+        "name": "accessibilityCanvasLabel",
+        "type": "text",
+        "label": "Nhãn cho công nghệ hỗ trợ",
+        "importance": "low",
+        "default": "Presentation canvas. Use left and right arrow to move between slides."
+      },
+      {
+        "name": "containsNotCompleted",
+        "type": "text",
+        "label": "Nhãn cho các tương tác chưa hoàn thành",
+        "importance": "low",
+        "default": "@slideName contains not completed interaction"
+      },
+      {
+        "name": "containsCompleted",
+        "type": "text",
+        "label": "Nhãn cho các tương tác đã hoàn thành",
+        "importance": "low",
+        "default": "@slideName contains completed interaction"
+      },
+      {
+        "name": "slideCount",
+        "type": "text",
+        "label": "Nhãn cho bộ đếm trang trình chiếu. Các biến là @index, @total",
+        "importance": "low",
+        "default": "Slide @index of @total"
+      },
+      {
+        "name": "containsOnlyCorrect",
+        "type": "text",
+        "label": "Nhãn cho các trang trình chiếu chỉ chứa câu trả lời đúng",
+        "importance": "low",
+        "default": "@slideName only has correct answers"
+      },
+      {
+        "name": "containsIncorrectAnswers",
+        "type": "text",
+        "label": "Nhãn cho các trang trình chiếu có câu trả lời sai",
+        "importance": "low",
+        "default": "@slideName has incorrect answers"
+      },
+      {
+        "name": "shareResult",
+        "type": "text",
+        "label": "Nhãn cho thanh chia sẻ cộng đồng",
+        "importance": "low",
+        "default": "Share Result"
+      },
+      {
+        "name": "accessibilityTotalScore",
+        "type": "text",
+        "label": "Thông báo tổng điểm cho công nghệ hỗ trợ",
+        "default": "You got @score of @maxScore points in total",
+        "description": "Các biến có sẵn là @score và @maxScore"
+      },
+      {
+        "name": "accessibilityEnteredFullscreen",
+        "type": "text",
+        "label": "Đã nhập thông báo toàn màn hình cho công nghệ hỗ trợ",
+        "default": "Entered fullscreen"
+      },
+      {
+        "name": "accessibilityExitedFullscreen",
+        "type": "text",
+        "label": "Đã thoát khỏi thông báo toàn màn hình cho các công nghệ hỗ trợ",
+        "default": "Exited fullscreen"
+      },
+      {
+        "name": "confirmDialogHeader",
+        "type": "text",
+        "label": "Tiêu đề của hộp thoại xác nhận gửi kết quả",
+        "default": "Submit your answers"
+      },
+      {
+        "name": "confirmDialogText",
+        "type": "text",
+        "label": "Nội dung hộp thoại xác nhận gửi kết quả",
+        "default": "This will submit your results, do you want to continue?"
+      },
+      {
+        "name": "confirmDialogConfirmText",
+        "type": "text",
+        "label": "Nút xác nhận của hộp thoại xác nhận gửi kết quả",
+        "default": "Submit and see results"
+      }
+    ]
+  }
+]

@@ -1,0 +1,193 @@
+{
+  "semantics": [
+    {
+      "label": "Trình soạn thảo kịch bản phân nhánh",
+      "fields": [
+        {
+          "label": "Tiêu đề"
+        },
+        {
+          "label": "Màn hình bắt đầu",
+          "fields": [
+            {
+              "label": "Tiêu đề màn hình bắt đầu",
+              "placeholder": "Tiêu đề cho khóa học của bạn"
+            },
+            {
+              "label": "Bắt đầu phụ đề màn hình",
+              "placeholder": "Chi tiết về khóa học"
+            },
+            {
+              "label": "Hình ảnh màn hình bắt đầu"
+            },
+            {
+              "label": "Văn bản thay thế hình ảnh"
+            }
+          ]
+        },
+        {
+          "label": "Danh sách màn hình kết thúc",
+          "field": {
+            "label": "Màn hình kết thúc",
+            "fields": [
+              {
+                "label": "Tiêu đề"
+              },
+              {
+                "label": "Văn bản"
+              },
+              {
+                "label": "Hình ảnh"
+              },
+              {
+                "label": "Điểm",
+                "description": "Điểm số sẽ được gửi đến bất kỳ LMS, LRS hoặc bất kỳ dịch vụ được kết nối nào khác nhận điểm từ H5P cho người dùng đạt đến kịch bản kết thúc mặc định"
+              },
+              {
+                "label": "ID Nội dung"
+              }
+            ]
+          }
+        },
+        {
+          "label": "Danh sách nội dung kịch bản phân nhánh",
+          "entity": "nội dung",
+          "field": {
+            "fields": [
+              {},
+              {
+                "label": "Hiện tiêu đề nội dung trong dạng xem",
+                "description": "Nếu được chọn, người dùng sẽ thấy tiêu đề nội dung trong thanh trên cùng phía trên nội dung này"
+              },
+              {
+                "label": "Bắt buộc phải hoàn thành",
+                "description": "Kêu gọi người xem hoàn thành tương tác trước khi tiến hành kịch bản.Cài đặt này sẽ chỉ hoạt động cho các tương tác có thể được hoàn thành",
+                "options": [
+                  {
+                    "label": "Sử dụng thiết đặt hành vi"
+                  },
+                  {
+                    "label": "Kích hoạt"
+                  },
+                  {
+                    "label": "Vô hiệu hoá"
+                  }
+                ]
+              },
+              {
+                "label": "ID Nội dung Tiếp theo (màn hình cuối được xác định bởi số âm)"
+              },
+              {
+                "label": "Phản hồi",
+                "fields": [
+                  {
+                    "label": "Tiêu đề phản hồi"
+                  },
+                  {
+                    "label": "Văn bản phản hồi"
+                  },
+                  {
+                    "label": "Hình ảnh phản hồi"
+                  },
+                  {
+                    "label": "Điểm số cho kịch bản này",
+                    "description": "Điểm số sẽ được gửi đến bất kỳ LMS, LRS hoặc bất kỳ dịch vụ kết nối nào khác nhận được điểm từ H5P cho người dùng đạt được kịch bản này"
+                  }
+                ]
+              },
+              {
+                "label": "Dẫn hướng trở lại",
+                "description": "Điều này sẽ cho phép người dùng quay lại và xem nội dung / câu hỏi trước đó trong kịch bản",
+                "options": [
+                  {
+                    "label": "Sử dụng thiết đặt hành vi"
+                  },
+                  {
+                    "label": "Kích hoạt"
+                  },
+                  {
+                    "label": "Vô hiệu hoá"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "Tùy chọn chấm điểm",
+          "fields": [
+            {
+              "label": "Tùy chọn chấm điểm",
+              "description": "Chọn loại chấm điểm",
+              "options": [
+                {
+                  "label": "Điểm số đặt tĩnh cho mỗi kịch bản kết thúc"
+                },
+                {
+                  "label": "Tự động tính điểm từ câu trả lời của người dùng"
+                },
+                {
+                  "label": "Không ghi điểm"
+                }
+              ]
+            },
+            {
+              "label": "Bao gồm điểm số từ các tương tác trong Kịch bản Phân nhánh",
+              "description": "Nếu điểm số được chọn từ ví dụ Video tương tác sẽ được thêm vào tổng số điểm thu được.Nếu không chỉ chọn điểm số được chỉ định trong phần phản hồi của các mục nội dung, câu hỏi phân nhánh."
+            }
+          ]
+        },
+        {
+          "label": "Thiết đặt Hành vi",
+          "fields": [
+            {
+              "label": "Ghi đè yêu cầu nội dung hoàn tất ",
+              "description": "Ghi đè cài đặt cá nhân để yêu cầu nội dung hoàn tất trước khi kích hoạt nút \" tiếp tục\". Sẽ không có ảnh hưởng nào nếu nội dung không cho biết liệu nội dung đó có phải là \", e. g \" không. Trình bày hình ảnh hoặc trình bày với chỉ một slide ."
+            },
+            {
+              "label": "Bắt buộc phải xem",
+              "description": "Thúc đẩy người xem hoàn tất video, trình bày tương tác và trình bày khóa học tương tác trước khi tiến hành kịch bản. Điều này có thể bị ghi đè trên cấp nội dung"
+            }
+          ]
+        },
+        {
+          "label": "Địa phương hoá",
+          "fields": [
+            {
+              "label": "Văn bản cho nút trên màn hình bắt đầu",
+              "default": "Bắt đầu khoá học"
+            },
+            {
+              "label": "Văn bản cho nút trên màn hình kết thúc",
+              "default": "Bắt đầu lại khoá học"
+            },
+            {
+              "label": "Văn bản cho nút trên mỗi màn hình thư viện",
+              "default": "Tiến hành"
+            },
+            {
+              "label": "Văn bản cho nút dùng để phát video ",
+              "default": "Phát lại video"
+            },
+            {
+              "label": "Nhãn cho điểm số trên màn hình kết thúc",
+              "default": "Điểm của bạn:"
+            },
+            {
+              "label": "Nhãn cho điểm số trên màn hình kết thúc",
+              "default": "Điểm của bạn:"
+            },
+            {
+              "label": "Nhãn cho điểm số trên màn hình kết thúc",
+              "default": "Điểm của bạn:"
+            },
+            {
+              "label": "Nhãn âm điệu cho nút toàn màn hình",
+              "default": "Toàn màn hình"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

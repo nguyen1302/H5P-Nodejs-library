@@ -1,0 +1,274 @@
+{
+  "semantics": [
+    {
+      "label": "Giới thiệu bài kiểm tra",
+      "fields": [
+        {
+          "label": "Giới thiệu hiển thị"
+        },
+        {
+          "label": "Tiêu đề",
+          "description": "Tiêu đề này sẽ được hiển thị phía trên văn bản giới thiệu."
+        },
+        {
+          "label": "Văn bản giới thiệu",
+          "description": "Văn bản này sẽ được hiển thị trước khi bài kiểm tra bắt đầu."
+        },
+        {
+          "label": "Văn bản nút Bắt đầu",
+          "default": "Bắt đầu Đố vui"
+        },
+        {
+          "label": "Ảnh nền",
+          "description": "Ảnh nền tùy chọn cho phần giới thiệu."
+        }
+      ]
+    },
+    {
+      "label": "Ảnh nền",
+      "description": "Ảnh nền tùy chọn cho bộ Câu hỏi."
+    },
+    {
+      "label": "Chỉ báo tiến độ",
+      "description": "Kiểu chỉ báo tiến độ đặt câu hỏi.",
+      "options": [
+        {
+          "label": "Văn bản"
+        },
+        {
+          "label": "Dấu chấm"
+        }
+      ]
+    },
+    {
+      "label": "Tỷ lệ vượt qua",
+      "description": "Tỷ lệ phần trăm tổng số điểm cần thiết để vượt qua bài kiểm tra."
+    },
+    {
+      "label": "Các câu hỏi",
+      "widgets": [
+        {
+          "label": "Mặc định"
+        },
+        {
+          "label": "Văn bản"
+        }
+      ],
+      "entity": "câu hỏi",
+      "field": {
+        "label": "loại câu hỏi",
+        "description": "Thư viện cho câu hỏi này."
+      }
+    },
+    {
+      "label": "Giao diện văn bản trong bài kiểm tra",
+      "fields": [
+        {
+          "label": "Nút quay lại",
+          "default": "Câu hỏi trước"
+        },
+        {
+          "label": "Nút tiếp theo",
+          "default": "Câu hỏi tiếp theo"
+        },
+        {
+          "label": "Nút kết thúc",
+          "default": "Kết thúc"
+        },
+        {
+          "label": "Nút nộp bài",
+          "default": "Nộp bài"
+        },
+        {
+          "label": "Văn bản Tiến trình",
+          "description": "Văn bản được sử dụng nếu tiến trình văn bản được chọn.",
+          "default": "Câu hỏi: @current của @total câu hỏi"
+        },
+        {
+          "label": "Nhãn để nhảy đến một câu hỏi nhất định",
+          "description": "Bạn phải sử dụng trình giữ vị trí '%d' thay vì số lượng câu hỏi, và %total thay vì tổng số câu hỏi.",
+          "default": "Câu hỏi %d trong tổng %total"
+        },
+        {
+          "label": "Nhãn câu hỏi hộp thoại bản quyền",
+          "default": "Câu hỏi"
+        },
+        {
+          "label": "Đọc tiến trình của diễn giả",
+          "description": "Có thể sử dụng các biến câu hỏi @current và @total",
+          "default": "Câu hỏi @current của @total"
+        },
+        {
+          "label": "Văn bản câu hỏi chưa được trả lời",
+          "default": "Chưa được trả lời"
+        },
+        {
+          "label": "Văn bản câu hỏi được trả lời",
+          "default": "Đã được trả lời"
+        },
+        {
+          "label": "Văn bản câu hỏi hiện tại",
+          "default": "Câu hỏi hiện tại"
+        }
+      ]
+    },
+    {
+      "label": "Vô hiệu hóa điều hướng ngược",
+      "description": "Tùy chọn này sẽ chỉ cho phép bạn chuyển tiếp trong tập nghi vấn "
+    },
+    {
+      "label": "Câu hỏi bất kì",
+      "description": "Cho phép ngẫu nhiên thứ tự các câu hỏi được hiển thị."
+    },
+    {
+      "label": "Số lượng câu hỏi được hiển thị:",
+      "description": "Tạo một loạt câu hỏi ngẫu nhiên từ tổng số câu hỏi ."
+    },
+    {
+      "label": "Bài kiểm tra đã hoàn thành",
+      "fields": [
+        {
+          "label": "Hiển thị kết quả"
+        },
+        {
+          "label": "Nút hiển thị giải pháp"
+        },
+        {
+          "label": "Nút thử lại"
+        },
+        {
+          "label": "Không có thông báo kết quả",
+          "description": "Văn bản hiển thị trên trang cuối khi \"Hiển thị kết quả\" bị vô hiệu hóa",
+          "default": "Hoàn thành"
+        },
+        {
+          "label": "Tiêu đề Phản hồi",
+          "default": "Kết quả của bạn:",
+          "description": "Tiêu đề này sẽ được hiển thị ở cuối bài kiểm tra khi người dùng đã trả lời tất cả các câu hỏi."
+        },
+        {
+          "label": "Ghi điểm",
+          "description": "Nhãn này sẽ được sử dụng để thông báo điểm cuối cùng cho người dùng trên màn hình cuối",
+          "default": "Bạn đã giành được @finals trên @totals điểm"
+        },
+        {
+          "label": "Phản hồi chung ",
+          "fields": [
+            {
+              "widgets": [
+                {
+                  "label": "Mặc định"
+                }
+              ],
+              "label": "Xác định phản hồi tùy chỉnh cho bất kỳ phạm vi điểm nào",
+              "description": "Ví dụ: 0 - 20% điểm kém, 21 - 91% điểm trung bình, 91 - 100% điểm tốt! ",
+              "entity": "Thêm thang điểm",
+              "field": {
+                "fields": [
+                  {
+                    "label": "Phạm vi điểm"
+                  },
+                  {},
+                  {
+                    "label": "Phản hồi cho phạm vi điểm được xác định",
+                    "placeholder": "Điền thông tin phản hồi"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "label": "Phản hồi cũ ",
+          "fields": [
+            {
+              "label": "Lời chào đã vượt qua bài kiểm tra",
+              "description": "Văn bản này sẽ được hiển thị trên điểm số nếu người dùng đã thông qua thành công ."
+            },
+            {
+              "label": "Bình luận đã thông qua",
+              "description": "Bình luận này sẽ được hiển thị sau điểm số nếu người dùng đã thông qua thành công."
+            },
+            {
+              "label": "Tiêu đề bài kiểm tra thất bại",
+              "description": "Văn bản này sẽ được hiển thị trên điểm số nếu người dùng đã thất bại trong bài kiểm tra."
+            },
+            {
+              "label": "Phản hồi thất bại",
+              "description": "Nhận xét này sẽ được hiển thị sau khi điểm số nếu người dùng đã thất bại trong bài kiểm tra."
+            }
+          ]
+        },
+        {
+          "label": "Nhãn nút giải pháp",
+          "default": "Hiển thị giải pháp",
+          "description": "Nút Văn bản cho giải pháp."
+        },
+        {
+          "label": "Nhãn nút thử lại",
+          "default": "Thử lại",
+          "description": "Văn bản cho nút thử lại."
+        },
+        {
+          "label": "Nút kết thúc văn bản",
+          "default": "Kết thúc"
+        },
+        {
+          "label": "Văn bản nút nộp bài",
+          "default": "Nộp bài"
+        },
+        {
+          "label": "Hiển thị video trước khi kết quả kiểm tra"
+        },
+        {
+          "label": "Bật nút bỏ qua video"
+        },
+        {
+          "label": "Bỏ qua nhãn nút video",
+          "default": "Dừng video"
+        },
+        {
+          "label": "video được thông qua",
+          "description": "Video này sẽ được phát nếu người dùng vượt qua bài kiểm tra thành công."
+        },
+        {
+          "label": "Video thất bại",
+          "description": "Video này sẽ được phát nếu người dùng thất bại trong bài kiểm tra."
+        }
+      ]
+    },
+    {
+      "label": "Thiết đặt cho các nút \"Hiện giải pháp\" và \"Thử lại\"",
+      "fields": [
+        {
+          "label": "Hiện nút \"Kiểm tra\"",
+          "description": "Tùy chọn này xác định xem nút \"Kiểm tra\" có được hiển thị cho tất cả các câu hỏi hay không."
+        },
+        {
+          "label": "Nút Ghi đè \"Hiện Giải pháp\"",
+          "description": "Tùy chọn này xác định xem nút \"Hiện Giải pháp\" sẽ được hiển thị cho tất cả các câu hỏi, bị vô hiệu hóa cho tất cả hoặc được cấu hình cho từng câu hỏi riêng lẻ.",
+          "options": [
+            {
+              "label": "Kích hoạt"
+            },
+            {
+              "label": "Vô hiệu hoá"
+            }
+          ]
+        },
+        {
+          "label": "Nút Ghi đè \"Thử lại\"",
+          "description": "Tùy chọn này xác định xem nút \"thử lại \" sẽ được hiển thị cho tất cả các câu hỏi, bị vô hiệu hóa cho tất cả hoặc được cấu hình cho từng câu hỏi hay không .",
+          "options": [
+            {
+              "label": "Kích hoạt"
+            },
+            {
+              "label": "Vô hiệu hoá"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
