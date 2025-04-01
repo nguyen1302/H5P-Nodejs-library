@@ -1,6 +1,6 @@
 {
     "name": "@lumieducation/h5p-server",
-    "version": "9.3.2",
+    "version": "10.0.4",
     "description": "A community re-implementation of the H5P server",
     "license": "GPL-3.0-or-later",
     "repository": {
@@ -71,7 +71,7 @@
         "@types/jest": "29.5.14",
         "@types/jsonpath": "0.2.4",
         "@types/mime-types": "2.1.4",
-        "@types/sanitize-html": "2.13.0",
+        "@types/sanitize-html": "2.15.0",
         "@types/stream-buffers": "3.0.7",
         "@types/yauzl-promise": "4.0.1",
         "@types/yazl": "2.4.6",
@@ -81,5 +81,11 @@
         "stream-mock": "2.0.5"
     },
     "main": "./build/src/index.js",
-    "types": "./build/src/index.d.ts"
+    "types": "./build/src/index.d.ts",
+    "files": [
+        "build/",
+        "CHANGELOG.md",
+        "LICENSE",
+        "README.md"
+    ]
 }

@@ -1,6 +1,6 @@
 {
     "name": "@lumieducation/h5p-express",
-    "version": "9.3.2",
+    "version": "10.0.4",
     "description": "A community re-implementation of the H5P server",
     "license": "GPL-3.0-or-later",
     "repository": {
@@ -43,7 +43,7 @@
         }
     ],
     "dependencies": {
-        "@lumieducation/h5p-server": "^9.3.2",
+        "@lumieducation/h5p-server": "^10.0.4",
         "express": "4.21.2"
     },
     "main": "./build/index.js",
@@ -52,12 +52,17 @@
         "@types/express": "4.17.21",
         "@types/express-fileupload": "1.5.1",
         "@types/express-serve-static-core": "5.0.5",
-        "@types/supertest": "6.0.2",
-        "axios": "1.7.9",
+        "@types/supertest": "6.0.3",
+        "axios": "1.8.4",
         "axios-mock-adapter": "2.1.0",
         "body-parser": "1.20.3",
         "express-fileupload": "1.5.1",
-        "supertest": "7.0.0",
+        "supertest": "7.1.0",
         "tmp-promise": "3.0.3"
-    }
+    },
+    "files": [
+        "build",
+        "CHANGELOG.md",
+        "README.md"
+    ]
 }

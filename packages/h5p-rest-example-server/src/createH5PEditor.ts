@@ -4,6 +4,8 @@ import redisStore from 'cache-manager-redis-store';
 import * as H5P from '@lumieducation/h5p-server';
 import * as dbImplementations from '@lumieducation/h5p-mongos3';
 import { IContentMetadata, IUser } from '@lumieducation/h5p-server';
+import SvgSanitizer from '@lumieducation/h5p-svg-sanitizer';
+import ClamAVScanner from '@lumieducation/h5p-clamav-scanner';
 
 /**
  * Create a H5PEditor object.
@@ -90,10 +92,7 @@ export default async function createH5PEditor(
         process.env.CONTENTSTORAGE !== 'mongos3'
             ? new H5P.fsImplementations.FileContentStorage(localContentPath)
             : new dbImplementations.MongoS3ContentStorage(
-                  dbImplementations.initS3({
-                      s3ForcePathStyle: true,
-                      signatureVersion: 'v4'
-                  }),
+                  dbImplementations.initS3({ forcePathStyle: true }),
                   (await dbImplementations.initMongo()).collection(
                       process.env.CONTENT_MONGO_COLLECTION
                   ),
@@ -109,10 +108,7 @@ export default async function createH5PEditor(
               ),
         process.env.TEMPORARYSTORAGE === 's3'
             ? new dbImplementations.S3TemporaryFileStorage(
-                  dbImplementations.initS3({
-                      s3ForcePathStyle: true,
-                      signatureVersion: 'v4'
-                  }),
+                  dbImplementations.initS3({ forcePathStyle: true }),
                   {
                       s3Bucket: process.env.TEMPORARY_AWS_S3_BUCKET,
                       maxKeyLength: process.env.AWS_S3_MAX_FILE_LENGTH
@@ -132,7 +128,15 @@ export default async function createH5PEditor(
             enableHubLocalization: true,
             enableLibraryNameLocalization: true,
             hooks,
-            permissionSystem
+            permissionSystem,
+            // We've allowed SVGs in config.json, so we need to sanitize SVGs
+            fileSanitizers: [new SvgSanitizer()],
+            // You might not want to use ClamAV or opt out of using a virus
+            // scanner.
+            malwareScanners:
+                process.env.CLAMSCAN_ENABLED === 'true'
+                    ? [await ClamAVScanner.create()]
+                    : []
         },
         contentUserDataStorage
     );

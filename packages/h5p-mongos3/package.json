@@ -1,6 +1,6 @@
 {
     "name": "@lumieducation/h5p-mongos3",
-    "version": "9.3.2",
+    "version": "10.0.4",
     "description": "A community re-implementation of the H5P server",
     "license": "GPL-3.0-or-later",
     "repository": {
@@ -43,9 +43,11 @@
         }
     ],
     "dependencies": {
-        "@lumieducation/h5p-server": "^9.3.2",
+        "@aws-sdk/client-s3": "^3.758.0",
+        "@aws-sdk/lib-storage": "^3.758.0",
+        "@lumieducation/h5p-server": "^10.0.4",
         "aws-sdk": "2.1692.0",
-        "mongodb": "4.17.2",
+        "mongodb": "6.15.0",
         "stream-buffers": "^3.0.2"
     },
     "main": "./build/index.js",
@@ -54,5 +56,10 @@
         "@types/stream-buffers": "3.0.7",
         "promisepipe": "3.0.0",
         "stream-mock": "2.0.5"
-    }
+    },
+    "files": [
+        "build",
+        "CHANGELOG.md",
+        "README.md"
+    ]
 }
